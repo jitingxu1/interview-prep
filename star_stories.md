@@ -46,26 +46,30 @@
 
 ---
 
-## Story 3: Unblocking Engineers & Building Technical Culture
-**Situation**: Your team was spending ~30% of time in meetings, context-switching between code reviews, design reviews, oncall rotation, and manager syncs. Productivity was suffering, and engineers were frustrated.
+## Story 3: Managing Meeting Burden Across Cross-Functional Teams
+**Situation**: Your Risk ML team was drowning in meetings. You had daily syncs with product, engineering, business stakeholders, data analytics, and data engineering. Engineers were spending 50%+ of their time in meetings or context-switching between meetings. Code wasn't getting written. People were burnt out. But you couldn't eliminate meetings—all those teams were critical stakeholders in fraud detection.
 
-**Task**: Improve focus time and engineering velocity while maintaining quality and safety.
+**Task**: Reduce meeting burden on engineers while keeping all stakeholders aligned and unblocking work.
 
 **Action**:
-- Surveyed the team to understand pain points (meetings were biggest complaint)
-- Designed a "focus window" policy: 10am-3pm no meetings, async updates via design docs/Slack
-- Moved oncall rotation to dedicated weekly coverage instead of ad-hoc paging
-- Consolidated design reviews into twice-weekly batches instead of ad-hoc interruptions
-- Established an async design doc template for easy review (fraud models, pipeline changes, etc.)
-- Modeled the behavior myself—blocked my calendar, responded to Slack async
+- First: mapped all recurring meetings and identified redundancy (you had 3 different sync meetings covering the same topics with slightly different audiences)
+- Consolidated meetings: instead of separate meetings with product, business, and analytics, created one "fraud stakeholders sync" (1x/week, 1 hour)
+- Became the "meeting consolidator"—attended many cross-functional meetings, but your engineers only attended the ones critical to their work (design reviews, technical deep dives)
+- For decisions that needed engineer input: you pre-briefed them, they attended the meeting, then you debriefed and handled follow-ups
+- Established "no-meeting blocks": 10am-3pm your engineers' calendar was protected (but your calendar wasn't—you attended the cross-functional meetings)
+- Created async decision docs: product proposals came to you in writing first; you reviewed with your team async before meetings
+- Took detailed meeting notes and sent summaries to the team (so people didn't need to attend just to stay informed)
+- Built an "action item tracker": you owned most action items (not the engineers), so meetings didn't create work for them
 
 **Result**:
-- Focus time increased from 30% to ~60%
-- Code review cycle time dropped from 3 days to 1 day (less context switching)
-- Oncall satisfaction improved; team knew when they were on rotation
+- Engineers' meeting load dropped from 50% to ~25%
+- Productivity increased (more coding time, faster ship cycle)
+- Stakeholders still got what they needed (alignment, updates, decisions)
+- You became a "translation layer" between your team and the organization—you absorbed the meeting burden
 - Shipped major fraud detection infrastructure upgrade 4 weeks ahead of schedule
+- Team morale improved significantly; people felt heard and unblocked
 
-**Key takeaway for Roblox**: You care about engineer productivity and well-being, and you're willing to rethink processes to unblock them. You model the behavior you want to see.
+**Key takeaway for Roblox**: You don't eliminate necessary stakeholder engagement—you *manage* it. You take on the meeting burden yourself to protect your team's focus time. You're a strategic communicator who translates between technical teams and business stakeholders. You understand that meeting management is a key leadership skill.
 
 ---
 
