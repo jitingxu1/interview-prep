@@ -183,26 +183,26 @@
 
 ---
 
-## Story 8: Difficult Conversation: When to Fire Someone (or Help Them Find a Better Fit)
-**Situation**: You had a very smart engineer on the team who was strong technically but struggled with collaboration and communication. They'd write excellent code, but engineers didn't want to review it (defensive feedback), and the team was frustrated. You'd given feedback multiple times, but nothing changed. You had to decide: fire them or help them find a different role.
+## Story 8: Right Person, Wrong Seat—Solving a Mismatch with Empathy & Strategy
+**Situation**: You had a senior ML engineer on your team with 8 years of backend engineering experience. He was smart and motivated, but he was relatively new to ML. Repeatedly, you got feedback from peers and cross-functional partners: "He's making ML decisions without enough ML experience. The model designs feel over-engineered from a backend perspective." This happened multiple times. He was frustrated with the feedback; you could see his confidence dropping.
 
-**Task**: Have a difficult conversation and make a decision about the engineer's future.
+**Task**: Address the skill-fit problem without making him feel like he failed or was being pushed out.
 
 **Action**:
-- Did some soul-searching first: "Is this a real performance issue or just a personality clash? Is this solvable?"
-- Realized: they might be a great fit for a research/individual-contributor role where deep focus matters more than collaboration
-- Had an honest 1:1: "I see your technical strength, but the team feedback is consistent—collaboration is a gap. I have two options: (A) we create an improvement plan with clear milestones, or (B) we explore if there's a different team/role where you'd thrive."
-- The engineer chose option B; together you identified a data science role in another org that needed deep technical work with less collaboration
-- Helped them interview internally; they took the role
-- Stayed in touch; it turned out to be a great fit for them
+- **Diagnosed the real issue**: This wasn't a performance problem. He was strong—just in the wrong domain. He had deep backend skills but shallow ML depth. Pushing him to "get better at ML faster" wasn't the answer.
+- **Looked for a win-win**: Your team was scaling agents and needed someone to build the infrastructure for agent execution—a *backend problem*, not an ML problem. You realized: "His backend strength is exactly what we need here. This is where he'd thrive."
+- **Had a direct conversation**: "I see your strength in systems and infrastructure. The ML decision-making feedback you're getting—that's because ML is new territory for you, and that's okay. But I have a role where you'd be unstoppable: building the AI infrastructure for our agent platform. You'd be an AI engineer focused on backend systems. This is your wheelhouse."
+- **Made it about growth, not sideways move**: Framed it as a promotion/expansion, not a demotion. He'd still be a senior engineer, just in a role that matched his strengths.
+- **He took it and owned it**: Within months, he built the agent infrastructure that became a core capability. He was confident again and doing work he loved.
 
 **Result**:
-- Engineer is thriving in their new role (less collaboration needed)
-- Your team morale improved immediately
-- You handled a difficult situation with humanity, not just performance metrics
-- The engineer left grateful, not bitter
+- Engineer went from frustrated to thriving (doing work that leveraged his 8 years of backend expertise)
+- Your team got the infrastructure they needed from someone who was genuinely excellent at it
+- ML engineers on the team could focus on ML decisions without backend confusion
+- No churn, no bitterness—he felt understood and repositioned to succeed
+- His infrastructure work became a blocker-remover for the whole org
 
-**Key takeaway for Roblox**: You care about people, not just metrics. You're willing to have hard conversations. You help people find where they succeed, rather than just managing them out. You treat people with dignity.
+**Key takeaway for Roblox**: You don't just manage people—you diagnose where they'll truly excel. You see "skill mismatch" as a puzzle to solve, not a failure. You find roles within your org that leverage people's real strengths. You help people succeed by putting them in positions where they can win.
 
 ---
 
