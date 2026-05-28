@@ -114,13 +114,119 @@
 
 ---
 
+## Story 6: Handling Team Conflict & Building Psychological Safety
+**Situation**: Two senior engineers on your fraud detection team had a heated disagreement about the architecture for the new model serving system. One wanted a microservices approach (more complex but flexible), the other wanted a monolithic system (simpler but less flexible). The tension spilled over into code reviews—they were being critical of each other's work, and it was starting to affect team morale.
+
+**Task**: Resolve the conflict and establish a framework for how the team makes technical decisions together.
+
+**Action**:
+- Met 1:1 with each engineer separately to understand their concerns (not just the technical disagreement, but what was really bothering them)
+- Learned that Engineer A felt unheard in previous decisions, and Engineer B felt their experience was being dismissed
+- Scheduled a structured 1-hour meeting with both (not a free-for-all debate)
+- Set ground rules: listen to understand, not to win; focus on tradeoffs, not egos
+- Asked each to present their proposal with assumptions, tradeoffs, and unknowns (in writing before meeting)
+- Facilitated the discussion: "What's your biggest concern with their approach?" instead of "Who's right?"
+- Proposed a hybrid approach: start with the monolith but design for future migration to microservices
+- Created a decision-making framework for future architecture: team votes, I break ties if needed, we all commit to the decision
+
+**Result**:
+- Both engineers felt heard; relationship recovered
+- Hybrid approach shipped on time and performed well
+- Team learned how to disagree productively
+- They established a "architecture council" pattern for future decisions—senior engineers propose, team debates, decision is made transparently
+- Morale improved; people felt safe to disagree without personal friction
+
+**Key takeaway for Roblox**: You don't avoid conflict—you create structures that let people disagree productively. You care about psychological safety. You don't make every technical decision; you teach the team how to decide.
+
+---
+
+## Story 7: Growing an Engineer from Mid-Level to Senior IC
+**Situation**: You had a mid-level engineer (3 years experience) named Alex who had strong technical skills but lacked confidence in systems thinking and mentoring. They wanted to grow to senior IC but didn't believe they were ready. Meanwhile, you needed senior technical leadership on the team.
+
+**Task**: Create a deliberate growth plan to accelerate Alex toward senior IC, with clear milestones and feedback.
+
+**Action**:
+- Had a career conversation: "What do you want to be great at? Where do you feel blocked?" 
+- Learned that Alex wanted to lead but didn't think they had enough "authority"—they were looking for a title to feel confident
+- Reframed: "Senior IC isn't about the title. It's about technical depth, systems thinking, and helping others succeed. Let's build that."
+- Created a 6-month leveling plan with 3 pillars:
+  1. **Technical depth**: Led the design of a major fraud detection subsystem (from scratch, end-to-end ownership)
+  2. **Systems thinking**: Attended all architecture meetings and code reviews; I asked them for their opinion first
+  3. **Mentoring**: Assigned them to mentor a junior engineer on a project; I gave them feedback on their mentoring
+- Monthly 1:1s to review progress against the plan
+- Gave them "hard" feedback: "You're technically brilliant, but you're waiting for permission. You need to be more opinionated in meetings."
+- Celebrated wins publicly: in team meetings, I called out when they solved a hard problem or gave great mentoring feedback
+- When Alex suggested a better approach in a meeting, I made sure they got credit ("Alex's insight here is exactly right...")
+
+**Result**:
+- Alex shipped the fraud subsystem successfully; it's now a core part of the system
+- Their mentee went from junior to mid-level engineer with strong foundation
+- After 6 months, Alex had the skills and confidence of a senior IC
+- Promoted them to senior IC; they now lead 2 other engineers
+- Alex told you later: "I needed someone to believe in me before I believed in myself. You did that."
+
+**Key takeaway for Roblox**: You're intentional about developing people. You see potential before they do. You give specific feedback, create clear growth plans, and celebrate progress. You're building leaders, not just managing individuals.
+
+---
+
+## Story 8: Difficult Conversation: When to Fire Someone (or Help Them Find a Better Fit)
+**Situation**: You had a very smart engineer on the team who was strong technically but struggled with collaboration and communication. They'd write excellent code, but engineers didn't want to review it (defensive feedback), and the team was frustrated. You'd given feedback multiple times, but nothing changed. You had to decide: fire them or help them find a different role.
+
+**Task**: Have a difficult conversation and make a decision about the engineer's future.
+
+**Action**:
+- Did some soul-searching first: "Is this a real performance issue or just a personality clash? Is this solvable?"
+- Realized: they might be a great fit for a research/individual-contributor role where deep focus matters more than collaboration
+- Had an honest 1:1: "I see your technical strength, but the team feedback is consistent—collaboration is a gap. I have two options: (A) we create an improvement plan with clear milestones, or (B) we explore if there's a different team/role where you'd thrive."
+- The engineer chose option B; together you identified a data science role in another org that needed deep technical work with less collaboration
+- Helped them interview internally; they took the role
+- Stayed in touch; it turned out to be a great fit for them
+
+**Result**:
+- Engineer is thriving in their new role (less collaboration needed)
+- Your team morale improved immediately
+- You handled a difficult situation with humanity, not just performance metrics
+- The engineer left grateful, not bitter
+
+**Key takeaway for Roblox**: You care about people, not just metrics. You're willing to have hard conversations. You help people find where they succeed, rather than just managing them out. You treat people with dignity.
+
+---
+
+## Story 9: Mentoring Through a Crisis: Unblocking an Engineer Who's Stuck
+**Situation**: One of your junior engineers was working on a critical feature for fraud detection—improving the alert system. They got stuck on a technical problem and spent 3 days on it without making progress. They were frustrated, losing confidence, and starting to spiral ("Maybe I'm not good enough for this team").
+
+**Task**: Unblock them and rebuild their confidence without just giving them the answer.
+
+**Action**:
+- Noticed the struggle in standup; asked them for 1:1
+- Instead of immediately solving the problem, you asked: "Walk me through what you've tried and what you learned."
+- They explained the problem; you asked clarifying questions: "What assumption might be wrong here? What would you do if X were true instead?"
+- Helped them think through the problem systematically, not by giving the answer
+- Paired with them for 30 minutes (not to code, but to think out loud together)
+- When they found the solution themselves, you made sure to emphasize: "You solved that. You had the insight."
+- In the team standup, you called out their progress: "This engineer debugged a really tricky issue this week—great persistence."
+
+**Result**:
+- Engineer unblocked the feature (shipped on time)
+- Their confidence returned; they realized they *could* solve hard problems
+- They learned the debugging approach and applied it to future problems
+- They told you later: "I was ready to give up, but you helped me see I could figure it out."
+
+**Key takeaway for Roblox**: You don't just manage through metrics—you develop people through challenges. You coach them to solve problems, not just solve problems for them. You help them build confidence.
+
+---
+
 ## How to Use These Stories
 
 1. **Listen for the question**, don't just recite stories
-   - "Tell me about a time you made a hard decision" → Story 2
-   - "How do you develop your team?" → Stories 3, 4
+   - "Tell me about a time you made a hard decision" → Story 2 or 8
+   - "How do you develop your team?" → Stories 4, 7, 9
    - "How do you handle feedback?" → Story 5
-   - "What's your management style?" → Story 3 or 4
+   - "Tell me about a conflict you resolved" → Story 6
+   - "How do you handle someone who's struggling?" → Story 9
+   - "Tell me about a tough personnel decision" → Story 8
+   - "What's your management style?" → Stories 3, 4, or 7
+   - "How do you build psychological safety?" → Story 6
 
 2. **Adapt and personalize**
    - Use real details (dates, team names, specific metrics)
