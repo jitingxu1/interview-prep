@@ -47,29 +47,27 @@
 ---
 
 ## Story 3: Managing Meeting Burden Across Cross-Functional Teams
-**Situation**: Your Risk ML team was drowning in meetings. You had daily syncs with product, engineering, business stakeholders, data analytics, and data engineering. Engineers were spending 50%+ of their time in meetings or context-switching between meetings. Code wasn't getting written. People were burnt out. But you couldn't eliminate meetings—all those teams were critical stakeholders in fraud detection.
+**Situation**: Your Risk ML team was drowning in meetings. You had product syncs, business updates, data analytics check-ins, data engineering alignments—spread across different days and times. Engineers were spending 50%+ of their time in meetings or context-switching. Code wasn't getting written. But you couldn't ignore stakeholders (product, business, data analytics, data engineering)—they were all critical to fraud detection.
 
-**Task**: Reduce meeting burden on engineers while keeping all stakeholders aligned and unblocking work.
+**Task**: Reduce meeting burden on engineers while keeping all cross-functional stakeholders aligned.
 
 **Action**:
-- First: mapped all recurring meetings and identified redundancy (you had 3 different sync meetings covering the same topics with slightly different audiences)
-- Consolidated meetings: instead of separate meetings with product, business, and analytics, created one "fraud stakeholders sync" (1x/week, 1 hour)
-- Became the "meeting consolidator"—attended many cross-functional meetings, but your engineers only attended the ones critical to their work (design reviews, technical deep dives)
-- For decisions that needed engineer input: you pre-briefed them, they attended the meeting, then you debriefed and handled follow-ups
-- Established "no-meeting blocks": 10am-3pm your engineers' calendar was protected (but your calendar wasn't—you attended the cross-functional meetings)
-- Created async decision docs: product proposals came to you in writing first; you reviewed with your team async before meetings
-- Took detailed meeting notes and sent summaries to the team (so people didn't need to attend just to stay informed)
-- Built an "action item tracker": you owned most action items (not the engineers), so meetings didn't create work for them
+- **Tracked and consolidated**: Mapped all recurring cross-functional meetings and identified massive redundancy (same topics being discussed in 3-4 different meetings with overlapping audiences)
+- **Created one unified sync**: Replaced separate product/business/analytics/engineering meetings with one "Fraud Stakeholders Sync" (1 hour, 1x/week) with all XFNs in one room
+- **Clear attendance model**: MLEs only attended when it was relevant to their work (design review input, technical decisions). You attended every single meeting to be the conduit
+- **Established "No Meeting Thursday"**: Blocked all recurring meetings on Thursdays for your team's focus time. Communicated this proactively to all XFNs—no exceptions, no recurring meetings on that day
+- **Pre/post sync work**: You handled communication before (briefed MLEs on agenda items that affected them) and after (summarized decisions, clarified next steps, managed action items)
+- **You absorbed the load**: As the tech lead manager, you owned the stakeholder interface. You attended cross-functional meetings while your engineers protected their coding time
 
 **Result**:
-- Engineers' meeting load dropped from 50% to ~25%
-- Productivity increased (more coding time, faster ship cycle)
-- Stakeholders still got what they needed (alignment, updates, decisions)
-- You became a "translation layer" between your team and the organization—you absorbed the meeting burden
+- Engineers' meeting load dropped from 50% to ~20%
+- No-Meeting Thursday became sacred—protected focus time for major work
+- All stakeholders stayed aligned through one efficient sync (instead of fragmented meetings)
+- You became the "translation layer" between cross-functional teams and engineering
 - Shipped major fraud detection infrastructure upgrade 4 weeks ahead of schedule
-- Team morale improved significantly; people felt heard and unblocked
+- Team morale improved; engineers could actually focus on building things
 
-**Key takeaway for Roblox**: You don't eliminate necessary stakeholder engagement—you *manage* it. You take on the meeting burden yourself to protect your team's focus time. You're a strategic communicator who translates between technical teams and business stakeholders. You understand that meeting management is a key leadership skill.
+**Key takeaway for Roblox**: You understand that as a manager, absorbing the meeting burden is part of your job. You're strategic about consolidation (one meeting instead of many). You set boundaries with XFNs (Thursday is protected) and enforce them consistently. You're a critical liaison who keeps all stakeholders aligned without burning out your engineers.
 
 ---
 
