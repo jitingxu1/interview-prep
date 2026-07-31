@@ -21,7 +21,7 @@ Before DoorDash, I worked at VoltronData and claypot on open source projects—s
 
 With Ibis-ML, we extended IBIS to feature engineering and preprocessing workflows—similar to scikit-learn preprocessing, but instead of being limited to in-memory datasets, you can run it on big clusters.
 
-At Airbnb, I was the tech lead and built the location graph—everything from data collection to location ranking and understanding. That was a large-scale data system handling millions of location data points. We had to think carefully about data collection, storage, indexing, ranking, and serving. The interesting part was that location data is fundamental to Airbnb—it powers search, the map, autocomplete, recommendations.
+Before that I worked at Airbnb. I was the tech lead and built the location graph—everything from data collection to location ranking and understanding. That was a large-scale data system handling millions of location data points. We had to think carefully about data collection, storage, indexing, ranking, and serving. The interesting part was that location data is fundamental to Airbnb—it powers search, the map, autocomplete, recommendations.
  - So we were constantly making tradeoffs between latency, accuracy, freshness, and cost. And we had to make those decisions in a way that served multiple teams downstream.
 
 I also worked on user engagement systems at Airbnb—figuring out how to send the right content to the right users at the right time.
