@@ -30,24 +30,17 @@ Several interconnected problems:
 
 4. **Reproducibility nightmare** — You couldn't answer basic questions: "What data trained this model?" "What hyperparameters?" "Which version is live?" Six months later, the model would drift and nobody could explain why.
 
-
-## The Scale & Impact
-
-Chargebacks are critical to DoorDash. Every fraudulent transaction that gets through costs money directly. So we have multiple chargeback models running in production—different transaction types, different signals, different strategies. When a model needs to be retrained or when we want to try a new approach, it takes forever.
-
-The operational overhead was massive. ML engineers spending weeks on non-ML work. Model release velocity was slow—experiments took 2-3 months to run because you had to wait for chargeback data to mature before you could evaluate.
-
 ## The Solution
 
-Here's the key insight: **A model is a prototype. An automated model is a product.** The gap between those two things isn't mathematical—it's operational.
+Here's the key insight: **A model is a prototype. An automated model pipeline is a product.** The gap between those two things isn't mathematical—it's operational.
 
-Teams that treat model development as "run a script in a notebook" eventually hit a wall: reproducibility breaks, models regress silently, datasets drift, and nobody can explain which checkpoint shipped to production last Tuesday. Designing a model pipeline is fundamentally a distributed systems problem wearing an ML hat.
+Teams that treat model development as "run a script in a notebook" eventually hit a wall: reproducibility breaks, models regress silently, datasets drift, and nobody can explain which checkpoint shipped to production last Tuesday.
 
 That's what we realized. We decided to build a comprehensive automation framework treating the entire process as a distributed systems problem with distinct, independently restartable stages. Instead of notebooks scattered everywhere, we built an orchestrated pipeline.
 
 **The Five-Stage Pipeline:**
 
-1. **Data Ingestion & Versioning**: Raw transaction data arrives from the data lake. Before anything trains, we fingerprint every dataset version using Delta Lake. This solves the "what data produced this model?" problem six months later.
+1. **Data Ingestion & Versioning**: Raw transaction data arrives from the data lake. Before anything trains, we fingerprint every dataset version using Delta Lake. Here's how: we compute a hash of the full dataset (rows + schema), record metadata (source, timestamp, row count, feature schema), and create an immutable snapshot. Delta Lake's versioning means we can always reference a specific dataset version—"training-data-v42"—and retrieve it exactly. This solves the "what data produced this model?" problem six months later.
 
 2. **Preprocessing & Tokenization**: We clean and standardize the raw transaction features. This is CPU-bound work—tokenization, feature normalization, sampling—and it runs on separate CPU workers, not during training. Huge win: no more wasting GPU cycles on data prep.
 
