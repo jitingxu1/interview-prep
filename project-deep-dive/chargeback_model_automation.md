@@ -14,7 +14,7 @@ The critical challenge: fraud patterns and feature distributions drift constantl
 
 **The Problem: 6-10 weeks to iterate**
 
-When I started, iterating on a chargeback model—whether retraining an existing one with new data or adding new features—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing.
+When I started, iterating on a chargeback model—whether retraining an existing one with new data or adding new features—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing—re-pulling the same dataset over and over, restarting jobs that failed halfway through, manually fixing broken data pipelines, coordinating between teams.
 
 **Why the bottleneck?**
 
