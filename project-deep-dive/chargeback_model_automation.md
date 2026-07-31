@@ -12,7 +12,7 @@ A chargeback model predicts whether a transaction will result in a chargeback—
 
 **The Problem: 6-10 weeks to iterate**
 
-When I started, iterating on a chargeback model—whether retraining an existing one or onboarding a new transaction-level model—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing.
+When I started, iterating on a chargeback model—whether retraining an existing one with new data or adding new features—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing.
 
 **Why the bottleneck?**
 
@@ -26,7 +26,6 @@ Several interconnected problems:
 
 4. **Reproducibility nightmare** — You couldn't answer basic questions: "What data trained this model?" "What hyperparameters?" "Which version is live?" Six months later, the model would drift and nobody could explain why.
 
-5. **Too many manual handoffs** — Data prep engineer → ML engineer → backend engineer → productionization. Each handoff introduced delays and miscommunication. No clear ownership or observability.
 
 ## The Scale & Impact
 
@@ -36,9 +35,11 @@ The operational overhead was massive. ML engineers spending weeks on non-ML work
 
 ## The Solution
 
-Here's the key insight: **a model is a hypothesis; a trained model in production is a product.** The gap isn't mathematical—it's operational. That's what we realized.
+Here's the key insight: **A model is a prototype. An automated model is a product.** The gap between those two things isn't mathematical—it's operational.
 
-We decided to build a comprehensive automation framework treating the entire process as a distributed systems problem with distinct, independently restartable stages. Instead of notebooks scattered everywhere, we built an orchestrated pipeline.
+Teams that treat model development as "run a script in a notebook" eventually hit a wall: reproducibility breaks, models regress silently, datasets drift, and nobody can explain which checkpoint shipped to production last Tuesday. Designing a model pipeline is fundamentally a distributed systems problem wearing an ML hat.
+
+That's what we realized. We decided to build a comprehensive automation framework treating the entire process as a distributed systems problem with distinct, independently restartable stages. Instead of notebooks scattered everywhere, we built an orchestrated pipeline.
 
 **The Five-Stage Pipeline:**
 
