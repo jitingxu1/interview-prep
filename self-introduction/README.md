@@ -28,6 +28,16 @@ This folder contains materials for answering:
    - Focus on systems thinking, architecture, technical decisions
    - Use when: Interviewing for tech lead or architect roles
 
+## Career Motivation
+
+5. **[Why Leave DoorDash](./why_leave_doordash_short.md)** — General reasons (short)
+   - Industry fit, margins, growth potential, startup vs. mature company
+   - Use when: Interviewers ask "why are you looking?" or "why leave DoorDash?"
+
+6. **[Why Leave DoorDash](./why_leave_doordash_long.md)** — General reasons (long)
+   - Deeper explanation of motivations and what you're looking for next
+   - Use when: You have time to explain your thinking
+
 ## Key Themes to Weave In
 
 - Your journey from IC → Tech Lead → Manager
