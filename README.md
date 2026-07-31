@@ -1,36 +1,47 @@
-# Roblox ML Engineering Manager Interview Prep
+# Interview Preparation Hub
 
-## Overview
-Interview preparation for **ML Engineering Manager role, Critical Harm team** at Roblox.
-
-**Background**: Tech Lead Manager at DoorDash Risk ML (fraud detection, ~10 engineers) + ML Manager at VoltronData (~2 years).
+Organized materials for tech manager interviews across companies.
 
 ---
 
-## 📋 Core Interview Materials
+## 📁 Folder Structure
 
-1. **[Profile & Background](./ml_manager_profile.md)** — Your experience arc and why you're a fit
-2. **[STAR Stories](./star_stories.md)** — Concrete examples for behavioral questions
-3. **[Manager Questions & Answers](./manager_qa.md)** — Common leadership questions
-4. **[Roblox Context](./roblox_context.md)** — Critical harm domain knowledge
-5. **[Technical + Leadership Synthesis](./tech_leadership_balance.md)** — How you operate as tech lead manager
+### **[⭐ star_stories/](./star_stories/)** — Behavioral Stories
+Individual story files, each a complete behavioral example. Mix and match for different questions.
+- 9 STAR stories covering leadership, decision-making, conflict resolution, team development, etc.
+
+### **[🎓 leadership/](./leadership/)** — Leadership Framework & Philosophy
+Your management approach, values, and thinking.
+- Manager Q&A — Common leadership questions
+- Technical + Leadership balance — How you operate as tech lead
+
+### **[🏢 company/](./company/)** — Company-Specific Materials
+Tailored prep for each company.
+- **[Roblox](./company/roblox/)** — ML Engineering Manager, Critical Harm team
+
+### **[👤 self-introduction/](./self-introduction/)** — Personal Pitch & Background
+Your background arc and key narrative threads.
+
+### **[🔧 project-deep-dive/](./project-deep-dive/)** — Project Deep Dives
+Detailed technical explorations of specific projects.
+
+### **[📄 resume/](./resume/)** — Resume
+Resume files and versions for different companies or roles.
 
 ---
 
-## 🎯 Key Themes to Emphasize
+## Quick Start
 
-- **High-stakes decision making** under ambiguity (fraud vs. user experience tradeoffs)
-- **Safety-critical mindset** (fraud = platform trust → critical harm parallels)
-- **Dual IC+Manager strengths** (staying hands-on, unblocking engineers, technical credibility)
-- **Team scaling** (10 → 20+ engineers, hiring, leveling, culture)
-- **Cross-functional impact** (fraud touches legal, ops, business, engineering)
+**Getting ready to interview?**
+
+1. Review your **[leadership philosophy](./leadership/)** — internalize your values
+2. Study **[STAR stories](./star_stories/)** — practice telling them aloud
+3. Go to your **[company folder](./company/roblox/)** — company-specific strategy
+4. Prepare **[self-introduction](./self-introduction/)** — craft your pitch
+5. Deep dive on **[projects](./project-deep-dive/)** — for technical questions
 
 ---
 
-## 💡 Interview Tips
+## Adding a New Company
 
-- Lead with impact, not just description
-- Connect your fraud detection experience to critical harm (safety, trust, real user impact)
-- Show both technical depth AND people leadership
-- Be honest about what you're learning in the manager role
-- Ask thoughtful questions about Roblox's critical harm strategy and team structure
+See [company/README.md](./company/README.md) for instructions.
