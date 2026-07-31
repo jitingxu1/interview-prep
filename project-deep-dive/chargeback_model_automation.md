@@ -1,16 +1,32 @@
 # Project Deep Dive: Chargeback Model Automation (DoorDash)
 
-**Authors: Fengying Yang, Zhifeng Wang, Jiting Xu, Lear Wang**
+**Authors:  Jiting Xu**
 
 ---
 
 ## Problem Statement
 
-When I started working on this, our chargeback model development process was a complete bottleneck. Here's what it looked like:
+**What is a chargeback model?**
 
-The process was highly manual and fragmented. We relied on ad-hoc Databricks notebooks to link different components together. You'd have one notebook for feature exploration, another for data sampling, another for training, another for validation. Everything was siloed, and there was no orchestration.
+A chargeback model predicts whether a transaction will result in a chargeback—when a customer disputes a charge and the transaction gets reversed. This directly impacts DoorDash's revenue and trust. We run multiple models in production, handling different transaction types and signals. Every fraudulent chargeback that gets through costs money.
 
-What that meant in practice: if an ML engineer wanted to retrain an existing model or onboard a new chargeback transaction-level model, they'd spend 6-8 weeks just going through the development cycle. And most of that time wasn't actually spent on ML work—it was spent on data engineering, feature generation, and manual coordination.
+**The Problem: 6-10 weeks to iterate**
+
+When I started, iterating on a chargeback model—whether retraining an existing one or onboarding a new transaction-level model—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing.
+
+**Why the bottleneck?**
+
+Several interconnected problems:
+
+1. **Ad-hoc Databricks notebooks everywhere** — Feature exploration lived in one notebook, data sampling in another, training in another, validation in another. Everything was siloed with no orchestration.
+
+2. **Manual data preparation & feature engineering** — Every time you wanted to try a new model or feature, you'd manually write code to sample data, generate features, and validate. Tedious, error-prone, and took weeks.
+
+3. **No standardized training pipeline** — Training jobs were individual scripts. No versioning, no checkpointing, no automatic resumption on failure. If a job died at step 8 of 10, you'd restart from scratch.
+
+4. **Reproducibility nightmare** — You couldn't answer basic questions: "What data trained this model?" "What hyperparameters?" "Which version is live?" Six months later, the model would drift and nobody could explain why.
+
+5. **Too many manual handoffs** — Data prep engineer → ML engineer → backend engineer → productionization. Each handoff introduced delays and miscommunication. No clear ownership or observability.
 
 ## The Scale & Impact
 
