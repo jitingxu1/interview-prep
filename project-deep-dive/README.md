@@ -6,21 +6,25 @@ Detailed explorations of specific projects and problem domains you've worked on.
 
 This folder contains materials for answering:
 - "Tell me about your biggest technical achievement"
-- "Walk me through the fraud detection system"
+- "Walk me through a complex project"
 - "What's the most complex problem you've solved?"
 - "How did you approach X problem domain?"
 
-## Files
+## Projects
 
-(Add files here as you build them out)
+1. **[Chargeback Model Automation](./chargeback_model_automation.md)** (DoorDash)
+   - Building automated ML pipeline for chargeback fraud models
+   - Offline feature store + orchestrated training
+   - Reduced model dev velocity from 6-8 weeks → 2-3 weeks
+   - Reduced experiment time from 2-3 months → 4-6 weeks
 
-## Example Structure
+## Deep Dive Structure
 
-Each project deep-dive could cover:
+Each project covers:
 - **Problem statement**: What was the challenge?
-- **Scale**: How big was the problem? (users, fraud, latency, etc.)
+- **Scale**: How big/important was the problem?
 - **Solution approach**: What did you build and why?
-- **Impact**: What did it achieve?
-- **Technical depth**: Key technical decisions and tradeoffs
-- **Team involvement**: How did you lead or collaborate?
-- **Learnings**: What did you learn?
+- **Technical decisions**: Key tradeoffs and reasoning
+- **Impact**: Results and team impact
+- **Challenges & learnings**: What went wrong, what you learned
+- **Key takeaway**: Why this matters for interviews
