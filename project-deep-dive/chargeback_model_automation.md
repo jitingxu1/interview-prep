@@ -8,7 +8,7 @@
 
 **What is a chargeback model?**
 
-A chargeback model predicts whether a transaction will result in a chargeback—when a customer disputes a charge and the transaction gets reversed. This directly impacts DoorDash's revenue and trust. We run multiple models in production, handling different transaction types and signals. Every fraudulent chargeback that gets through costs money.
+A chargeback model predicts whether a transaction will result in a chargeback. This directly impacts DoorDash's revenue and trust.
 
 The critical challenge: fraud patterns and feature distributions drift constantly. Fraudsters adapt their tactics, seasonal patterns shift, new payment methods emerge. That means models need to be retrained frequently to stay effective. You can't set a model and forget it.
 
