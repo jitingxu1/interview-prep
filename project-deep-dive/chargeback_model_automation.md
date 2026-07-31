@@ -10,6 +10,8 @@
 
 A chargeback model predicts whether a transaction will result in a chargeback—when a customer disputes a charge and the transaction gets reversed. This directly impacts DoorDash's revenue and trust. We run multiple models in production, handling different transaction types and signals. Every fraudulent chargeback that gets through costs money.
 
+The critical challenge: fraud patterns and feature distributions drift constantly. Fraudsters adapt their tactics, seasonal patterns shift, new payment methods emerge. That means models need to be retrained frequently to stay effective. You can't set a model and forget it.
+
 **The Problem: 6-10 weeks to iterate**
 
 When I started, iterating on a chargeback model—whether retraining an existing one with new data or adding new features—took 6-10 weeks. That's a long time in a fast-moving business. And here's the painful part: most of those weeks weren't spent on actual ML work. They were spent on plumbing.
