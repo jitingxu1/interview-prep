@@ -20,7 +20,7 @@ Several interconnected problems:
 
 1. **Ad-hoc Databricks notebooks everywhere** — Feature exploration lived in one notebook, data sampling in another, training in another, validation in another. Everything was siloed with no orchestration.
 
-2. **Manual data preparation & feature engineering** — Every time you wanted to try a new model or feature, you'd manually write code to sample data, generate features, and validate. Tedious, error-prone, and took weeks.
+2. **Manual data preparation & feature engineering** — Every time you wanted to try a new model or feature, you'd manually write code to sample data, generate features, and validate. Tedious, error-prone, and took weeks. And if it failed in the middle—network timeout, memory error, whatever—you'd restart the entire process from scratch.
 
 3. **No standardized training pipeline** — Training jobs were individual scripts. No versioning, no checkpointing, no automatic resumption on failure. If a job died at step 8 of 10, you'd restart from scratch.
 
