@@ -20,32 +20,67 @@ The operational overhead was massive. ML engineers spending weeks on non-ML work
 
 ## The Solution
 
-We decided to build a comprehensive automation framework. The idea was: what if we could standardize the entire process, from feature generation to model training to productionization? We'd build an offline feature store and an orchestrated training pipeline.
+Here's the key insight: **a model is a hypothesis; a trained model in production is a product.** The gap isn't mathematical—it's operational. That's what we realized.
 
-**Key components:**
+We decided to build a comprehensive automation framework treating the entire process as a distributed systems problem with distinct, independently restartable stages. Instead of notebooks scattered everywhere, we built an orchestrated pipeline.
 
-1. **Offline Feature Store**: Pre-computed, standardized features so engineers don't have to write data generation code for every model. Features are computed in batch, stored in a central location, and versioned.
+**The Five-Stage Pipeline:**
 
-2. **Orchestrated Training Pipeline**: Instead of individual notebooks, we built a pipeline that handles the entire flow: data sampling, feature retrieval, training, validation, score calibration, model promotion.
+1. **Data Ingestion & Versioning**: Raw transaction data arrives from the data lake. Before anything trains, we fingerprint every dataset version using Delta Lake. This solves the "what data produced this model?" problem six months later.
 
-3. **Standardized Experimentation Framework**: New framework for running A/B tests and experiments, including threshold adjustment and score calibration steps.
+2. **Preprocessing & Tokenization**: We clean and standardize the raw transaction features. This is CPU-bound work—tokenization, feature normalization, sampling—and it runs on separate CPU workers, not during training. Huge win: no more wasting GPU cycles on data prep.
+
+3. **Training Job Orchestration**: The actual training job. We submit to a job scheduler (Fireworks cluster in our case) with explicit resource requests. Decisions here: batch size, number of training steps, gradient accumulation if needed. The key: make it reproducible and schedulable.
+
+4. **Checkpoint Management**: Training jobs fail. We write checkpoints to durable storage at regular intervals. The pipeline automatically resumes from the latest valid checkpoint without human intervention. We validate checkpoints on write to catch corruption.
+
+5. **Evaluation, Registry & Promotion**: After training, models run against a frozen eval harness—standardized tests that don't change between runs. Models that pass thresholds get registered in our model registry with full lineage: dataset version, hyperparameters, eval scores. Promotion to production requires explicit approval.
+
+**Key Components:**
+
+1. **Offline Feature Store**: Pre-computed, versioned features. Engineers declare what they need; the store handles retrieval. No more data generation code in notebooks.
+
+2. **Orchestrated Training Pipeline**: Configurable, reproducible, observable. You specify your model, hyperparameters, eval criteria; the pipeline handles everything else.
+
+3. **Model Registry with Lineage**: Every model tracks what data it trained on, what config, what hardware, what eval scores. You can always answer "why did we promote this checkpoint?"
 
 ## Technical Approach
 
-**Model Development Velocity** was the first goal. We needed to reduce MLE dev time from 6-8 weeks down to something reasonable.
+**The Core Principle: Separation of Concerns**
 
-The old process: Each stage was manual.
-- Model Development: 6-8 weeks (ad-hoc notebooks, feature exploration)
-- Training Data Prep: 4-6 weeks (ad-hoc notebooks, manual sampling)
-- Model Training: 2-3 weeks (ad-hoc notebooks, Fireworks cluster jobs)
-- Model Productionization: 1-2 weeks (backend changes, integration, calibration)
-- Experimentation: 2-3 months (waiting for data to mature, manual threshold adjustment)
+The old process mixed everything together. One notebook did data prep, another did feature generation, another did training. This meant:
+- If you changed data prep logic, you had to re-run everything
+- Failures were non-deterministic and hard to debug
+- You couldn't parallelize different stages
+- Reproducibility was a nightmare
 
-Our solution: Standardize and automate every step.
+Our solution: Treat each stage as independently testable and restartable.
 
-We built an offline feature store that pre-computes features at different granularities. Instead of engineers writing their own feature generation code, they declare what features they need, and the feature store handles it. This alone cut the data prep stage by 50%.
+**Stage 1: Data Versioning & Immutability**
 
-For training, we created a configurable pipeline. You specify your model architecture, hyperparameters, evaluation criteria, and the pipeline handles feature retrieval, training, validation, and score calibration. It runs on a batch orchestration system (Fireworks cluster) so everything is parallel and scalable.
+We stopped treating datasets as ephemeral. Every training dataset gets a fingerprint (hash of content + metadata). We use Delta Lake for immutable snapshots. Why? So six months later, you can answer "what data trained this model?" instantly. This matters for auditing, compliance, and debugging.
+
+**Stage 2: Preprocessing Isolation**
+
+Here's a subtle but critical win: we moved all CPU-bound work (data cleaning, tokenization, feature normalization) off the GPU training path. We have separate CPU workers that pre-compute all features and write them to sharded binary files. GPU training nodes just read pre-computed data.
+
+Why does this matter? Your GPU is expensive. If you waste it on CPU work (parsing JSON, running min-hash deduplication, normalizing features), you're leaving money on the table. Plus, preprocessing becomes non-deterministic when it happens during training—different batch orders → different cache effects → non-reproducible results.
+
+**Stage 3: Stateful Training with Checkpointing**
+
+Training jobs are brittle. GPUs preempt, spot instances evict, network timeouts happen. We wrote the pipeline to checkpoint at fixed intervals (every N steps), write to durable storage, and resume from the latest valid checkpoint. We validate checkpoints on write—if the file is corrupted, we keep the previous one.
+
+The pipeline is built on a job scheduler (Fireworks) with explicit resource requests and timeouts. The scheduler handles retry logic and failure notifications.
+
+**Stage 4: Frozen Evaluation Harness**
+
+Models without evaluation are just hypothesis. We built a frozen benchmark that doesn't change between runs: standard chargeback test sets, performance thresholds, regression tests for general fraud signals. After training completes, the model runs through this harness.
+
+Only models that pass get registered in the model registry with full lineage: dataset version, hyperparameters, hardware specs, eval scores.
+
+**Stage 5: Promotion Gates**
+
+Production deployment isn't automatic. Models are registered, staged for A/B testing, then promoted with explicit approval. The registry tracks which version is live, which is staging, which are archived.
 
 ## Key Technical Decisions
 
