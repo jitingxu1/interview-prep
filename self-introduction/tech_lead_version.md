@@ -4,7 +4,7 @@
 
 ---
 
-I'm Jiting, and I'm the tech lead manager at DoorDash in our opex org, leading the ML and AI team. We're building machine learning and agentic AI systems to solve fraud detection and customer support automation at scale. I've got about 12 engineers split across a couple of pods — predictive ML, agentic AI, and platform.
+I'm Jiting, and I'm the tech lead manager at DoorDash in our opex org, leading 12 engineers building ML and agentic AI systems for fraud detection and customer support automation at scale—organized across predictive ML, agentic AI, and platform pods.
 
 I focus on two main things: the technical side and the people side. 
 
