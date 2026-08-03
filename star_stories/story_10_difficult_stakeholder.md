@@ -1,6 +1,6 @@
 # Assignment ranking experimentation: Navigating Difficult Stakeholder Alignment
 
-**Situation**: I'd built a delivery-level risk score that worked well for triaging fraud after assignment. Now I wanted to shift from reactive to proactive—embed this risk score into the assignment algorithm to block risky deliveries *before* assignment happened. This was the first time my fraud detection team was collaborating with the logistics/assignment team on a joint initiative—a true cross-org partnership aimed at driving growth.
+**Situation**: I'd built a delivery-level risk score that worked well for triaging fraud after assignment. Now I wanted to shift from reactive to proactive—embed this risk score into the assignment algorithm to block risky deliveries *before* assignment happened. This was the first time my fraud detection team was collaborating with the logistics/assignment team on a joint initiative—a true cross-org partnership.
 
 I had buy-in from the assignment team initially. But when the model was ready and I proposed online experimentation, they hit the brakes. Two concerns: (1) They couldn't tune offline simulations for this new input—the engineers who built the system had just left DoorDash, and they temporarily lacked both bandwidth and knowledge to integrate my model; (2) They worried my risk model would slow or block assignments, hurting their assignment rate and time-to-assignment metrics.
 
@@ -9,6 +9,8 @@ I had buy-in from the assignment team initially. But when the model was ready an
 ## Action
 
 ### Build Trust First (Cross-Org Foundation)
+Since this was our first collaboration, I knew earning their trust would be critical—without it, no amount of technical argument would move them forward.
+
 - I listened to their concerns without defensiveness. I made them feel heard about their institutional knowledge gap and the real constraints they faced—not pushing back, but genuinely understanding their position
 - I went deeper: "Walk me through how your assignment algorithm works. What's hard about adding a new input?" I discovered they had lost institutional knowledge when key engineers left and lacked bandwidth to integrate my model offline
 - I showed I wasn't just asking them to rubber-stamp my model. I committed real time and resources upfront to help them rebuild and strengthen their offline simulation system
