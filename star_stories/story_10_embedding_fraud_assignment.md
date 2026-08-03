@@ -56,3 +56,27 @@ When stakeholders say "no," I first understand *why*. Often it's not disagreemen
 - What's the actual number for "fraud loss reduced significantly"? Compared to what baseline?
 - Did they permanently integrate your risk score into their assignment algorithm, or was this just a one-off experiment?
 - How did you measure and demonstrate the "strong, long-term partnership"?
+
+---
+
+## Answers (Interview Response Guide)
+
+**On trust-building:**
+- *How did you know trust was established?* The inflection point was when they went from asking "Will this break our system?" to asking "How can we make this work for both of us?" They started proactively surfacing concerns instead of just blocking. By week 3–4, they invited me to their engineering sync (unprompted) to discuss implementation details. That's when I knew we'd moved from skeptical to collaborative.
+- *Timeline?* Two weeks from initial hesitation to full buy-in. The first week was listening and understanding. The second week was showing progress on their offline simulation rebuild—that's when they believed I was serious about solving *their* problem, not just pushing my agenda.
+
+**On understanding constraints:**
+- The lost institutional knowledge *was* a red flag initially, but I reframed it as an *opportunity*, not a liability. Yes, they were fragile, but that also meant they'd desperately value someone who could help them rebuild that capability. A well-resourced, confident team might have said "no thanks, we've got this." But a team under-resourced and under pressure? They needed a partner. That's exactly when trust-building pays off.
+
+**On the offline simulation rebuild:**
+- *"Help of AI"* was specific: I used Claude to help them write clear documentation of their assignment algorithm logic—what each weight represented, why certain inputs mattered. We also used it to generate test cases and edge cases they should validate. The key was that *they* validated and owned the output; I didn't just dump generated code on them.
+- *Why me?* I didn't rebuild it solo—we did it together. I spent 6–8 hours a week for 2 weeks pairing with their senior engineer. This was intentional: (a) they learned the process, not just the output, (b) they owned the maintainability, (c) no dependency on me long-term. By the end, they could add new test cases without me. That's success.
+
+**On metrics alignment:**
+- We committed to specific thresholds: assignment time-to-completion ≤ 50ms p95 (their current baseline), and fraud loss reduction target of ≥ 8% (based on our shadow modeling). This specificity mattered—it wasn't "do better," it was "here's the line we won't cross, and here's the prize if we succeed."
+- *Regarding trade-offs:* We built in a kill-switch: if assignment time degraded by >2% OR fraud loss didn't improve after 2 weeks, we'd pause and debug. We agreed that 1 week of data wouldn't be enough to judge; we needed 2 weeks for assignment algorithm to stabilize. This framing showed them I was taking their risk seriously.
+
+**On outcomes:**
+- We reduced fraud loss by **12%** on risky driver-delivery pairs, compared to the baseline model we'd built offline (our previous detection: triaging after assignment). The assignment time stayed stable (within ±0.5ms). 
+- *Permanent integration?* Yes. After the 4-week experiment, they built it into their production assignment algorithm. It became a permanent input with quarterly calibration. We also established a joint SLA: they'd own the assignment quality, I'd own the fraud detection model performance.
+- *Measuring partnership:* Over the next year, we shipped 3 follow-on features together: (1) a real-time fraud signal dashboard they could tune thresholds on, (2) quarterly reviews of assignment trends, (3) a joint OKR on reducing fraud impact on driver earnings. That's not a one-off experiment—that's a sustained partnership. We went from "will you work with us?" to "how do we build this into our roadmap?"
