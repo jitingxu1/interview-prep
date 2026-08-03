@@ -8,8 +8,13 @@ I had buy-in from the assignment team initially. But when the model was ready an
 
 ## Action
 
+### Build Trust First (Cross-Org Foundation)
+- I listened to their concerns without defensiveness. I made them feel heard about their institutional knowledge gap and the real constraints they faced—not pushing back, but genuinely understanding their position
+- I showed I wasn't just asking them to rubber-stamp my model. I committed real time and resources upfront to help them rebuild and strengthen their offline simulation system
+- I worked with them to make their offline simulation system easier to maintain, more automated, and self-serve—with only a final human review and approval step. This wasn't about my project; it was about making *their* system better
+
 ### Understand Their Real Constraints
-- I didn't push back on their concerns. Instead, I went deeper: "Walk me through how your assignment algorithm works. What's hard about adding a new input?"
+- I went deeper into their constraints: "Walk me through how your assignment algorithm works. What's hard about adding a new input?"
 - I discovered the real problem: they had lost institutional knowledge when key engineers left. They had no way to validate offline that a new weighted input wouldn't break their system
 - I realized the tension: they weren't being defensive—they were genuinely under-resourced
 
