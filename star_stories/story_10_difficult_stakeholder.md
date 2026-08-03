@@ -10,23 +10,15 @@ I had buy-in from the assignment team initially. But when the model was ready an
 
 ### Build Trust First (Cross-Org Foundation)
 - I listened to their concerns without defensiveness. I made them feel heard about their institutional knowledge gap and the real constraints they faced—not pushing back, but genuinely understanding their position
+- I went deeper: "Walk me through how your assignment algorithm works. What's hard about adding a new input?" I discovered they had lost institutional knowledge when key engineers left and lacked bandwidth to integrate my model offline
 - I showed I wasn't just asking them to rubber-stamp my model. I committed real time and resources upfront to help them rebuild and strengthen their offline simulation system
-- I worked with them to make their offline simulation system easier to maintain, more automated, and self-serve—with only a final human review and approval step. This wasn't about my project; it was about making *their* system better
+- I worked side-by-side to make their offline simulation system easier to maintain, more automated, and self-serve—with only a final human review and approval step. This wasn't about my project; it was about making *their* system better
 
-### Understand Their Real Constraints
-- I went deeper into their constraints: "Walk me through how your assignment algorithm works. What's hard about adding a new input?"
-- I discovered the real problem: they had lost institutional knowledge when key engineers left. They had no way to validate offline that a new weighted input wouldn't break their system
-- I realized the tension: they weren't being defensive—they were genuinely under-resourced
-
-### Build Capability Together
-- I volunteered to help them *understand and rebuild* the offline simulation system
-- I worked side-by-side to document how their weighting system worked, wrote clear tests, made the system reviewable
-- This wasn't a quick ask—it was a commitment to their success, not just mine
-
-### Align on Shared Metrics
-- I acknowledged their concern: "You're right—we can't impact assignment time. Let's make that a guardrail metric during experimentation"
-- I built a system that mapped fraud cost savings *into assignment time improvements*: fraud avoided → faster, higher-quality assignments → better assignment utilization
-- I showed them the math: "If we block risky deliveries, you're not losing capacity—you're reallocating it to higher-probability assignments"
+### Establish Experimentation Framework
+- After building trust, we had a new round of conversation about how to define success for this experiment
+- I proposed a clear metric structure: assignment metrics as our *primary* objective (these must stay stable), and fraud loss as the *guardrail metric* (the thing we're trying to improve)
+- We aligned on the goal: keep primary metrics stable while moving the guardrail metrics in our favor
+- This framing showed them I wasn't asking them to take on risk—I was asking them to help me prove we could win *together* without hurting their business
 
 ### Co-Own the Experiment
 - I positioned it as a joint launch, not "Risk team building something on top of Assignment": "We're experimenting together. Your metrics are our north star"
