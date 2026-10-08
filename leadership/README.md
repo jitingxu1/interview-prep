@@ -10,7 +10,17 @@ Materials on your leadership approach, values, and how you think about managing.
    - Career development
    - Decision-making frameworks
 
-2. **[Technical + Leadership Balance](./tech_leadership_balance.md)** — How you operate as a technical leader
+2. **[Interview Question Bank](./interview_questions.md)** — 90 practice questions with follow-ups
+   - Team building & scaling, execution & ambiguity, cross-functional influence
+   - Technical leadership, growth & self-awareness, values, curveballs
+   - Practice protocol and what gets people rejected
+
+3. **[Building a Team and Its Culture](./building_team_and_culture.md)** — the "how do you build a team?" answer
+   - Building from zero vs. inheriting a team
+   - Three enforced mechanisms (clarity, ownership, protection) with your proof
+   - 90-second spoken version + follow-ups
+
+4. **[Technical + Leadership Balance](./tech_leadership_balance.md)** — How you operate as a technical leader
    - Staying hands-on while managing
    - Building credibility with engineers
    - Technical depth + people leadership

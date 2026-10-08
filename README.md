@@ -13,10 +13,12 @@ Individual story files, each a complete behavioral example. Mix and match for di
 ### **[🎓 leadership/](./leadership/)** — Leadership Framework & Philosophy
 Your management approach, values, and thinking.
 - Manager Q&A — Common leadership questions
+- **Interview Question Bank — 90 practice questions with follow-ups**
 - Technical + Leadership balance — How you operate as tech lead
 
 ### **[🏢 company/](./company/)** — Company-Specific Materials
 Tailored prep for each company.
+- **[LinkedIn](./company/linkedin/)** — Manager Leadership Phone Screen, AI org
 - **[Roblox](./company/roblox/)** — ML Engineering Manager, Critical Harm team
 
 ### **[👤 self-introduction/](./self-introduction/)** — Personal Pitch & Background
