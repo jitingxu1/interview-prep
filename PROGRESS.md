@@ -34,8 +34,17 @@
 8. ✅ Right Person, Wrong Seat (skill mismatch)
 9. ✅ Mentoring Through Crisis (unblocking)
 
+### Interview Question Bank
+- ✅ 90 practice questions across 7 areas with interviewer follow-ups (`leadership/interview_questions.md`)
+- ✅ Practice protocol + common rejection reasons at manager level
+
 ### Company-Specific
 - ✅ Roblox folder with ML manager profile, context, questions to ask
+- ✅ **LinkedIn** (Sept 8, 2026 — Manager Leadership Phone Screen, AI org w/ Sergei Tolkachov)
+  - Reframed "why leave DoorDash" for a large established company (the startup framing was a liability)
+  - Theme-by-theme brief mapped to the recruiter's stated rubric
+  - Four stories rewritten first-person for 2-minute delivery
+  - Questions to ask + honest gap analysis
 
 ## In Progress / Ready for Next Phase
 

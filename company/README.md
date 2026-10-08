@@ -4,6 +4,7 @@ Tailored materials for specific companies you're interviewing with.
 
 ## Current Companies
 
+- **[LinkedIn](./linkedin/)** — Manager Leadership Phone Screen, AI org (Sept 8, 2026)
 - **[Roblox](./roblox/)** — ML Engineering Manager, Critical Harm team
 
 ## Adding a New Company

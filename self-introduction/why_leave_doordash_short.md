@@ -1,5 +1,12 @@
 # Why Leave DoorDash: Short Version (30-45 seconds)
 
+> ⚠️ **Use with care.** This version leans on "I want a startup / less legacy / less org burden."
+> That answer works for early-stage companies and actively hurts you at a large, established one
+> (LinkedIn, Google, Microsoft, Meta, Roblox). For those, use the reframed version in
+> [`../company/linkedin/why_linkedin.md`](../company/linkedin/why_linkedin.md) — same honest motivation,
+> framed around the problem rather than company size.
+
+
 **For quick answers to "why are you looking?" or "why leave?"**
 
 ---
