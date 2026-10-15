@@ -4,8 +4,10 @@ Tailored materials for specific companies you're interviewing with.
 
 ## Current Companies
 
+- **[Checkr](./checkr/)** — Engineering Manager, hiring manager interview with Gio
 - **[LinkedIn](./linkedin/)** — Manager Leadership Phone Screen, AI org (Sept 8, 2026)
 - **[Roblox](./roblox/)** — ML Engineering Manager, Critical Harm team
+- **[Snorkel AI](./snorkel/)** — AI System Design + Build with AI (Oct 9, 2026)
 
 ## Adding a New Company
 
