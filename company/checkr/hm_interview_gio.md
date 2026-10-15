@@ -93,15 +93,27 @@ Using one story for both ownership questions is deliberate: Gio goes deep, and o
 
 **What he's looking for:** a real decision-making framework — how you justified the call to the team and stakeholders, what you optimized for, and the downstream consequences.
 
-**Same story, told as the trade-off:**
+**Same story, told as the trade-off** (about 2 minutes; the version from Mock 1):
 
-> The trade-off was real. The fast option was to keep shipping models the old way — a heroic engineer could push one model through in a few weeks, and the business would have seen output sooner. The scalable option was to pause and build the pipeline, which meant fewer model releases for [a quarter] while we built it.
+> It was a real trade-off, and I didn't take it lightly. The fast option was to keep going the way we were: take each stakeholder request, build a model, ship it. Stakeholders would have seen new models sooner. The scalable option was to slow down new model delivery for about [a quarter] and invest in unifying the models and automating the pipeline.
 >
-> I chose scalability, and here's the framework I used. First, **is this a one-time need or a repeating one?** Chargeback models retrain constantly because fraud drifts, so any manual cost got paid again every cycle. Second, **what's the cost of delay?** Pausing for [N weeks] cost us a few model updates; staying manual cost us six to ten weeks on every update, forever. Third, **is it reversible?** We built it so a model could still go out the old way in an emergency, so the bet didn't trap us.
+> I chose scalability, and I used three questions to decide.
 >
-> To justify it to stakeholders, I [kept one model update going in parallel / showed the 6–10-week breakdown], so they weren't asked to accept zero output on faith.
+> **First, is this cost one-time or repeating?** Fraud drifts constantly, so we retrain all the time. Every manual step and every duplicate model wasn't a one-time cost; we paid it again on every iteration. Repeating costs are where infrastructure pays off.
 >
-> The downstream consequences were mostly good, with one cost: standardizing meant less flexibility for unusual models. About 80% of our work fit the standard pipeline, so we built escape hatches — engineers could plug in custom steps — rather than forcing everything through one path.
+> **Second, what does waiting actually cost?** Pausing cost us a few model releases for one quarter. Staying manual cost us six to eight weeks on every model, indefinitely. One cost is bounded, the other isn't.
+>
+> **Third, can we reverse it if I'm wrong?** I made sure we could still push a model out the old way in an emergency, so the bet didn't lock us in.
+>
+> **Justifying it to stakeholders** was the hard part, because they wanted models, not infrastructure. I didn't argue engineering excellence; I argued their problem. I showed them where the six to eight weeks actually went, and most of it was plumbing, not modeling. Then I framed it as: slow iteration means we're fighting this month's fraud with last quarter's model. And I didn't ask them to accept zero output on faith: I kept [one high-priority model] shipping in parallel, and I gave them a date when the new pipeline would start paying back.
+>
+> **With the team,** it was an easier conversation. The pipeline removed exactly the work they hated most. But I was explicit that the next quarter would feel slower before it felt faster, so nobody was surprised.
+>
+> **On the consequences, the good:** iteration went from six to eight weeks to two to three, experiments from two to three months to four to six weeks, and we freed two to three engineers to work on new fraud areas. **The cost:** standardizing reduced flexibility. About 20% of our models didn't fit the standard path, so we built escape hatches where engineers could plug in custom steps, instead of forcing everything through one pipeline. And for that first quarter, [one stakeholder team] had to wait longer than they wanted, and I owned that conversation with them directly.
+>
+> I don't always pick scalability, though. **When the cost is one-off, the window is closing, or we're still learning what we need, I pick speed.** For example, during an account takeover escalation, the right call was a fast, contained fix first, with the long-term system going through planning afterward.
+
+**Why it works:** it names both options up front; the three questions are the "decision-making framework" Gio asked for; the stakeholder pitch is in business terms, with something still shipping during the build; it gives good *and* bad consequences and how you handled the bad; and it ends by showing you don't always choose scalability, which sets up the speed question that comes next.
 
 **The framework, in one line for the room:** *"I choose scalability when the cost repeats, the delay is bounded, and the decision is reversible. I choose speed when it's a one-off, the window is closing, or we're still learning what we need."*
 
@@ -201,3 +213,9 @@ Prepare three; ask two.
 3. **No hard moment.** Pausing to build meant fewer new models for a while — say who resisted and how you won them over. Gio will dig here.
 
 The rewritten STAR version is in the Ownership section above.
+
+### Mock 1 — speed vs. scalability follow-up
+
+**Question:** "Walk me through that decision. How did you decide that was the right call, and how did you justify it to your team and your stakeholders? What were you optimizing for, and what were the downstream consequences, good and bad?"
+
+You asked for a model answer instead of answering live. It's now the script in the Technical standards section. Next time: answer it out loud yourself first, then compare against the script.
