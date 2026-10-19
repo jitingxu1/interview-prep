@@ -12,3 +12,4 @@ No verbatim questions for either round name appear in public sources — they're
 ## Contents
 
 - [Model answer: state-machine tagging workflow](system_design_tagging_state_machine.md)
+- [ML design: multiple-choice questions from arXiv papers](ml_design_arxiv_mcq.md) — prompt and my whiteboard
