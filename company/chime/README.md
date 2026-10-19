@@ -1,31 +1,35 @@
-# Chime
-
-Tech Lead Manager, Machine Learning — growth and marketing team. Prep based on the recruiter screen with Emily Carson on 2026-10-15. (Transcript garbled the name; details match Chime.)
+# Chime — Recruiter Screen with Emily Carson (2026-10-15)
 
 [Wispr Flow notes](https://notes.wisprflow.ai/shared/7nVjgBg9YgBp5wggXPPNFBM3LS_s1nfUB_J2zSCIxVY)
 
-| Stage | Format |
-| --- | --- |
-| Hiring manager screen | 30 minutes |
-| Technical discussion | 45–60 minutes |
-| Loop | Four interviews, 45–60 min each (~3.5 hrs), virtual |
+Recruiter screen for a Tech Lead Manager, Machine Learning role on the growth and marketing team at a fintech (transcribed as 'trying', likely Chime). Strong match; candidate's info goes to the hiring manager.
 
-## Company and role
+### Logistics, Leveling and Compensation
+- Jiting Xu is in San Francisco, can commute to the SF office 4 days a week, and needs no visa sponsorship
+- Jiting Xu is level 6 / M1 at DoorDash (equivalent to E6 at Google or Meta), which aligns well with the role
+- Total comp is roughly 400 to 485k: base 230 to 275, about 15% bonus, equity vesting over 4 years
+    - 25% in year one, then quarterly, about 25% a year
+- Job description link sent to candidates was reportedly opening a blank page
 
-- Fintech for paycheck-to-paycheck Americans; public last year; ~1,600 employees (600 eng), 10M+ members
-- HQ San Francisco (4 days/week in office); offices in Chicago and New York
-- Mostly people management: team of 4 growing to 6, coding as needed. HM wants someone strong at growing the team
+### Company and Role
+- Mission-driven fintech serving paycheck-to-paycheck Americans; public last year, 1,600 employees (600 in engineering), 10 million-plus members
+- HQ in San Francisco, with offices in Chicago and New York
+- Role is mostly people management: team of 4 growing to 6, coding only as needed
+    - Hiring manager wants someone strong at growing the team
 
-## Compensation (from recruiter)
+### Jiting Xu's Background
+- Currently leads 12 people across 2 sub-teams at DoorDash: an LLM-based support chatbot and fraud detection models
+- 8+ years as IC (data scientist, eBay, Airbnb tech lead), then about 3 to 4 years as tech lead manager
+- Growth experience: promotion eligibility and LTV models at DoorDash, user engagement recommendations at Airbnb
+    - About 4 years in marketing technology, roughly 6 in trust and safety
+- Team writes nearly 100% of code via AI; focus is on design and research
 
-- Total ~$400–485K: base $230–275K, ~15% bonus, 4-year equity (25% year one, then quarterly)
+### Interview Process
+- Next rounds: 30-minute hiring manager screen, 45 to 60 minute technical discussion, then a four-person loop
+    - Loop is 45 to 60 minutes each, about 3.5 hours total, all virtual
 
-## What you pitched
-
-- DoorDash L6/M1, 12 people across LLM support chatbot and fraud detection
-- Growth experience: promotion eligibility and LTV models at DoorDash, engagement recs at Airbnb (~4 yrs martech, ~6 yrs T&S)
-
-## Next steps
-
-- Emily to send your info to the HM and schedule the HM screen via Goodtime
-- You: send updated resume
+### Next Steps
+- (Emily Carson) Fix the job description link that opens a blank page
+- (Emily Carson) Send Jiting Xu's information to the hiring manager
+- (Emily Carson) Follow up tomorrow morning and send a Goodtime request to schedule the hiring manager screen
+- (Jiting Xu) Share updated resume after the call
