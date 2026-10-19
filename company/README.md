@@ -4,7 +4,10 @@ Tailored materials for specific companies you're interviewing with.
 
 ## Current Companies
 
+- **[Attentive](./attentive/)** — ML leadership, agentic marketing pivot (intro call Oct 15, 2026)
 - **[Checkr](./checkr/)** — Engineering Manager, hiring manager interview with Gio
+- **[Chime](./chime/)** — TLM, Machine Learning, growth & marketing (recruiter screen Oct 15, 2026)
+- **[Cresta](./cresta/)** — ML engineering, contact-center AI (recruiter screen Oct 16, 2026)
 - **[LinkedIn](./linkedin/)** — Manager Leadership Phone Screen, AI org (Sept 8, 2026)
 - **[Roblox](./roblox/)** — ML Engineering Manager, Critical Harm team
 - **[Snorkel AI](./snorkel/)** — AI System Design + Build with AI (Oct 9, 2026)
