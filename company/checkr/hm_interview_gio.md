@@ -220,11 +220,121 @@ Required for all manager interviews. Quick questions, so **answer in 30–60 sec
 
 | Topic | Your answer, short |
 | --- | --- |
-| **Your AI dev setup** | [Confirm and fill in.] E.g.: Claude Code in the terminal as a daily driver — for coding, reviewing diffs, and writing docs — plus [IDE assistant]. Say *how* you use it, not just which tools: "I give it the repo and a narrow task, review every diff, and keep a project instructions file so it follows our conventions." |
-| **Last thing you shipped with meaningful AI involvement** | Story 10: you used Claude to document the assignment team's algorithm and generate test and edge cases for the rebuilt simulation system — part of why buy-in took two weeks instead of a quarter. Or a more recent one from your agentic AI pod. [Pick the most recent real one.] |
-| **Helping your team adopt AI** | [Fill in what you actually did.] Strong shapes: pick one workflow and prove it (e.g. test generation or code review), share what worked in a team demo, write down team conventions for prompts and review, and measure something — review time, cycle time — instead of mandating tools. |
-| **Opportunities beyond code generation** | From your own domain: agentic customer-support automation (your agentic AI pod), LLMs as labelers to create training data for fraud models, summarizing fraud investigations for ops, drafting documentation and runbooks, and generating test and edge cases. |
-| **When *not* to use AI** | Use your ATO story: you didn't push a model to auto-block accounts when there was no verification or recovery channel, because a wrong call locked a real person out with no way back. The general rule: don't put AI in a high-stakes, irreversible decision without a human or a recovery path; don't use an LLM where a deterministic rule does the job; and be careful where you need auditability or tight latency. Very relevant at Checkr, where a wrong decision affects someone's job. |
+| **Your AI dev setup** | Three layers — **build, operate, grow**. Script below the table. |
+| **Last thing you shipped with meaningful AI involvement** | **The restaurant lending pilot** — AI built the model in a week; the model made the picks; a human checked every loan. Backup: the agentic support system. Script below the table. |
+| **How AI changed your own work** | Three shifts — **the bottleneck moved to design and checking, overhead time went to people, decisions got better and faster**. Script below the table. |
+| **Helping your team adopt AI** | A playbook, not a mandate — **lead by example → prove it on painful work → peer demos → team conventions + harness → ownership rule**. Script below the table. |
+| **Opportunities beyond code generation** | Three layers you've built — **AI as the product, AI for data, AI for how the team operates** — then the Checkr angle. Script below the table. |
+| **When *not* to use AI** | Three cases — **a simpler tool works, the constraints rule it out, or the decision belongs to a human**. Script below the table. |
+| **What most people get wrong about AI** | Two things — **treating a demo as a system**, and **thinking AI removes judgment** (it moves it). Script below the table. (Added from the Taylor call transcript.) |
+
+### Tier 1 — your setup
+
+**"What's your AI dev setup?"** (~45 seconds)
+
+> I think of it in three layers. **Building:** a coding agent is my daily driver — it writes code, does a first-pass code review, and helps me study an unfamiliar codebase fast. I also use it to organize knowledge: turning design discussions and docs into something the team can find later. **Operating:** an AI notetaker runs in every meeting and summarizes it, so I'm in the conversation instead of typing. And at the end of each day I use AI to go through my Slack and email and give me a summary: what I finished, what I missed, and what I need to do tomorrow. **Growing:** I use it as a coach. Before a hard conversation — a conflict, difficult feedback, a cross-team disagreement — I talk it through and rehearse it. And when I'm under a lot of pressure, I use it to step back and sort out what's really bothering me before I react.
+
+Notes on delivery:
+- Lead with the build layer; that's what the question literally asks. The other two layers are what make the answer memorable — most candidates stop at code.
+- On the stress point, keep the framing as *stepping back before I react*. It shows self-awareness and judgment; no need to go further than that in an interview.
+
+**"When did you last ship something where AI was meaningfully involved?"** (~45–60 seconds; model answer — fill the brackets)
+
+> The restaurant lending pilot, late last year. Leadership wanted a one-month launch, and the critical path was the underwriting model: deciding which restaurants we could safely lend to.
+>
+> **AI is how I built it in one week instead of a month or more.** I used a coding agent to [pull and join the restaurant data, build the feature pipeline, and write the backtest against Parafin's historical loans]. That's the work that usually eats the time. It left me free to focus on the parts that needed judgment: which signals actually predict repayment, where to set a very conservative threshold, and whether the backtest results held up.
+>
+> **And I kept the human in the loop where it mattered.** The model picked the 20 restaurants, but a person checked every loan before any money went out.
+>
+> **The result:** 19 of 20 restaurants repaid in full. That proved we could pick the right restaurants and collect, and this year the program grew to $20 million.
+
+Why it works: leads with the business outcome, with AI as the reason for the speed; shows AI on the plumbing and you on the judgment calls; "a person checked every loan" echoes your when-not-to-use answer and is Checkr's world. It's the same story as your tempo answer from a different angle — if Gio says "you mentioned that," switch to the backup.
+
+**Backup:** the agentic support system, where AI *is* the product — an agent handles customer order issues end to end, with real-time RAG over past support cases. [Add a result: resolution rate, cost per ticket, or tickets handled without a human.]
+
+To fill in: the real AI role in the one-week build (the bracket is a guess); a result for the support system if you want the backup ready.
+
+### Tier 2 — your own work
+
+**"How has AI changed the way you work?"** (~45–60 seconds; model answer — fill the bracket)
+
+> It changed where my time goes, in three ways.
+>
+> **First, the bottleneck moved from writing code to deciding what to build and checking it.** My team writes nearly all its code with AI now, so implementation isn't the slow part anymore. I write fewer PRs, and I spend that time on design, specs and reviews. A clear spec is now the highest-leverage thing I write, because it's effectively the prompt for the engineers and their agents. And I put more into what we call the harness: tests, evals and guardrails that tell us whether the output is actually right.
+>
+> **Second, I spend less time on overhead and more time on people.** AI takes my meeting notes, and every evening it summarizes my Slack and email: what I finished, what I missed, what's next. That gives me back [an hour or so] a day, and most of it goes to one-on-ones, unblocking people, and cross-team work.
+>
+> **Third, I make better decisions, faster.** Before a big call, I give AI a clear, scoped question and have it pull together the evidence and the trade-offs. I read it, learn from it, and make the decision myself. I also rehearse hard conversations with it before I have them. So I walk in better prepared, but the judgment is still mine.
+
+Why it works: about impact, not tools; shows AI used at a manager's level (specs, reviews, decisions, people); consistent with your other answers — the harness (adoption), "clear, scoped questions, and I make the call" (when not to use AI), rehearsing hard conversations (setup).
+
+Watch the overlap with the setup answer: if Gio asks both back to back, keep this one to the *change* — the first two sentences of each shift.
+
+To fill in: roughly how much time AI saves you a day; use a number only if it's real, otherwise "a meaningful chunk of every day."
+
+### Tier 3 — your team and products
+
+**"How have you helped your team adopt AI?"** (~60 seconds; model answer — fill the brackets)
+
+> My team now writes nearly all its code with AI, but it didn't start that way, and I didn't get there by mandating tools.
+>
+> **I started by using it myself, visibly.** I used a coding agent for my own prototypes and design docs, and shared what worked and what didn't. That made it safe to try, because people could see their manager learning too.
+>
+> **Then I picked the work people hated most and proved it there,** [e.g. writing data pipelines, test cases, boilerplate]. Once a couple of engineers got real wins, I had them demo their workflow to the team. Engineers trust other engineers more than they trust a mandate.
+>
+> **Then we made it a team practice, not an individual habit.** We wrote shared conventions: instruction files in each repo, how to scope a task for an agent, and how we review AI-written code. And we invested in what I call the harness: tests, evals and guardrails, so we could trust the output at volume.
+>
+> **The one rule I held firm on was ownership.** If your name is on the PR, you own every line, generated or not.
+>
+> **The hard part was [e.g. a senior engineer who didn't trust the output].** I didn't push. I paired them with [someone] on a task where AI clearly helped, and kept the review bar high, which is what they actually cared about.
+>
+> **The result:** [we went from X% to nearly all code AI-written in N months], and [cycle time / PRs per engineer went from A to B]. More importantly, the team's time moved from typing code to design, research and evaluation, which is where the real problems are.
+
+Why it works: it's a concrete playbook; it has a hard moment; it ends on business impact; and the ownership rule echoes the Checkr ML EM posting almost word for word ("Keep ownership of every output. As generated code becomes cheaper, raise the bar on judgment").
+
+To fill in: the first workflow you proved it on; who resisted or what the real friction was (trust in quality, review load, cost); one before/after number; and confirm the lead-by-example and demo steps match what actually happened.
+
+**"Where do you see AI improving products or engineering systems, beyond code generation?"** (~60 seconds; model answer)
+
+> Code generation is the most visible part, but in my experience the bigger wins are in three other places, and I've built all three.
+>
+> **First, AI as the product itself.** My team built an agentic support system: when a customer has a problem with an order, like a missing item or a spilled drink, an agent handles the case end to end, with real-time RAG over past support cases. That changes the cost of support, not just the speed of engineering.
+>
+> **Second, AI for data, which is the most underrated one.** In fraud, our slowest input was always labels. We built an LLM labeling agent with batch RAG that creates training labels for our fraud models. Better labels, faster, means every downstream model gets better. That's leverage code generation can't give you.
+>
+> **Third, AI for how the team operates.** Summarizing investigations so analysts spend their time deciding, not reading. Turning meetings, docs and decisions into knowledge the team can actually find. Triaging incidents with runbooks. Each one removes reading and searching time from expensive people.
+>
+> At Checkr I'd expect the same shape. AI can do the heavy reading: parsing messy records, matching them to the right person, summarizing a case for a reviewer. Then people make the decision, because it affects someone's job.
+
+Why it works: every example is something you built; each layer is framed by business impact (support cost, model quality, expensive people's time); "AI for data" is a distinctive point that shows ML depth; the Checkr close ties back to your when-not-to-use answer — AI reads, humans decide.
+
+To check: what the labeling agent labels and any result (volume, cost, model lift); whether your team actually did investigation summaries or incident triage — if not, swap in your meeting summaries and daily Slack/email digest; the Checkr close is deliberately general — name a specific Checkr AI product if you know one.
+
+### Tier 4 — judgment
+
+**"When would you *not* use AI?"** (~60 seconds)
+
+> Three cases. **First, when a simpler tool solves it.** If heuristic rules or traditional ML can handle the problem, I don't reach for an LLM or an agent. Most of fraud detection is tabular data, and gradient-boosted models find those patterns better and cheaper than an LLM.
+>
+> **Second, when the engineering or cost constraints rule it out.** If I need a real-time decision in under a second, like scoring a transaction at checkout, or I need a deterministic answer that's the same every time, an LLM is the wrong tool.
+>
+> **Third, the big decisions — direction, strategy, a high-stakes call about a person — stay with humans.** AI is great at analyzing the trade-offs, but the decision itself is ours. The way I use it there is as a research tool: I give it a clear, well-scoped question, and it finds me the material, the evidence, and the explanation. Then I read it, learn from it, and make the call myself. In the lending pilot, the model picked the restaurants, but a person checked every loan before any money went out.
+
+Why it works: it shows you use AI with judgment, not by default; the examples come from your own domain (sub-second fraud scoring, tabular data, lending); and the third case — humans own consequential decisions about people — is exactly Checkr's world, where a background check affects someone's job.
+
+**"What do most people get wrong about AI today?"** (~45–60 seconds; model answer — fill the bracket)
+
+> Two things.
+>
+> **The biggest one is treating a demo as a system.** It works on ten examples, so people ship it, with no evals, no monitoring, and no idea how it fails. I've seen this myself: [e.g. our support agent looked great in testing, then in production it confidently gave wrong answers on an edge case we hadn't covered]. What fixed it wasn't a better prompt. It was building an eval set from real cases and monitoring live outputs. With AI, building it is the easy part; knowing whether it's right is the real work.
+>
+> **The second is thinking AI removes the need for judgment.** It actually moves the judgment somewhere else. Generating code or analysis is now cheap, so the value is in asking the right question and checking the answer. AI does best with a clear, well-scoped question. Give it a vague one and you get a confident, vague answer. And the teams that get burned are the ones that lower their review bar as output goes up, when they should be raising it.
+>
+> So the way I'd put it: AI makes output cheap, which makes judgment more valuable, not less.
+
+Why it works: practical, not hype or doom — a heavy but careful user; the personal example shows you learned it firsthand; "clear, well-scoped questions" ties to your when-not-to-use answer and "raise the review bar" to your adoption answer's ownership rule; the closing line echoes the Checkr posting ("As generated code becomes cheaper, raise the bar on judgment").
+
+To fill in: one real case where an AI system looked right but failed — support chatbot, RAG, or the labeling agent — what broke and what you did.
 
 **Tier strategy:** questions likely get harder or more strategic as they go. For the first ones (your setup), be crisp and concrete. For the later ones (adoption, when not to use AI), show judgment: what you'd measure, where the risk is.
 
