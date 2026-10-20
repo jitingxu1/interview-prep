@@ -52,52 +52,83 @@ Sources: [1point3acres Checkr list](https://www.1point3acres.com/interview/compa
 
 | Area | Question to expect | Your story | Why it fits |
 | --- | --- | --- | --- |
-| Ownership | A problem you spotted unprompted that drove a business result | **Chargeback model automation** | You saw that model iteration took 6–10 weeks, mostly plumbing — nobody asked you to fix it |
-| Technical standards | A speed vs. scalability trade-off | **Same story, the trade-off angle** — backup: foundation over firefighting | You chose to build the pipeline (scalability) over shipping models faster by hand (speed). Taylor said to pick scalability, because the next question covers speed |
+| Ownership | A problem you spotted unprompted that drove a business result | **Never-delivered abuse: reactive → proactive** — backup: driver time abuse | The ask was a better model; you saw the model sat too late in the flow, and moved detection to order time with a verification code |
+| Technical standards | A speed vs. scalability trade-off | **Fraud model pipeline** (chargeback automation) — backup: foundation over firefighting | You chose to build the pipeline (scalability) over shipping models faster by hand (speed). Taylor said to pick scalability, because the next question covers speed |
 | Relentless execution | Your highest-tempo project; how you personally unblocked the team | **Story 11: restaurant lending pilot** — backup: Story 10 | Six-month plan cut to a one-month pilot; you personally built the underwriting model in a week; 19 of 20 loans repaid, program grew to $20M |
 | AI-first questionnaire | ~12 min of quick questions in four tiers | Your agentic AI pod, Story 10's AI use, your own setup | See the questionnaire section |
 
-Using one story for both ownership questions is deliberate: Gio goes deep, and one story told in layers beats two told thinly. If he wants a second example, use the foundation story.
+Each area now has its own story, so Gio hears three different projects: never-delivered abuse (ownership), the model pipeline (scalability), and the lending pilot (speed). The pipeline and the lending pilot land on opposite sides of the trade-off — see [`leadership/speed_vs_scalability.md`](../../leadership/speed_vs_scalability.md).
 
 ## 1. Ownership: a problem you spotted unprompted
 
 **What he's looking for:** you saw the stakeholders' problem before anyone handed it to you, and you drove a real business result — not just a technical improvement.
 
-**Story: unifying and automating the fraud model pipeline** (combines the chargeback automation and the foundation-over-firefighting work). Told in STAR, result first:
+**The principle behind your answer — this is your daily work:** stakeholders bring an *ask*; you turn it into the *real solution*. They know the surface of the problem very well — the symptoms and the cost — but not the underlying cause, or what the technology can do about it. That gap is our value. Not just doing what they asked, but (1) finding the problem behind the ask, (2) designing what actually solves it, and (3) explaining the why and the what in terms they understand. Say this out loud in the close — it turns one fraud example into how you operate every day.
 
-> **[Result first]** At DoorDash, I cut our fraud model iteration time from six to eight weeks down to two to three, and freed up two to three ML engineers to work on new fraud problems instead of plumbing. Nobody asked me to fix it — everyone had accepted the slowness as the cost of doing ML.
->
-> **[Situation]** When I joined, we had a small ML team facing a lot of fraud problems. Stakeholders were frustrated: new models took too long, updates were slow, and we kept missing new fraud trends. The engineers were frustrated too — constant deadlines, lots of repetitive work.
->
-> **[Task — what I saw]** The complaints were about speed, but when I dug in, the real problem was how we built models. Every stakeholder request became its own model, so we had [N] models that overlapped heavily, each with its own features, labels, and evaluation. And the process was manual: everything lived in separate notebooks, so engineers re-pulled the same data, restarted jobs that failed halfway, and couldn't easily tell what data trained a production model. We weren't slow because people weren't working hard. We were slow because we kept rebuilding the same things by hand.
->
-> **[Action]** I proposed two things. First, **unification**: I inventoried every model — what use case it covered, what it protected — and merged overlapping ones onto shared feature pipelines, shared labels, and one evaluation standard. That took us from [N] models to [M]. Second, **automation**: an orchestrated pipeline with versioned data, training that automatically resumes from checkpoints, and a fixed evaluation gate before anything ships.
->
-> The hard part was the pitch. This meant fewer new models for [about a quarter] while we built it, and stakeholders wanted output, not infrastructure. So I framed it in their terms: slow iteration means we're fighting this month's fraud with last quarter's model. I [kept one high-priority model shipping in parallel], so they weren't asked to accept nothing on faith. The engineers were easy to win: it removed the work they hated most.
->
-> **[Result]** Model development went from six to eight weeks to two to three — one to two for engineers fully on the pipeline. Experiments went from two to three months to four to six weeks. We moved from quarterly model updates to [monthly], and we could respond to new fraud patterns in weeks instead of quarters. [Business number: e.g. fraud loss reduced by X, or a new fraud pattern caught within Y weeks.]
->
-> **[Reflection]** What I'd do differently: I'd have measured where the weeks actually went before pitching it. Once I had that breakdown, the argument got much easier.
+**Story: never-delivered abuse — moving fraud detection from reactive to proactive.** One insight: our model was accurate, but it sat too late in the flow to stop the loss. About 2 minutes, result first:
 
-**Numbers to fill in:** models before and after unification ([N] → [M]); how long new-model delivery slowed during the build; whether one model kept shipping in parallel; the change in update frequency; and one business metric. If there's no business number yet, connect the freed capacity to new coverage: "freed up 2–3 MLEs, and we used that capacity to cover [new fraud area]."
+*Result first*
 
-**The hard moment to include:** [Who doubted it? E.g. a quarter where fewer models shipped while the pipeline was being built, or engineers attached to their notebooks.] This is where Gio digs.
+> At DoorDash, I moved one of our biggest abuse problems, false "never delivered" claims, from reactive to proactive: instead of judging the claim after the loss, we stopped it before it happened. Never-delivered refund requests dropped [X%], [saving $Z]. Nobody asked for this. The ask was a more accurate model. What I saw was that accuracy wasn't the bottleneck; where the model sat in the flow was.
+
+*Situation*
+
+> Some customers falsely claim an order never arrived, to get a refund, a credit, or a chargeback. Our model scored the claim when the customer asked for the refund.
+
+*What I saw*
+
+> But by then, the damage was already done either way. If we wrongly denied a real customer, we lost a customer. If we approved an abuser, we lost money. The model was stuck choosing between two bad outcomes, and no amount of accuracy would get it out of that.
+
+*Action*
+
+> So I proposed moving it upstream, to when the order is placed. If the model flags a user as likely to file a false never-delivered claim, we ask them to enter a verification code when they receive the order. Honest customers barely notice, and once you've entered the code, you can't claim the order never arrived.
+
+*The hard moment*
+
+> [Fill in. Likely: product worried a verification code would add friction for good customers. You answered it by only applying it to high-risk users with a conservative threshold, and testing the impact on conversion and satisfaction before rolling out.]
+
+*Result*
+
+> Never-delivered refund requests dropped [X%], [saving $Z], with [no measurable impact on conversion / good-customer complaints]. And support no longer had to make as many no-win calls on refunds.
+
+*Close*
+
+> The request was "make the model better." The real fix was moving the decision earlier, from reacting after the loss to preventing it.
+>
+> And that's really my day-to-day job. Business partners know the surface of the problem better than anyone: where it hurts, and how much it costs. What they usually can't see is the underlying cause, and what the technology could do about it. That's what I bring. So my job isn't to just build what they asked for. It's to find the real problem behind the ask, turn it into a solution that actually solves it, and explain the why and the what in their terms, so they can see it's better than what they asked for. Here, that meant telling the business and product teams: fewer good customers wrongly denied, and less money lost.
+
+**Why it works:**
+
+- **Unprompted:** the ask was a better model; you saw the problem was *where* the model sat. Spotting the question behind the question is the ownership signal.
+- **Ask → real solution, explained in their terms:** the close generalizes it to your daily job.
+- **Stakeholder empathy:** you name the cost on both sides — losing good customers vs. losing money — not just fraud loss.
+- **Crosses team boundaries:** the delivery flow belonged to product. You drove change in a system you didn't own.
+- **Checkr link:** a reactive decision about a person, made after the fact, is costly whichever way you get it wrong. Better to design the flow so fewer hard calls are needed.
+
+**Numbers to fill in:** the drop in never-delivered refund requests (and dollars saved); share of users who got the verification step; any impact on conversion or good-customer complaints.
 
 **Likely follow-ups:**
 
-- "How did you know it was worth fixing?" — The 6–10 weeks, and that most of it was plumbing, not modeling. You measured where the time went.
-- "Who did you have to convince?" — [Fill in.] Frame the pitch in business terms: stale models mean losses.
-- "Why didn't anyone fix it before?" — Everyone treated it as the normal cost of ML. Spotting a cost everyone has accepted is the ownership signal.
+- "How did you spot it?" — [Fill in: e.g. you looked at the cost of both wrong answers at refund time, and saw that no model accuracy could remove it.]
+- "Who did you have to convince, and how?" — [Product, for the verification code; the business team.] Frame it in their terms: fewer good customers wrongly denied, less money lost, fewer no-win refund calls.
+- "Didn't the verification code hurt good customers?" — Only high-risk users saw it, with a conservative threshold, and [what you measured].
+- "Why hadn't anyone done this before?" — Each team optimized its own piece: support the refund decision, us the model. Nobody owned the whole flow end to end.
+
+**Backup — driver time abuse** (same reactive → proactive pattern, if he wants a second example): a low-recall "late" filter sat in front of an accurate attribution model, so most deliberately late orders never reached the model — "a perfect model can't catch what it never sees." You proposed to the business team that owned the filter that we consolidate the two: every order later than our ETA estimate goes straight to the attribution model. [Result: e.g. caught Y% more abusive late deliveries.]
 
 ## 2. Technical standards: the speed vs. scalability trade-off
 
 **What he's looking for:** a real decision-making framework — how you justified the call to the team and stakeholders, what you optimized for, and the downstream consequences.
 
-**Same story, told as the trade-off** (about 2 minutes; the model answer from Mock 1):
+**Story: unifying and automating the fraud model pipeline** (chargeback automation + foundation over firefighting). About 2 minutes; the model answer from Mock 1:
+
+*Set the context (one or two sentences — he hasn't heard this story yet)*
+
+> At DoorDash, every stakeholder request had become its own fraud model, built by hand in notebooks, so each new model took six to eight weeks, and most of that was plumbing. Even updating a model we already had took about two months, because every iteration was done by hand: pulling the data, training, and evaluation were the same steps every time, but someone did them manually. Counting the release, a full cycle from starting an iteration to having it live in production took several months. I had to decide whether to keep shipping models that way, or slow down to unify and automate.
 
 *Name both options*
 
-> It was a real trade-off, and I didn't take it lightly. The fast option was to keep going the way we were: take each stakeholder request, build a model, ship it. Stakeholders would have seen new models sooner. The scalable option was to slow down new model delivery for about [a quarter] and invest in unifying the models and automating the pipeline.
+> It was a real trade-off, and I didn't take it lightly. The fast option was to keep going the way we were: take each stakeholder request, build a model, ship it. Stakeholders would have seen new models sooner. The scalable option was to build every model in a more standard, more automated way, so that each next iteration would take less time, and step by step, automate the whole model pipeline.
 
 *The framework: three questions*
 
@@ -140,6 +171,27 @@ Using one story for both ownership questions is deliberate: Gio goes deep, and o
 - "What would have made you choose speed instead?" — The one-line framework above, reversed.
 - "What did the team think?" — [Fill in: who pushed back, and what you said.]
 - "What broke afterward?" — The flexibility cost, and the escape hatches you built.
+
+**Full STAR version, if he wants the whole story** (moved from the Ownership section):
+
+> **[Result first]** At DoorDash, I cut our fraud model iteration time from six to eight weeks down to two to three, and freed up two to three ML engineers to work on new fraud problems instead of plumbing. Nobody asked me to fix it — everyone had accepted the slowness as the cost of doing ML.
+>
+> **[Situation]** When I joined, we had a small ML team facing a lot of fraud problems. Stakeholders were frustrated: new models took too long, updates were slow, and we kept missing new fraud trends. The engineers were frustrated too — constant deadlines, lots of repetitive work.
+>
+> **[Task — what I saw]** The complaints were about speed, but when I dug in, the real problem was how we built models. Every stakeholder request became its own model, so we had [N] models that overlapped heavily, each with its own features, labels, and evaluation. And the process was manual: everything lived in separate notebooks, so engineers re-pulled the same data, restarted jobs that failed halfway, and couldn't easily tell what data trained a production model. We weren't slow because people weren't working hard. We were slow because we kept rebuilding the same things by hand.
+>
+> **[Action]** I proposed two things. First, **unification**: I inventoried every model — what use case it covered, what it protected — and merged overlapping ones onto shared feature pipelines, shared labels, and one evaluation standard. That took us from [N] models to [M]. Second, **automation**: an orchestrated pipeline with versioned data, training that automatically resumes from checkpoints, and a fixed evaluation gate before anything ships.
+>
+> The hard part was the pitch. This meant fewer new models for [about a quarter] while we built it, and stakeholders wanted output, not infrastructure. So I framed it in their terms: slow iteration means we're fighting this month's fraud with last quarter's model. I [kept one high-priority model shipping in parallel], so they weren't asked to accept nothing on faith. The engineers were easy to win: it removed the work they hated most.
+>
+> **[Result]** Model development went from six to eight weeks to two to three — one to two for engineers fully on the pipeline. Experiments went from two to three months to four to six weeks. We moved from quarterly model updates to [monthly], and we could respond to new fraud patterns in weeks instead of quarters. [Business number: e.g. fraud loss reduced by X, or a new fraud pattern caught within Y weeks.]
+>
+> **[Reflection]** What I'd do differently: I'd have measured where the weeks actually went before pitching it. Once I had that breakdown, the argument got much easier.
+
+**Numbers to fill in:** models before and after unification ([N] → [M]); how long new-model delivery slowed during the build; whether one model kept shipping in parallel; the change in update frequency; and one business metric. If there's no business number yet, connect the freed capacity to new coverage: "freed up 2–3 MLEs, and we used that capacity to cover [new fraud area]."
+
+**The hard moment to include:** [Who doubted it? E.g. a quarter where fewer models shipped while the pipeline was being built, or engineers attached to their notebooks.] This is where Gio digs.
+
 
 ## 3. Relentless execution: the highest-tempo project
 
