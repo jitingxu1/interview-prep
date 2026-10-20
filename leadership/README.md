@@ -33,6 +33,11 @@ Materials on your leadership approach, values, and how you think about managing.
    - Mission and goals, roadmap, saying no upward, KPIs, cross-functional work with S&O and Product
    - Written project report, judgment archetypes, rehearsal checklist
 
+7. **[Speed vs. Scalability](./speed_vs_scalability.md)** — framework for trade-off questions
+   - The principle, four questions, and the one-line answer
+   - Chargeback pipeline (scalability) vs. lending pilot (speed), mapped
+   - 2-minute answer structure + follow-ups
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

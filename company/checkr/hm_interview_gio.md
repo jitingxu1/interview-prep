@@ -54,7 +54,7 @@ Sources: [1point3acres Checkr list](https://www.1point3acres.com/interview/compa
 | --- | --- | --- | --- |
 | Ownership | A problem you spotted unprompted that drove a business result | **Chargeback model automation** | You saw that model iteration took 6–10 weeks, mostly plumbing — nobody asked you to fix it |
 | Technical standards | A speed vs. scalability trade-off | **Same story, the trade-off angle** — backup: foundation over firefighting | You chose to build the pipeline (scalability) over shipping models faster by hand (speed). Taylor said to pick scalability, because the next question covers speed |
-| Relentless execution | Your highest-tempo project; how you personally unblocked the team | **Story 10: risk score in the assignment algorithm** | From "no" to full buy-in in two weeks, a four-week experiment, and you personally rebuilt the partner team's simulation system with them |
+| Relentless execution | Your highest-tempo project; how you personally unblocked the team | **Story 11: restaurant lending pilot** — backup: Story 10 | Six-month plan cut to a one-month pilot; you personally built the underwriting model in a week; 19 of 20 loans repaid, program grew to $20M |
 | AI-first questionnaire | ~12 min of quick questions in four tiers | Your agentic AI pod, Story 10's AI use, your own setup | See the questionnaire section |
 
 Using one story for both ownership questions is deliberate: Gio goes deep, and one story told in layers beats two told thinly. If he wants a second example, use the foundation story.
@@ -93,10 +93,14 @@ Using one story for both ownership questions is deliberate: Gio goes deep, and o
 
 **What he's looking for:** a real decision-making framework — how you justified the call to the team and stakeholders, what you optimized for, and the downstream consequences.
 
-**Same story, told as the trade-off** (about 2 minutes; the version from Mock 1):
+**Same story, told as the trade-off** (about 2 minutes; the model answer from Mock 1):
+
+*Name both options*
 
 > It was a real trade-off, and I didn't take it lightly. The fast option was to keep going the way we were: take each stakeholder request, build a model, ship it. Stakeholders would have seen new models sooner. The scalable option was to slow down new model delivery for about [a quarter] and invest in unifying the models and automating the pipeline.
->
+
+*The framework: three questions*
+
 > I chose scalability, and I used three questions to decide.
 >
 > **First, is this cost one-time or repeating?** Fraud drifts constantly, so we retrain all the time. Every manual step and every duplicate model wasn't a one-time cost; we paid it again on every iteration. Repeating costs are where infrastructure pays off.
@@ -104,20 +108,30 @@ Using one story for both ownership questions is deliberate: Gio goes deep, and o
 > **Second, what does waiting actually cost?** Pausing cost us a few model releases for one quarter. Staying manual cost us six to eight weeks on every model, indefinitely. One cost is bounded, the other isn't.
 >
 > **Third, can we reverse it if I'm wrong?** I made sure we could still push a model out the old way in an emergency, so the bet didn't lock us in.
+
+*Justifying it to stakeholders*
+
+> That was the hard part, because they wanted models, not infrastructure. I didn't argue engineering excellence; I argued their problem. I showed them where the six to eight weeks actually went, and most of it was plumbing, not modeling. Then I framed it as: slow iteration means we're fighting this month's fraud with last quarter's model. And I didn't ask them to accept zero output on faith: I kept [one high-priority model] shipping in parallel, and gave them a date when the new pipeline would start paying back.
+
+*Justifying it to the team*
+
+> That was easier. The pipeline removed exactly the work they hated most. But I was explicit that the next quarter would feel slower before it felt faster, so nobody was surprised.
+
+*Consequences, good and bad*
+
+> The good: iteration went from six to eight weeks to two to three, experiments from two to three months to four to six weeks, and we freed two to three engineers to work on new fraud areas.
 >
-> **Justifying it to stakeholders** was the hard part, because they wanted models, not infrastructure. I didn't argue engineering excellence; I argued their problem. I showed them where the six to eight weeks actually went, and most of it was plumbing, not modeling. Then I framed it as: slow iteration means we're fighting this month's fraud with last quarter's model. And I didn't ask them to accept zero output on faith: I kept [one high-priority model] shipping in parallel, and I gave them a date when the new pipeline would start paying back.
->
-> **With the team,** it was an easier conversation. The pipeline removed exactly the work they hated most. But I was explicit that the next quarter would feel slower before it felt faster, so nobody was surprised.
->
-> **On the consequences, the good:** iteration went from six to eight weeks to two to three, experiments from two to three months to four to six weeks, and we freed two to three engineers to work on new fraud areas. **The cost:** standardizing reduced flexibility. About 20% of our models didn't fit the standard path, so we built escape hatches where engineers could plug in custom steps, instead of forcing everything through one pipeline. And for that first quarter, [one stakeholder team] had to wait longer than they wanted, and I owned that conversation with them directly.
->
-> I don't always pick scalability, though. **When the cost is one-off, the window is closing, or we're still learning what we need, I pick speed.** For example, during an account takeover escalation, the right call was a fast, contained fix first, with the long-term system going through planning afterward.
+> The cost: standardizing reduced flexibility. About 20% of our models didn't fit the standard path, so we built escape hatches where engineers could plug in custom steps instead of forcing everything through one pipeline. And for that first quarter, [one stakeholder team] had to wait longer than they wanted, and I owned that conversation with them directly.
+
+*Close: you don't always pick scalability*
+
+> I don't always pick scalability, though. When the cost is one-off, the window is closing, or we're still learning what we need, I pick speed. During an account takeover escalation, for example, the right call was a fast, contained fix first, with the long-term system going through planning afterward.
 
 **Why it works:** it names both options up front; the three questions are the "decision-making framework" Gio asked for; the stakeholder pitch is in business terms, with something still shipping during the build; it gives good *and* bad consequences and how you handled the bad; and it ends by showing you don't always choose scalability, which sets up the speed question that comes next.
 
-**The framework, in one line for the room:** *"I choose scalability when the cost repeats, the delay is bounded, and the decision is reversible. I choose speed when it's a one-off, the window is closing, or we're still learning what we need."*
+**The framework, in one line for the room:** *"I choose speed when we're still proving the bet, the cost is one-off, or the window is closing. I choose scalability when the bet is proven, the cost repeats, and the delay is bounded. Either way, I never cut corners on the one thing that decides success."* Full framework, with the four questions and your stories mapped: [`leadership/speed_vs_scalability.md`](../../leadership/speed_vs_scalability.md).
 
-**Show you don't always pick scalability.** Have one sentence ready: the ATO escalation, where the right call was a fast, contained short-term fix while the long-term plan went through planning. Judgment means knowing which situation you're in.
+**Show you don't always pick scalability.** Have one sentence ready: the restaurant lending pilot (Story 11), where the bet was unproven and leadership wanted a pilot in a month, so we simplified everything except the underwriting model. Or the ATO escalation, where the right call was a fast, contained fix first. Judgment means knowing which situation you're in.
 
 **Backup story: foundation over firefighting** (several teams wanted bespoke models; you built shared features and serving first). Use it if he wants a second example or a roadmap-level trade-off. See `leadership/stripe_strategy_and_execution/13_foundation_story.md` — its blanks need filling first.
 
@@ -130,6 +144,49 @@ Using one story for both ownership questions is deliberate: Gio goes deep, and o
 ## 3. Relentless execution: the highest-tempo project
 
 **What he's looking for:** what speed actually looked like — told with energy and specifics — and a concrete moment where **you personally** unblocked the team, technically, organizationally, or cross-functionally. Taylor's warnings: don't pick a "fast project" that was really normal pace, and **never blame slowdowns on other teams.**
+
+**Story 11: restaurant lending pilot** (full story: `star_stories/story_11_restaurant_lending_pilot.md`). About 2 minutes, result first:
+
+*Result first*
+
+> In the second half of 2025, leadership asked my team to turn a six-month plan for in-house restaurant lending into a pilot in one month. We launched on time: 20 restaurants, $20 to 30K each, and after six months 19 of 20 had paid back in full. That proved we could pick restaurants that needed the money and would repay, and get it back, and this year the program grew to $20 million.
+
+*Situation*
+
+> Before, we used a vendor, Parafin, to underwrite and fund loans to restaurants, and we took a revenue split. We wanted to own it. Our plan covered everything: the merchant UI, how we communicate with restaurants, the underwriting models, and loan performance monitoring.
+
+*The ask, taken seriously*
+
+> Leadership loved the plan but wanted a pilot in one month. My first instinct was that it wasn't realistic. But when we analyzed the ask, they had a point: we were building to scale before we'd proven the core bet: that we could pick restaurants that needed the money and would repay, and actually get the money back. A pilot would tell us that much faster.
+
+*Simplify everything that can be simplified*
+
+> So I re-scoped around one question: what's the minimum we need to lend to about 20 restaurants and prove we can choose the right ones and collect? Once the goal was that clear, we knew which steps we could skip or simplify and which we had to strengthen. I split the work into two tracks, backend, and UX plus communication, and both took the simplest version that worked for a pilot. We cut the merchant-facing UI and the automated outreach completely: neither affected whether we picked the right restaurants. Instead, we selected restaurants ourselves with the risk underwriting model.
+
+*Concentrate force on what can't be simplified — personally unblocking*
+
+> The one thing we couldn't simplify was the underwriting risk model. You can't lend money without deciding who'll pay it back. That was the critical path, so I took it on myself: I pulled the data together and built a quick-and-dirty model end to end in one week. I validated it against Parafin's historical loans, where we already knew which restaurants had repaid, and it was good enough for a small, controlled pilot, and the model chose the 20 restaurants. I contained the risk three ways: very conservative thresholds, so only the best of the best qualified; a manual check on every loan before any money went out; and small loans, $20 to 30K. The manual checks didn't block a single loan. Right after launch we built a monitoring dashboard to track repayment.
+
+*Close*
+
+> What I took from it: under a hard deadline, first get clear on the main goal. Then you know which steps can be skipped and which have to be strengthened — put your strength there, and give everything else the simplest version that works. Speed came from not treating every part of the plan as equally important.
+
+**Why it scores on every warning:**
+
+- **Real tempo with specifics:** six months → one month; the model in one week; 20 loans; 6-month repayment; $20M a year later.
+- **Personally unblocking:** you built the critical-path model yourself, and you re-scoped the whole plan.
+- **No blame:** you treat leadership's aggressive ask as right once you analyzed it, rather than pushing back on it.
+- **Bonus:** it's your *speed over scalability* example — the counterpart to the chargeback pipeline in section 2, which shows the framework cuts both ways.
+
+**Likely follow-ups:**
+
+- "How did you know a one-week model was good enough?" — We validated it on Parafin's historical loans: we had real outcomes for restaurants that had already borrowed through Parafin, so we backtested the model on whether those restaurants actually repaid. [Fill in the metric and result, e.g. AUC, or default rate among the top-scored restaurants vs. all Parafin loans.] On top of that, the conservative threshold meant we only lent where the model was most confident.
+- "What did you cut, and what did it cost later?" — The merchant UI and automated outreach; we picked restaurants with the risk model instead. Monitoring was deferred to just after launch, not dropped. [What you built when scaling to $20M.]
+- "Isn't a one-week model risky when money is involved?" — Yes, so I capped the risk three ways: very conservative thresholds (best of the best only), a manual check on every loan before disbursement, and small loan sizes. The manual checks never blocked a loan — the model's picks all held up.
+- "Why build the model yourself instead of assigning it?" — It was the critical path and the riskiest piece; doing it myself removed a hand-off, and [the team productionized it afterward].
+- "What about the one restaurant that didn't repay?" — [What you learned.]
+
+**Backup — Story 10: embedding the risk score into assignment.** Use it if he wants a cross-team unblocking example.
 
 **Story 10: embedding the risk score into assignment.**
 
