@@ -13,6 +13,8 @@ Behavioral stories you can use across different interviews. Each story is a sepa
 7. **[Story 7: Engineer Leveling](./story_7_engineer_leveling.md)** — Developing an engineer to senior IC through deliberate growth plan
 8. **[Story 8: Right Person, Wrong Seat](./story_8_right_person_wrong_seat.md)** — Solving skill mismatches with empathy
 9. **[Story 9: Mentoring & Unblocking](./story_9_mentoring_unblocking.md)** — Coaching people to solve hard problems
+10. **[Story 10: Embedding Fraud Detection into Assignment](./story_10_embedding_fraud_assignment.md)** — Cross-org buy-in by unblocking a partner team
+11. **[Story 11: Restaurant Lending Pilot](./story_11_restaurant_lending_pilot.md)** — Cut a six-month plan to a one-month pilot; built the underwriting model in a week; grew to $20M
 
 ## How to Use
 
@@ -25,6 +27,7 @@ Behavioral stories you can use across different interviews. Each story is a sepa
    - "Tell me about a tough personnel decision" → Story 8
    - "What's your management style?" → Stories 3, 4, or 7
    - "How do you build psychological safety?" → Story 6
+   - "Tell me about your highest-tempo project" / "speed over scalability" → Story 11
 
 2. **Adapt and personalize**
    - Use real details (dates, team names, specific metrics)
