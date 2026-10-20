@@ -130,15 +130,15 @@ Each area now has its own story, so Gio hears three different projects: never-de
 
 > It was a real trade-off, and I didn't take it lightly. The fast option was to keep going the way we were: take each stakeholder request, build a model, ship it. Stakeholders would have seen new models sooner. The scalable option was to build every model in a more standard, more automated way, so that each next iteration would take less time, and step by step, automate the whole model pipeline.
 
-*The framework: three questions*
+*The framework: benefit, cost, effort*
 
-> I chose scalability, and I used three questions to decide.
+> I chose scalability, and I decided by looking at three things: the benefit, the cost, and the effort.
 >
-> **First, is this cost one-time or repeating?** Fraud drifts constantly, so we retrain all the time. Every manual step and every duplicate model wasn't a one-time cost; we paid it again on every iteration. Repeating costs are where infrastructure pays off.
+> **The benefit: does it pay back once, or every time?** Fraud patterns keep changing, so we retrain all the time. Pulling the data, training, evaluation: we repeated those by hand on every iteration of every model, about two months each time, and several months per release. Automating them meant the benefit came back on every future iteration, not just once.
 >
-> **Second, what does waiting actually cost?** Pausing cost us a few model releases for one quarter. Staying manual cost us six to eight weeks on every model, indefinitely. One cost is bounded, the other isn't.
+> **The cost: what do we give up, and can we undo it?** In the short term, [stakeholders would see new models a bit later while we standardized]. That cost was bounded; the cost of staying manual never stopped. And it was low-risk: we could still push a model out the old way in an emergency, so the bet didn't lock us in.
 >
-> **Third, can we reverse it if I'm wrong?** I made sure we could still push a model out the old way in an emergency, so the bet didn't lock us in.
+> **The effort: how much work, and can we do it in steps?** We didn't stop everything for a big rewrite. We standardized and automated each model as we touched it, and built the pipeline up step by step, [with N engineers over X weeks]. So the effort was spread out and paid back early.
 
 *Justifying it to stakeholders*
 
