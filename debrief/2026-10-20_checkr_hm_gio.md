@@ -1,6 +1,6 @@
 # Checkr: hiring manager interview with Gio — debrief
 
-[← Checkr index](README.md) · [Prep doc](hm_interview_gio.md)
+[← Debrief index](README.md) · [Checkr folder](../company/checkr/README.md) · [Prep doc](../company/checkr/hm_interview_gio.md)
 
 **Date:** Tuesday 2026-10-20 · **Interviewer:** Gio, head of data & ML engineering · **Format:** intro → why Checkr → one project deep dive (~35 min of follow-ups) → your questions
 

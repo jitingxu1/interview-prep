@@ -21,6 +21,9 @@ Tailored prep for each company.
 - **[LinkedIn](./company/linkedin/)** — Manager Leadership Phone Screen, AI org
 - **[Roblox](./company/roblox/)** — ML Engineering Manager, Critical Harm team
 
+### **[📝 debrief/](./debrief/)** — Interview Debriefs
+One file per real interview: what went well, what didn't, questions asked, and fixes for the next round.
+
 ### **[👤 self-introduction/](./self-introduction/)** — Personal Pitch & Background
 Your background arc and key narrative threads.
 
