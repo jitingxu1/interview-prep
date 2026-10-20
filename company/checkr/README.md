@@ -12,6 +12,7 @@ Engineering manager loop. Prep based on the recruiter call with Taylor on 2026-1
 ## Contents
 
 - [Hiring manager interview with Gio](hm_interview_gio.md) — story map, scripts for each value area, AI questionnaire answers, questions to ask
+- [Debrief: interview with Gio (2026-10-20)](hm_interview_gio_debrief.md) — what went well, what didn't, every follow-up Gio asked, what you learned about Checkr, and fixes for the next rounds
 
 ## Open question
 
