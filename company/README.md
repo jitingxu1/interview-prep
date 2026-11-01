@@ -12,6 +12,7 @@ Tailored materials for specific companies you're interviewing with.
 - **[LinkedIn](./linkedin/)** — Manager Leadership Phone Screen, AI org (Sept 8, 2026)
 - **[Roblox](./roblox/)** — ML Engineering Manager, Critical Harm team
 - **[Snorkel AI](./snorkel/)** — AI System Design + Build with AI (Oct 9, 2026)
+- **[TikTok](./tiktok/)** — Senior Manager, Agentic AI, PGC ecosystem team (recruiter screen with Helen Oct 30, 2026)
 
 ## Adding a New Company
 
