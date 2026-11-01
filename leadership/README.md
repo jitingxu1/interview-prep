@@ -38,6 +38,17 @@ Materials on your leadership approach, values, and how you think about managing.
    - Chargeback pipeline (scalability) vs. lending pilot (speed), mapped
    - 2-minute answer structure + follow-ups
 
+8. **[Weaknesses](./weaknesses.md)** — three real ones, fully built
+   - Slow to delegate, too technical when reporting up, negative feedback feels hard
+   - How you noticed, what changed, how you track progress, follow-ups
+
+9. **[Reporting Up](./reporting_up.md)** — how to brief leadership
+   - Bottom line up front; templates for decisions, status, bad news, impromptu asks
+   - Technical-to-business translation table and pre-flight checks
+
+10. **[Managing Up](./managing_up.md)** — working effectively with your manager
+    - Six practices, the ByteDance "avoid managing up" caveat, 30-second spoken version
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
