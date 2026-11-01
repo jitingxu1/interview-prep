@@ -30,6 +30,9 @@ Your background arc and key narrative threads.
 ### **[🔧 project-deep-dive/](./project-deep-dive/)** — Project Deep Dives
 Detailed technical explorations of specific projects.
 
+### **[🤖 agent-infra/](./agent-infra/)** — Agent Platform Infrastructure
+Technical prep for agentic AI platform roles: reference architecture, harness and runtime, tool ecosystem, evals, a 45-minute system design walkthrough, and drill-down questions.
+
 ### **[📄 resume/](./resume/)** — Resume
 Resume files and versions for different companies or roles.
 
