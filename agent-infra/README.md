@@ -13,6 +13,7 @@ Agent platform infrastructure: the framework, the harness, the tool ecosystem, a
 
 ## Contents
 
+0. **[Landscape (Nov 2026)](./00_landscape_2026.md)** — what companies are building to run many agents: the converged stack, vendor platforms, Cloudflare / Starburst / PhonePe case studies, open problems
 1. **[Reference architecture](./01_reference_architecture.md)** — the layers of an agent platform and what each one owns
 2. **[Harness and runtime](./02_harness_and_runtime.md)** — the agent loop, context management, durable execution, sandboxing
 3. **[Tool ecosystem](./03_tool_ecosystem.md)** — registry, MCP, schemas, versioning, auth, governance when many teams contribute
