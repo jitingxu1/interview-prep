@@ -20,6 +20,7 @@ Agent platform infrastructure: the framework, the harness, the tool ecosystem, a
 4. **[Evals and observability](./04_evals_and_observability.md)** — offline evals, trajectory grading, online monitoring, cost
 5. **[System design walkthrough](./05_design_walkthrough.md)** — "Design an agent platform for internal teams," paced for 45 minutes
 6. **[Drill-down questions](./06_drill_down_questions.md)** — 连环追问 practice: likely follow-ups with short answers
+7. **[Case: DeepSeek Super-agent](./07_case_deepseek_superagent.md)** — Router / Worker split for many concurrent tasks: architecture, self-reported numbers, interview follow-ups
 
 ## Your anchors
 
