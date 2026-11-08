@@ -65,7 +65,7 @@ Point out: everything a product team owns is in this file; everything else is th
 
 1. **Durable execution and side effects** — checkpoint per step, replay without re-calling, idempotency keys, HITL as a parked state. → [02](./02_harness_and_runtime.md#durable-execution)
 2. **Tool ecosystem governance** — registry, MCP at the edge, automated onboarding checks, description changes trigger dependent evals. → [03](./03_tool_ecosystem.md)
-3. **Evals as deploy gate** — computed outcome checks, calibrated judges, per-slice gates, shadow → canary. → [04](./04_evals_and_observability.md)
+3. **Evals as deploy gate** — computed outcome checks, calibrated judges, per-slice gates, shadow → canary. → [04](./evaluation/evals_and_observability.md)
 4. **Context and cost** — tool retrieval, result truncation, compaction, sub-agents, prompt caching, small models for routing. → [02](./02_harness_and_runtime.md#context-management)
 
 ## 40–45 min: Trade-offs, risks, and what you'd build first

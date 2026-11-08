@@ -17,9 +17,19 @@ Agent platform infrastructure: the framework, the harness, the tool ecosystem, a
 1. **[Reference architecture](./01_reference_architecture.md)** — the layers of an agent platform and what each one owns
 2. **[Harness and runtime](./02_harness_and_runtime.md)** — the agent loop, context management, durable execution, sandboxing
 3. **[Tool ecosystem](./03_tool_ecosystem.md)** — registry, MCP, schemas, versioning, auth, governance when many teams contribute
-4. **[Evals and observability](./04_evals_and_observability.md)** — offline evals, trajectory grading, online monitoring, cost
+4. **[Evaluation](./evaluation/)** (section) — all eval material in one folder:
+   - [Evals and observability](./evaluation/evals_and_observability.md) — the framework: offline evals, trajectory grading, online monitoring, cost; how DoorDash does it
+   - [Level 1 unit tests](./evaluation/level1_unit_tests.md) — code-assertion tests for the support bot, gates, production use, order of work, worked example with who does what
+   - [Hamel — *Your AI Product Needs Evals*](./evaluation/hamel_your_ai_product_needs_evals.md) — study notes on the three-level framing
+   - [Reading list](./evaluation/reading_list.md) — how big companies and well-known practitioners evaluate agents
 5. **[System design walkthrough](./05_design_walkthrough.md)** — "Design an agent platform for internal teams," paced for 45 minutes
 6. **[Drill-down questions](./06_drill_down_questions.md)** — 连环追问 practice: likely follow-ups with short answers
+
+**Related study notes** (in `project-deep-dive/`):
+
+- **[Chatbot offline simulator](../project-deep-dive/chatbot_offline_simulator.md)** — DoorDash's simulation and evaluation flywheel for support chatbots: LLM customer simulator, binary calibrated judges, release gate
+- **[Ask DoorDash agent memory](../project-deep-dive/doordash_assistant_memory.md)** — how agents fetch, use and write consumer memory, with flowcharts and worked examples
+- **[DoorDash AI code reviewer](../project-deep-dive/doordash_ai_code_reviewer.md)** — lead scout notices, deep reviewers verify, disprove-it pass before posting
 
 ## Your anchors
 
