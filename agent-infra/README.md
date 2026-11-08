@@ -20,6 +20,7 @@ Agent platform infrastructure: the framework, the harness, the tool ecosystem, a
 4. **[Evaluation](./evaluation/)** (section) — all eval material in one folder:
    - [Evals and observability](./evaluation/evals_and_observability.md) — the framework: offline evals, trajectory grading, online monitoring, cost; how DoorDash does it
    - [Level 1 unit tests](./evaluation/level1_unit_tests.md) — code-assertion tests for the support bot, gates, production use, order of work, worked example with who does what
+   - [Eval-driven development (blog)](./evaluation/eval_driven_development.md) — the workflow from policy doc to PR: human checkpoints, dev/holdout split, locked tests, trace reading, tiered gates, and the skill design
    - [Hamel — *Your AI Product Needs Evals*](./evaluation/hamel_your_ai_product_needs_evals.md) — study notes on the three-level framing
    - [Reading list](./evaluation/reading_list.md) — how big companies and well-known practitioners evaluate agents
 5. **[System design walkthrough](./05_design_walkthrough.md)** — "Design an agent platform for internal teams," paced for 45 minutes
