@@ -2,7 +2,7 @@
 
 *A practical workflow, with human checkpoints and an AI coding agent doing the volume. November 2026.*
 
-Part of the [evaluation section](./README.md). Builds on [Level 1 unit tests](./level1_unit_tests.md) and [Hamel Husain's *Your AI Product Needs Evals*](./hamel_your_ai_product_needs_evals.md).
+Part of the [blog](../README.md) ([eval](./README.md)). Related study notes: [evaluation section](../../agent-infra/evaluation/README.md). Builds on [Level 1 unit tests](../../agent-infra/evaluation/level1_unit_tests.md) and [Hamel Husain's *Your AI Product Needs Evals*](../../agent-infra/evaluation/hamel_your_ai_product_needs_evals.md).
 
 ---
 
@@ -13,6 +13,7 @@ Part of the [evaluation section](./README.md). Builds on [Level 1 unit tests](./
 - Let an AI implementer iterate against a **dev set**: run, log traces, read traces, turn new failures into new tests, tune, repeat.
 - Gate the release on a **holdout set** the implementer never saw, with tiered thresholds: **100%** on invariants, **no regression beyond noise** on behavior.
 - Ship it as **two PRs**: the eval spec merges to main first (tests marked pending), and its review *is* the sign-off, enforced by CODEOWNERS. The implementation follows. The holdout lives outside the repo.
+- **Every PR has a human owner; AI agents may open drafts but never approve.** The eval owner owns the spec PR (the policy owner signs off); the feature engineer owns the implementation PR (another engineer and the eval owner review); the PM makes the rollout call.
 - **Humans own what's correct and what ships. AI owns volume.** The workflow's job is to keep it that way.
 
 ---
@@ -158,7 +159,7 @@ empathetic_when_declining (L2)      60%    62%    70%    74%   tracked
 
 ### Phase 7 — Read traces and build a taxonomy
 
-The step teams skip, and the one that finds the bugs nobody predicted.
+The step teams skip, and the one that finds the bugs nobody predicted. Make it cheap with a custom trace viewer ([looking at data](../../agent-infra/evaluation/looking_at_data.md)).
 
 1. **Read failing traces** and write a free-form note on each (*open coding*).
 2. **Also read a random sample of passing traces.** A weak assertion can pass a bad output; this is how you find false passes.
@@ -369,13 +370,15 @@ Use CODEOWNERS with branch protection set to "require review from code owners":
 
 ```
 # .github/CODEOWNERS
-evals/*/policy.md            @support-policy @eval-owner
-evals/*/policy_values.yaml   @support-policy
-evals/*/scenarios.yaml       @support-policy @eval-owner @support-qa
-evals/*/assertions.md        @eval-owner
-evals/*/thresholds.yaml      @eval-owner @eng-lead
-evals/*/tests/               @eval-owner
+evals/*/policy.md            @org/support-policy @org/eval-owners
+evals/*/policy_values.yaml   @org/support-policy
+evals/*/scenarios.yaml       @org/support-policy @org/eval-owners @org/support-qa
+evals/*/assertions.md        @org/eval-owners
+evals/*/thresholds.yaml      @org/eval-owners @org/eng-leads
+evals/*/tests/               @org/eval-owners
 ```
+
+Use teams with at least two people each: a PR's author can't approve their own PR, so a one-person owner entry would leave the author's files with no possible approver.
 
 Any change to these files, in any PR — including an implementation PR that tries to change a test — needs the right approvals.
 
@@ -412,15 +415,58 @@ scenarios:
 | A threshold changes | Eval owner + engineering lead |
 | A test dispute is accepted | Eval owner; reason logged in `disputes.md` |
 
+### Who opens each PR, who owns it, who reviews it
+
+**Three rules first:**
+1. **Every PR has a human owner.** An AI agent may open it, but as a **draft** under the owner's name or a bot account; the owner reviews it and marks it ready. The owner answers for what's in it.
+2. **AI never approves.** Approvals come only from people.
+3. **The author can't approve their own PR** (GitHub enforces this). So every CODEOWNERS entry needs a team with at least two people, or the author's own files would have no one left to approve them.
+
+**PR A — eval spec**
+
+| | Who | What they do |
+| --- | --- | --- |
+| **Opened by** | The test-writer agent (draft), or the eval owner directly | Branch `eval/late-delivery`; contains policy snapshot, policy values, scenarios, assertions, thresholds, dev cases, pending tests |
+| **Owner** | **Eval owner** (the engineer or DS who owns the feature's evals) | Marks the draft ready; writes the PR description (scenario list, open ambiguities and their answers); merges once approved |
+| **Required reviewers** | **Policy owner** — `policy.md`, `policy_values.yaml`, `scenarios.yaml` | Signs off on rules and expected behavior: the actual sign-off |
+| | **A second engineer from the eval-owners team** — `assertions.md`, `tests/` | Checks assertions test behavior (not implementation), tests fail for the right reason, tiers make sense |
+| | **Engineering lead** — `thresholds.yaml` | Approves the gate levels |
+| **Optional reviewers** | Domain expert (senior support agent / QA) | Checks scenarios against real cases |
+| **Informed** | PM | Sees scope and what "done" means before work starts |
+
+**PR B — implementation**
+
+| | Who | What they do |
+| --- | --- | --- |
+| **Opened by** | The implementer agent (draft), or the feature engineer | Branch `feat/late-delivery`; prompt, tools, guardrails; removes `xfail` markers as tests pass |
+| **Owner** | **Feature engineer** (ideally a different person from the eval owner) | Marks it ready; writes the description with the evidence: pass-rate table per version, taxonomy, CHANGELOG, any test disputes and rulings; merges |
+| **Required reviewers** | **Another engineer** | Normal code review: correctness, structure, guardrails, no special-casing of test inputs |
+| | **Eval owner** | Reviews the evidence: dev vs. holdout gap, taxonomy, that no test or threshold was quietly changed |
+| | **Code owners, automatically** | Only if the PR touches a spec file (tests, scenarios, thresholds) — and then the same approvals as PR A are required again |
+| **Required check** | CI holdout gate | Blocks merge unless invariants are 100% and behavior shows no regression beyond noise |
+| **Launch decision** | PM | Not a code approval: decides on the rollout (A/B, canary) after merge |
+
+**Follow-up PRs**
+
+| PR | Opened by | Owner | Required reviewers |
+| --- | --- | --- | --- |
+| New assertion from a failure mode (Phase 8) | Agent (draft) or eval owner | Eval owner | Second engineer from the eval-owners team; **policy owner** if it changes expected behavior |
+| Accepted test dispute | Eval owner | Eval owner | Second engineer; reason logged in `disputes.md` |
+| Threshold change | Eval owner | Eval owner | Engineering lead |
+| Policy change | Policy owner, or the eval owner on their behalf | Policy owner | Policy owner (if not the author) + eval owner; suite re-runs |
+
+**On a small team** the eval owner and the feature engineer are often the same person. Then the separation comes from the rest of the setup: separate agents for tests and implementation, locked `tests/`, the holdout outside the repo, and a second engineer who must approve both PRs.
+
 ### The full lifecycle
 
-| Step | Branch | PR | Sign-off |
-| --- | --- | --- | --- |
-| Policy snapshot, scenarios, assertions, dev cases, tests (pending) | `eval/late-delivery` | **PR A → main** | Policy owner + eval owner via CODEOWNERS |
-| Holdout cases | Outside the repo | — | Eval owner |
-| Implement, iterate, add approved new tests | `feat/late-delivery` | **PR B → main** | Code review; spec-file changes need CODEOWNERS again |
-| Gate: holdout run in CI | — | Required check on PR B | Automatic, from `thresholds.yaml` |
-| Later policy change | `eval/late-delivery-v4` | PR → main | Policy owner |
+| Step | Branch | PR | Opened by → owner | Reviewers / sign-off |
+| --- | --- | --- | --- | --- |
+| Policy snapshot, scenarios, assertions, dev cases, tests (pending) | `eval/late-delivery` | **PR A → main** | Test-writer agent (draft) → **eval owner** | **Policy owner** (sign-off) + second engineer + eng lead, via CODEOWNERS |
+| Holdout cases | Outside the repo | — | Test-writer agent → eval owner | Eval owner |
+| Implement, iterate, add approved new tests | `feat/late-delivery` | **PR B → main** | Implementer agent (draft) → **feature engineer** | Second engineer + eval owner; CODEOWNERS again if spec files change |
+| Gate: holdout run in CI | — | Required check on PR B | CI | Automatic, from `thresholds.yaml` |
+| Rollout | — | — | — | **PM** decides on A/B / canary |
+| Later policy change | `eval/late-delivery-v4` | PR → main | Policy owner (or eval owner) → **policy owner** | Eval owner; suite re-runs |
 
 ---
 
@@ -473,4 +519,4 @@ scenarios:
 - Shreya Shankar et al. — [*Who Validates the Validators?*](https://arxiv.org/abs/2404.12272) (criteria drift)
 - Anthropic — [*Demystifying evals for AI agents*](https://anthropic.com/engineering/demystifying-evals-for-ai-agents)
 - Sierra — [*τ-bench*](https://sierra.ai/blog/benchmarking-ai-agents) (simulated users, pass^k)
-- Notes in this repo: [Level 1 unit tests](./level1_unit_tests.md) · [reading list](./reading_list.md) · [DoorDash chatbot offline simulator](../../project-deep-dive/chatbot_offline_simulator.md)
+- Notes in this repo: [Level 1 unit tests](../../agent-infra/evaluation/level1_unit_tests.md) · [reading list](../../agent-infra/evaluation/reading_list.md) · [DoorDash chatbot offline simulator](../../project-deep-dive/chatbot_offline_simulator.md)
