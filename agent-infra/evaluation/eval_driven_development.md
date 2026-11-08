@@ -12,6 +12,7 @@ Part of the [evaluation section](./README.md). Builds on [Level 1 unit tests](./
 - Generate test inputs with an LLM, write the tests, and **watch them all fail**. Then lock them.
 - Let an AI implementer iterate against a **dev set**: run, log traces, read traces, turn new failures into new tests, tune, repeat.
 - Gate the release on a **holdout set** the implementer never saw, with tiered thresholds: **100%** on invariants, **no regression beyond noise** on behavior.
+- Ship it as **two PRs**: the eval spec merges to main first (tests marked pending), and its review *is* the sign-off, enforced by CODEOWNERS. The implementation follows. The holdout lives outside the repo.
 - **Humans own what's correct and what ships. AI owns volume.** The workflow's job is to keep it that way.
 
 ---
@@ -115,7 +116,7 @@ Write `assertions.md` in plain words: what each test checks, its **level** and i
 
 A **test-writer agent** that has never seen any implementation:
 - generates inputs with an LLM (about 50 customer messages per scenario: varied tone, typos, exaggerations, other languages), each paired with several mock backend setups;
-- **splits cases into dev (~70%) and holdout (~30%)**, stratified by scenario;
+- **splits cases into dev (~70%) and holdout (~30%)**, stratified by scenario; dev goes in the repo, holdout goes to storage the implementer can't read (section 8);
 - writes the test code: arrange (mocks) → act (conversation) → assert.
 
 ```python
@@ -246,11 +247,12 @@ One resumable skill, with a state file, so the work can span several sessions:
 
 ```
 evals/late_delivery/
-├── policy.md               # source of truth (human)
-├── scenarios.yaml          # Phase 1, approved
+├── policy.md               # versioned snapshot of the policy, with source link (section 8)
+├── policy_values.yaml      # the policy's numbers, owned by the policy owner
+├── scenarios.yaml          # Phase 1, approved; records who signed off on which version
 ├── assertions.md           # Phase 2, approved; each assertion has a level and tier
 ├── thresholds.yaml         # gate tiers (human-only)
-├── cases/{dev,holdout}/    # Phase 3, LLM-generated
+├── cases/dev/              # Phase 3, LLM-generated (holdout lives outside the repo)
 ├── tests/                  # Phase 3, locked after Phase 4
 ├── runs/<date>_vN.json     # Phase 6: pass rates, CIs, model and prompt versions, trace IDs
 ├── traces/                 # failing traces + sampled passing traces
@@ -295,7 +297,134 @@ On start, read state.json and resume at the recorded phase.
 
 ---
 
-## 8. Common mistakes
+## 8. Where things live, branching, and sign-off
+
+### Where to store the policy or design doc
+
+| What | Where | Why |
+| --- | --- | --- |
+| **The original policy** | Wherever the policy owner works (Google Docs, Confluence, an ops wiki) | Support ops shouldn't have to maintain policy in Git |
+| **A snapshot for the evals** | `evals/<feature>/policy.md`, with source link, version, owner and date | Every test must trace back to *one exact policy version* |
+| **The design doc** (engineering features) | `docs/design/<feature>.md`, or the doc tool with a link in the snapshot header | Same rule: evals reference a fixed version |
+| **The policy numbers** ($5, 20 min, 30 days) | `evals/<feature>/policy_values.yaml`, owned by the policy owner | One place for the numbers, so the tool guardrail and the docs never disagree |
+
+```markdown
+<!-- evals/late_delivery/policy.md -->
+---
+source: https://docs.google.com/.../late-delivery-policy
+version: 2026-11-08 (v3)
+owner: support-policy team
+---
+Late means delivered more than 20 minutes after the latest ETA shown...
+```
+
+When the policy changes, a PR updates `policy.md` and `policy_values.yaml`; it re-runs the suite, and the diff shows exactly which rules and scenarios changed.
+
+### Branching: the eval spec merges first
+
+```
+ PR A  "eval spec: late delivery"        PR B  "implement late delivery"
+ ─────────────────────────────           ─────────────────────────────
+ policy.md (snapshot)                    prompt, tools, guardrails
+ policy_values.yaml                      (no edits to tests/, scenarios,
+ scenarios.yaml                           thresholds)
+ assertions.md
+ thresholds.yaml                         flips tests from "pending" to
+ cases/dev/                              "gating" as they pass
+ tests/  ← all marked PENDING
+        │                                       │
+        ▼ approved = SIGN-OFF                   ▼ CI gates on the holdout
+      merge to main                           merge to main
+```
+
+**Why the spec goes to main before the implementation:**
+- **It becomes the reviewed source of truth.** Anyone can see what "correct" means before the code exists.
+- **Edits become visible.** If PR B touches `tests/` or `scenarios.yaml`, the diff shows it and the spec owners must approve again. On a shared feature branch, a quiet edit is easy to miss.
+- **Small PRs.** Reviewers judge the spec on its own, without implementation code mixed in.
+
+**Failing tests don't break main.** They're marked pending until the feature lands:
+
+```python
+@pytest.mark.xfail(strict=True, reason="pending: late_delivery not implemented")
+def test_amount_never_exceeds_policy(...): ...
+```
+
+`strict=True` makes CI fail if a pending test *unexpectedly passes*, which also enforces "tests fail first." PR B removes the marker as each test becomes gating.
+
+If the team doesn't want tests for unbuilt features on main, use **stacked PRs**: PR A targets main, PR B targets PR A's branch; approve A first, then merge both in order. The sign-off still happens on PR A.
+
+### The holdout set stays out of the repo
+
+If holdout cases sit in the repo, the implementer agent can read them, and the holdout stops being a holdout.
+
+| Option | How |
+| --- | --- |
+| **Separate storage** (recommended) | A restricted bucket or private eval repo; only CI can read it, and it runs the holdout at the gate |
+| **Encrypted in the repo** | CI holds the key and decrypts at run time |
+| **Generated at the gate** | CI generates fresh variations from the approved scenarios each gate run (cheap, less reproducible) |
+
+### Sign-off: PR approvals plus a record in the files
+
+Use CODEOWNERS with branch protection set to "require review from code owners":
+
+```
+# .github/CODEOWNERS
+evals/*/policy.md            @support-policy @eval-owner
+evals/*/policy_values.yaml   @support-policy
+evals/*/scenarios.yaml       @support-policy @eval-owner @support-qa
+evals/*/assertions.md        @eval-owner
+evals/*/thresholds.yaml      @eval-owner @eng-lead
+evals/*/tests/               @eval-owner
+```
+
+Any change to these files, in any PR — including an implementation PR that tries to change a test — needs the right approvals.
+
+| Artifact | Required approvers | Optional |
+| --- | --- | --- |
+| `policy.md`, `policy_values.yaml` | Policy owner | — |
+| `scenarios.yaml` (expected behavior) | **Policy owner** + eval owner | Domain expert |
+| `assertions.md`, `tests/` | Eval owner | Another engineer |
+| `thresholds.yaml` (gates) | Eval owner + engineering lead | PM |
+| Implementation PR | Normal code review | — |
+
+**Record the sign-off in the file**, tied to a policy version, so it survives copies and exports:
+
+```yaml
+# evals/late_delivery/scenarios.yaml
+policy_version: 2026-11-08 (v3)
+approved:
+  - {by: "@policy-owner", role: policy owner, date: 2026-11-09, pr: 15}
+  - {by: "@eval-owner",   role: eval owner,   date: 2026-11-09, pr: 15}
+scenarios:
+  - id: A
+    given: 30 min late
+    expect: offer $5 credit
+```
+
+**If the policy owner doesn't use GitHub** (common with ops teams): share a readable table of scenarios and expected behavior in their doc tool, collect the approval there, and paste the link and date into the `approved:` block. What matters is that the approval is written down and tied to a version, not which tool it happens in.
+
+**When sign-off is needed again:**
+
+| Event | Who re-approves |
+| --- | --- |
+| Policy changes | Policy owner; scenarios updated |
+| New failure mode becomes an assertion (Phase 8) | Eval owner; also the policy owner if expected behavior changes |
+| A threshold changes | Eval owner + engineering lead |
+| A test dispute is accepted | Eval owner; reason logged in `disputes.md` |
+
+### The full lifecycle
+
+| Step | Branch | PR | Sign-off |
+| --- | --- | --- | --- |
+| Policy snapshot, scenarios, assertions, dev cases, tests (pending) | `eval/late-delivery` | **PR A → main** | Policy owner + eval owner via CODEOWNERS |
+| Holdout cases | Outside the repo | — | Eval owner |
+| Implement, iterate, add approved new tests | `feat/late-delivery` | **PR B → main** | Code review; spec-file changes need CODEOWNERS again |
+| Gate: holdout run in CI | — | Required check on PR B | Automatic, from `thresholds.yaml` |
+| Later policy change | `eval/late-delivery-v4` | PR → main | Policy owner |
+
+---
+
+## 9. Common mistakes
 
 1. **Writing the prompt first** and the evals "later." Later never comes, and there's no baseline.
 2. **Letting the AI approve its own scenarios or assertions.**
@@ -305,17 +434,20 @@ On start, read state.json and resume at the recorded phase.
 6. **Patching the prompt for each failure** when the fix belongs in a tool or in the data the model sees.
 7. **Using an uncalibrated LLM judge as a gate.**
 8. **Stopping at the PR.** Production finds failures no offline set will.
+9. **Keeping the holdout in the repo** where the implementer agent can read it.
+10. **Sign-off in a chat thread.** If it isn't recorded against a policy version, it didn't happen.
 
 ---
 
-## 9. Checklist
+## 10. Checklist
 
 **Before implementation**
-- [ ] Policy or design doc exists; ambiguities answered by its owner
+- [ ] Policy or design doc exists; versioned snapshot in `evals/<feature>/policy.md`; ambiguities answered by its owner
 - [ ] Scenarios cover every rule's branches, boundaries and interactions, plus real-transcript cases
 - [ ] Assertions approved, each with a level and tier
-- [ ] Cases split into dev and holdout
-- [ ] Every test fails; `tests/` locked
+- [ ] Cases split into dev (in the repo) and holdout (outside the repo)
+- [ ] Every test fails; marked strict-xfail; `tests/` locked
+- [ ] Eval-spec PR merged to main with CODEOWNERS approvals; sign-off recorded in `scenarios.yaml`
 
 **Each round**
 - [ ] Dev smoke suite run ×3, pass rates with confidence intervals, versions pinned
