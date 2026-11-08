@@ -89,7 +89,7 @@ What companies are building to run **many** agents, not one. Short survey for in
 - **For Cresta / contact center:** PhonePe's fraud investigation numbers and your DoorDash support + fraud work are the same domain.
 - **For Rillet / ERP:** deterministic policy on every tool call (Cedar-style) and audit logs on every write.
 
-Deeper detail on each layer: [01](./01_reference_architecture.md) · [02](./02_harness_and_runtime.md) · [03](./03_tool_ecosystem.md) · [04](./04_evals_and_observability.md).
+Deeper detail on each layer: [01](./01_reference_architecture.md) · [02](./02_harness_and_runtime.md) · [03](./03_tool_ecosystem.md) · [04](./evaluation/evals_and_observability.md).
 
 ---
 

@@ -3,7 +3,7 @@
 "Harness" gets used two ways. **Ask which one the interviewer means** — it shows you know both.
 
 1. **Agent harness:** the code around the model that turns a model into an agent — the loop, tool dispatch, context management, permissions, hooks, stopping rules. (Claude Code, Codex, and similar coding agents are harnesses around a model.)
-2. **Eval / test harness:** the infrastructure that runs agents against test sets and grades them. Covered in [04](./04_evals_and_observability.md).
+2. **Eval / test harness:** the infrastructure that runs agents against test sets and grades them. Covered in [04](./evaluation/evals_and_observability.md).
 
 TikTok's "harness engineering infrastructure" most likely means #1, possibly both. This file is #1.
 
@@ -90,6 +90,6 @@ Needed when runs outlive a request: multi-step back-office tasks, long research,
 | Context blow-up | Result truncation, compaction, sub-agents |
 | Prompt injection via tool results / retrieved docs | Treat tool output as data; permission gates on writes; no secrets in context |
 | Duplicate side effects on retry | Idempotency keys; durable step log |
-| Silent quality regression after a model upgrade | Eval gate in CI; canary with online metrics — see [04](./04_evals_and_observability.md) |
+| Silent quality regression after a model upgrade | Eval gate in CI; canary with online metrics — see [04](./evaluation/evals_and_observability.md) |
 
 **Your anchor:** [which of these you actually hit at DoorDash, and what you changed]. One real incident beats this whole table.
