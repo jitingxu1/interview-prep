@@ -14,6 +14,7 @@ Everything on evaluating LLM agents in one place: the framework, how companies a
 | **[Looking at data](./looking_at_data.md)** | Why manually reading data matters (Jason Wei, Greg Brockman), Hamel's review of annotation tools (Prodigy, Argilla, Lilac), why build your own viewer, Shiny for Python vs. Gradio / Panel / Streamlit, Quarto for eval reports, what a trace viewer needs, and a minimal Shiny sketch | Before building tooling for trace reading or judge labeling |
 | **[Hamel — *Your AI Product Needs Evals*](./hamel_your_ai_product_needs_evals.md)** | Study notes on the post behind the three levels: virtuous cycle, Lucy case study, Level 1/2/3, judge alignment, fine-tuning and debugging payoffs, how his thinking evolved | Background for the Level 1 doc |
 | **[Reading list](./reading_list.md)** | How Anthropic, OpenAI, Google, Microsoft, Shopify, Airbnb, Sierra, Uber, Intercom and practitioners (Hamel Husain, Shreya Shankar, Eugene Yan, Jason Wei) evaluate agents, mapped to your DoorDash work | To cite a company or person by name |
+| **[Agent eval playbook](./agent_eval_playbook.md)** | The process end to end: error analysis on ~30 traces, 20–50 starter tasks, pass@k vs pass^k, capability vs regression suites; finding the broken component with a transition failure matrix, component evals and oracle swaps; Meituan's two-loop flywheel (agent vs eval-set vs grader triage) and eval-set types | When asked "how do you know which part of the agent to fix?" or "how do you iterate on evals?" |
 
 ## Related notes elsewhere
 

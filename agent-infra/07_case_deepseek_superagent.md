@@ -78,11 +78,11 @@ It looks more and more like a human org: a lead who triages and delegates, and I
 
 **Tie to your own work:**
 
-- **DoorDash support chatbot:** the same split shows up as intent routing in front of specialized flows. Compare: your router classifies a customer's intent; theirs dispatches *tasks* and keeps a long-lived global context. Be ready to say where your router lived and which model ran it. (Fill in once the [chatbot deep dive](../project-deep-dive/) exists.)
+- **DoorDash support chatbot:** the same split shows up as intent routing in front of specialized flows. Compare: your router classifies a customer's intent; theirs dispatches *tasks* and keeps a long-lived global context. Be ready to say where your router lived and which model ran it. See [chatbot offline simulator](../project-deep-dive/chatbot_offline_simulator.md) and [Ask DoorDash agent memory](../project-deep-dive/doordash_assistant_memory.md).
 - **Offline labeling agent:** a natural Worker-style job with isolated context and no user in the loop.
 - **Agent execution infra ([S8](../star_stories/story_8_right_person_wrong_seat.md)):** Watchdog, isolation, and concurrency are platform concerns, not prompt concerns. That's the platform-instinct point.
 
-**Map to the reference architecture ([01](./01_reference_architecture.md)):** Router = orchestration layer, Worker = runtime/sandbox ([02](./02_harness_and_runtime.md)), Triggers = event ingestion, Watchdog = ops/observability ([04](./04_evals_and_observability.md)).
+**Map to the reference architecture ([01](./01_reference_architecture.md)):** Router = orchestration layer, Worker = runtime/sandbox ([02](./02_harness_and_runtime.md)), Triggers = event ingestion, Watchdog = ops/observability ([evals and observability](./evaluation/evals_and_observability.md)).
 
 ---
 
@@ -104,7 +104,7 @@ The prototype doesn't solve this well; agent-to-agent communication is listed as
 Shard by channel or repo, with each shard owning its threads. Keep the global state in a durable store instead of in the context window, so a Router can restart without losing anything. The Watchdog restarts it.
 
 **How would you evaluate this system?**
-End-to-end task success and p50/p95 completion on a replayed message stream (their method); Router routing accuracy as its own metric; cost per completed task; how often a human had to step in. See [04](./04_evals_and_observability.md).
+End-to-end task success and p50/p95 completion on a replayed message stream (their method); Router routing accuracy as its own metric; cost per completed task; how often a human had to step in. See [evals and observability](./evaluation/evals_and_observability.md).
 
 **Biggest risk in production?**
 Prompt injection. It reads issue comments from anyone and has a Worker with full tools. Treat external content as data, sandbox Workers, gate writes (push, merge, external send) behind policy in the harness, and don't rely on a blocklist.

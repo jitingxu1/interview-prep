@@ -24,9 +24,11 @@ Agent platform infrastructure: the framework, the harness, the tool ecosystem, a
    - [Looking at data](./evaluation/looking_at_data.md) — why reading data matters, build-vs-buy for annotation tools, Shiny for Python and Quarto, what a trace viewer needs
    - [Hamel — *Your AI Product Needs Evals*](./evaluation/hamel_your_ai_product_needs_evals.md) — study notes on the three-level framing
    - [Reading list](./evaluation/reading_list.md) — how big companies and well-known practitioners evaluate agents
+   - [Agent eval playbook](./evaluation/agent_eval_playbook.md) — how to start (error analysis, 20–50 tasks), find which component is broken (transition matrix, oracle swaps), and run the eval flywheel
 5. **[System design walkthrough](./05_design_walkthrough.md)** — "Design an agent platform for internal teams," paced for 45 minutes
 6. **[Drill-down questions](./06_drill_down_questions.md)** — 连环追问 practice: likely follow-ups with short answers
 7. **[Case: DeepSeek Super-agent](./07_case_deepseek_superagent.md)** — Router / Worker split for many concurrent tasks: architecture, self-reported numbers, interview follow-ups
+8. **[How companies build agents](./08_how_companies_build_agents.md)** — single vs multi-agent, orchestration, context engineering, coding agents: Anthropic, Cognition, LinkedIn, DoorDash, Shopify, Kimi, Meituan, Stripe, Ramp, Uber, and others
 
 **Related study notes** (in `project-deep-dive/`):
 
