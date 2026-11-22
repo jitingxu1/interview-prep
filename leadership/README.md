@@ -54,6 +54,11 @@ Materials on your leadership approach, values, and how you think about managing.
     - Five-step structure for any philosophy question, final ~80-second answer, delivery checklist
     - Seven follow-ups with answers, practice log
 
+12. **[Tech Lead to Manager](./tech_lead_to_manager.md)** — the "what changed when you became a manager?" answer
+    - Value by doing vs. by building the system the team runs on; the manager owns that system (design, staff, observe, fix, connect, exceptions)
+    - Tech lead vs. manager operating system table; operating system = mindset + skills + habits
+    - Final ~75-second answer, delivery checklist, seven follow-ups (VoltronData as "how did you learn that?"), practice log
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

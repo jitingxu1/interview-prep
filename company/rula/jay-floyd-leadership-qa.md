@@ -57,11 +57,25 @@ The trap I watch for is over-coaching. If someone needs me to rebuild their conf
 
 ### ★ Q2. What changed for you when you moved from tech lead to manager?
 
-Everything about what I was measured on. As a tech lead, I was measured by answers — how fast I could solve it, how good the design was. As a manager, I'm measured by the system — whether the team can produce good answers without me in the room.
+The biggest change was how I create value. As a tech lead, I created value by doing. As a manager, I create value by building the system the team runs on.
 
-There's a line Jay uses — leading a new role with an old operating system — and that was exactly my experience. I came up as a strong tech lead, so my instincts were: if it matters, own it; if someone's stuck, jump in; if the reasoning is sound, explain it in depth. All of that was useful as an IC. As a manager, each one became a drag. At VoltronData I made the classic mistake — I tried to code full-time and manage full-time. It didn't work.
+By doing, I mean I solved problems myself: I made the technical call, wrote the hard part, and unblocked people with my own answers. The team's output depended on mine.
 
-So I rebuilt the operating system deliberately. I stay about 10 to 15 percent hands-on — design reviews on major projects, spike investigations, critical bugs — enough to keep technical credibility and spot debt early. The other 85 percent is growing others: setting direction, clearing blockers, and building the layer below me that owns decisions. The shift took time, and honestly on a high-stakes call my instinct is still to step in early. But I catch it now, and that's the difference.
+As a manager, my job is to own that system. I design it: who owns what, how decisions get made, what good looks like. I bring people into it and grow them until they can run their part on their own. I watch whether it's working. And when it breaks, I fix the system, not just the symptom. When my team was spending half its time in meetings, I didn't ask people to work harder. I consolidated four stakeholder syncs into one and protected a no-meeting day, and we got meeting time down to about 20 percent.
+
+My test is simple: if I'm out for two weeks, does the team slow down? If it does, the system isn't done yet.
+
+*Jay angle: this is his "new role with an old operating system" and "answer machine" idea, told as your own story. Don't quote his framework back to him. He builds data platforms, so one short line works if natural: "I think of the team the way I'd think of a production system: design it, run it, monitor it, and fix it."*
+
+**Likely follow-ups** (full answers, delivery checklist, and practice log in [leadership/tech_lead_to_manager.md](../../leadership/tech_lead_to_manager.md)):
+
+- *How did you learn that?* VoltronData: tried to code full-time and manage full-time; cut to 10–15% hands-on and started asking "what would you do?"
+- *Hardest thing to let go of?* Being the person with the answer. Answering took the learning away from them.
+- *How do you know the system is working?* Decisions still coming to me each week, shipping when I'm not in the room, what I hear in 1:1s, stakeholders going to pod leads directly.
+- *Technical credibility at 10–15%?* Depth on the work where judgment matters most: design reviews, spikes, critical bugs.
+- *How did the team react when you stepped back?* **[NEEDS YOUR STORY]**
+- *Do you miss coding?* Sometimes, but watching someone own a problem I used to own is the part I wouldn't give up.
+- *An IC habit you still watch?* Over-explaining. Give the goal and constraints, and let them work out the rest.
 
 ### Q3. What kind of team and culture do you want to build?
 
@@ -414,6 +428,8 @@ And the two aren't separate lists. When we plan each month or each quarter, we d
 10. **Q23 peer-manager example** — one real peer manager you helped: who, what you shared, what changed. (New.)
 11. **Q1 follow-up: misjudged stage** — one case where you delegated too early or held on too long. The Q4 three-month lag is a candidate. (New, Nov 22.)
 12. **Q1 follow-up: what your team would say** — confirm with real feedback (skip-level, 360, or a report's words) before using it. (New, Nov 22.)
+13. **Q2 VoltronData symptom** — one real sign that coding full-time and managing full-time wasn't working (reviews piling up, cancelled 1:1s, a slipped deadline). Also settle 10–15% vs 20–30% hands-on (`leadership/tech_leadership_balance.md` says 20–30%). (New, Nov 22.)
+14. **Q2 follow-up: how the team reacted** when you stepped back from coding — one concrete moment. (New, Nov 22.)
 
 ## Sources
 
