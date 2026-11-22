@@ -79,13 +79,28 @@ My test is simple: if I'm out for two weeks, does the team slow down? If it does
 
 ### Q3. What kind of team and culture do you want to build?
 
-My honest view is that culture is the set of behaviors you're willing to protect when protecting them costs you something. Everything else is a poster on a wall.
+I want a team where people have the context to make good decisions on their own, and the safety to say when something's wrong.
 
-So I think about it as three things I actually enforce, not three things I believe. First, clarity — people always know what good looks like and where they stand. I learned that the hard way: early on, an engineer was blindsided in a review because I'd never clearly stated the expectation. That was my failure, not theirs. So now feedback is mid-cycle, in writing, with a standard structure, and my rule is no surprises at review time.
+To me, culture isn't the values on a wall. It's what you protect when it costs you something. So there are three things I actually enforce.
 
-Second, real ownership — not "you own this" as a phrase, but actual decision rights. Senior ICs own areas and review each other's work, so I'm not the bottleneck.
+First, clarity. Everyone knows the goal, who owns what, how decisions get made, and why we're doing the work, not just what. When that's explicit, nobody has to route decisions through me.
 
-Third — and this is the one I'd actually be judged on — I absorb the organizational load so engineers get to build. My team was spending about 50 percent of its time in meetings. I consolidated four stakeholder syncs into one, made async prep mandatory so meeting time was for decisions, published structured notes so nobody had to attend just to stay informed, and I held a no-meeting day against real pressure from partner teams. We got engineers down to about 20 percent meeting time, and shipped a major infrastructure upgrade four weeks early. I'd rather be the one taking the hit from the org than have my team take it.
+Second, transparency by default. I don't wait for people to ask. I share the context up front: the roadmap, the business reason, what leadership is worried about. I publish notes from stakeholder meetings so nobody has to attend just to stay informed. And it goes both ways: feedback comes early, so nobody is surprised at review time.
+
+Third, safety to disagree and to fail. When two of my senior engineers deadlocked on a model architecture, I didn't pick a winner. Each wrote a one-page design doc, we debated the trade-offs as a team, and we landed on a hybrid. Since then the rule is: propose, debate, decide, and then everyone commits. And when something goes wrong, we ask what in the system allowed it, not who to blame.
+
+At Rula, I'd add one more: every engineer should be able to say how their work helps a patient get care. What I'm going for is a team where the healthy way to work is also the easy way, so great people can do their best work.
+
+*Jay angle: the close echoes his "the safest and healthiest path is also the easiest path" and "an environment where great people can do their best work," in your own words. Proof is different from Q2 (meeting load is used there).*
+
+**Likely follow-ups** (full answers in [leadership/building_team_and_culture.md](../../leadership/building_team_and_culture.md)):
+
+- *How do you know people feel safe to disagree?* They disagree with me with data, bad news arrives early, juniors speak in reviews, people report their own mistakes.
+- *A time someone made a mistake?* My own: the blindsided engineer. Owned it, fixed the system (feedback within a week, mid-cycle check-ins).
+- *Someone goes against the culture?* Early and private; check if the expectation was clear first; then the standard feedback structure. **[NEEDS YOUR STORY]**
+- *Different from your team today?* **[CONFIRM: your real gap]**
+- *Isn't propose-debate-commit slow?* Only for big, hard-to-reverse calls; reversible ones the owner just makes.
+- *How do you keep culture as the team grows?* First hires set it; write standards down early.
 
 ---
 

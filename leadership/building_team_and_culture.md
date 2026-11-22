@@ -78,7 +78,43 @@ That's the most concrete culture answer you own. Most candidates talk about prot
 
 ---
 
-## The 90-second spoken answer
+## The 90-second spoken answer (updated Nov 22: context + safety)
+
+Use this version when the interviewer has just heard your "tech lead to manager" answer ([tech_lead_to_manager.md](./tech_lead_to_manager.md)). That answer is about **your role** (you own the system the team runs on). This one is about **what it feels like to be on the team**, so the two don't repeat each other. It also uses different proof: the meeting-load example belongs to the other answer.
+
+> I want a team where people have the context to make good decisions on their own, and the safety to say when something's wrong.
+>
+> To me, culture isn't the values on a wall. It's what you protect when it costs you something. So there are three things I actually enforce.
+>
+> **First, clarity.** Everyone knows the goal, who owns what, how decisions get made, and why we're doing the work, not just what. When that's explicit, nobody has to route decisions through me.
+>
+> **Second, transparency by default.** I don't wait for people to ask. I share the context up front: the roadmap, the business reason, what leadership is worried about. I publish notes from stakeholder meetings so nobody has to attend just to stay informed. And it goes both ways: feedback comes early, so nobody is surprised at review time.
+>
+> **Third, safety to disagree and to fail.** When two of my senior engineers deadlocked on a model architecture, I didn't pick a winner. Each wrote a one-page design doc, we debated the trade-offs as a team, and we landed on a hybrid. Since then the rule is: propose, debate, decide, and then everyone commits. And when something goes wrong, we ask what in the system allowed it, not who to blame.
+>
+> What I'm going for is a team where the healthy way to work is also the easy way, so great people can do their best work.
+
+**Ideas behind it:**
+
+| Source | Idea | Where it shows up |
+|---|---|---|
+| Google Project Aristotle (180 teams) | Five traits of effective teams: psychological safety (#1), dependability, structure and clarity, meaning, impact | The clarity and safety pillars |
+| Netflix culture | "Context, not control" | Transparency by default |
+| Amazon | "Disagree and commit" | Propose, debate, decide, commit |
+| Jay Floyd (Rula) | "The safest and healthiest path is also the easiest path"; "an environment where great people can do their best work" | The close, in your own words |
+
+**Company-specific option:** add one line before the close to cover meaning and impact. At Rula: *"Every engineer should be able to say how their work helps a patient get care."*
+
+**Checklist:**
+- [ ] Headline is context + safety, not "the team runs without me" (that's the other answer)
+- [ ] Each pillar has a mechanism or proof, not just an adjective
+- [ ] Proactive transparency: "I don't wait for people to ask"
+- [ ] The safety pillar uses the architecture-deadlock story
+- [ ] No "right?", no "something like this," never "I know this isn't well organized"
+
+**Practice log (Nov 22):** your first attempt had the right ideas (clarity on goals, owners, how and why; proactive transparency, "not when you ask, I tell you"; trust). It had no headline, repeated the Q2 "runs without me" idea, had no proof, and was missing psychological safety, meaning, and growth.
+
+### Original 90-second answer (use when the meeting-load story isn't used elsewhere)
 
 > "My honest view is that culture is the set of behaviors you're willing to protect when protecting them costs you something. Everything else is a poster on a wall.
 >
@@ -108,6 +144,31 @@ This is your honest growth edge — say so. At 12 you can personally hold a cult
 
 **"Tell me about a time you had to enforce it when it was costly."**
 No-Meeting Thursday against cross-functional pressure, or the decision to move the engineer to infrastructure rather than manage him out. Have one ready — this follow-up is where the thesis line either pays off or collapses.
+
+**"How do you know if people actually feel safe to disagree?"**
+> I watch what people do, not what they say in a survey. Do people disagree with me in a meeting, with data? Does bad news reach me early, or only when it's too late to fix? Do junior engineers speak up in design reviews, or only the seniors? And when someone makes a mistake, do they tell me themselves, or do I find out from someone else? I also ask directly in 1:1s: "Is there anything you think we're doing wrong that you haven't said?" If the answer is always no, that's a signal too.
+
+The question about mistakes matches Google's own psychological-safety survey item: "if I make a mistake, is it held against me?"
+
+**"Tell me about a time someone made a mistake. What happened next?"**
+> The clearest one was actually my mistake. Early as a manager, an engineer was blindsided in a performance review because I'd never stated the expectation clearly. I told him directly that it was on me, and we rebuilt the plan together. Then I fixed the system, not just the case: feedback now happens within a week of noticing, with a set structure, and every engineer gets a mid-cycle check-in. He stayed, his performance recovered, and the whole team got clearer expectations out of it.
+>
+> I start with my own mistake on purpose. If I can admit one openly, the team learns that mistakes are something we fix, not something we hide.
+
+**[OPTIONAL STORY: a case where an engineer on your team made a real mistake, such as a bad deploy or a wrong call, and you handled it without blame. Useful if asked "and someone else's mistake?"]**
+
+**"What do you do when someone goes against the culture?"**
+> I address it early and privately, and I treat it as information first. Usually it means the expectation wasn't clear, or the system made the wrong thing easier. For example, if someone keeps making decisions outside their area, I check whether the decision rights are actually clear before I assume bad intent. If they are clear and it keeps happening, it becomes a direct conversation with the same structure I use for any feedback: what I observed, why it matters, what good looks like, how I'll help. Culture is what you protect, so letting it slide once tells everyone the rule is optional.
+
+**[NEEDS YOUR STORY: one real case, e.g. someone who hoarded information, bypassed the decision process, or was dismissive in reviews. What you saw, what you said, what changed.]**
+
+**"How is this different from your team today?"**
+> Most of it is in place. Ownership and decision rights are written down, feedback is early and structured, and disagreements go through design docs. Where I'm still pushing is transparency upward and across pods: making sure context from leadership reaches the second pod as clearly as the first. That's the part I'd build in from day one on a new team.
+
+**[CONFIRM BEFORE USING LIVE: replace the "still pushing" part with your real gap. Honesty here earns trust.]**
+
+**"Isn't 'propose, debate, commit' slow?"**
+> Only if you use it for everything. Reversible decisions inside someone's area, they just make and tell me after. The full process is for big or hard-to-reverse calls, like an architecture choice that several people will live with for years. There, an extra day of debate is cheap compared to a wrong decision nobody believes in.
 
 **"What kind of culture would you build here?"**
 Don't answer confidently about a company you haven't joined. Better: "I'd want to understand what's already working before I changed anything — inheriting a team is mostly subtraction. What I'd bring is the clarity piece and the protection piece, because those travel. What the team needs beyond that I'd want to learn first."

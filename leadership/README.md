@@ -19,6 +19,7 @@ Materials on your leadership approach, values, and how you think about managing.
    - Building from zero vs. inheriting a team
    - Three enforced mechanisms (clarity, ownership, protection) with your proof
    - 90-second spoken version + follow-ups
+   - Updated Nov 22 answer: context + safety (clarity, transparency by default, safety to disagree and fail), with Project Aristotle / Netflix / Jay ideas and new follow-ups
 
 4. **[Technical + Leadership Balance](./tech_leadership_balance.md)** — How you operate as a technical leader
    - Staying hands-on while managing
