@@ -7,7 +7,9 @@
 
 ## How to use this
 
-22 questions — more than will fit in 60 minutes. ★ = most likely, given Jay's own material. Prioritize those first, then skim the rest. Answers are written to be spoken in 60–120 seconds. Philosophy questions: 60–90 seconds. Story questions: up to 2 minutes. If you run past 2 minutes, you're rambling.
+36 questions — more than will fit in 60 minutes. ★ = most likely, given Jay's own material. Prioritize those first, then skim the rest. Answers are written to be spoken in 60–120 seconds. Philosophy questions: 60–90 seconds. Story questions: up to 2 minutes. If you run past 2 minutes, you're rambling.
+
+**The sections mirror Jay's own structure.** The first five sections are his People Leadership OS steps, in his words and order: (1) Map Your Leadership Design, (2) Find the Leadership Drag, (3) Rebuild Delegation and Ownership, (4) Strengthen Performance and Hard Conversations, (5) Practice Calm Authority. Then: Coaching-First Management & Leveling, Recruiting & Growing Teams, Cross-Team Coordination & Roadmaps, and Alignment & Positioning (his RareStack system). The original 22 questions are all here, reorganized; 13 new questions (Q12, Q16, Q17, Q21–Q23, Q30–Q35) were added Nov 21 after auditing his websites, books, and podcast against the first version — see `jay-floyd-content-alignment-audit.md`. Q36 was added the same day from spoken practice in a voice call.
 
 **Rule for this round:** Jay listens for *systems*, not just stories — a delegation system, a performance-conversation structure, how you handle former peers and stakeholder tension, and whether you can name what "level" means transparently for your reports. He explicitly dislikes over-explaining, rescuing, and being the "answer machine." Frame answers around ownership transfer, trust, and calm authority, with concrete 1:1 / feedback / leveling examples.
 
@@ -15,18 +17,19 @@
 
 ## Jay Floyd in 60 seconds
 
-Jay is Sr. Manager, Analytics Engineering at Rula (since June 2026), previously a data-platform engineering manager at Zapier for ~5.5 years. In parallel since 2022 he has run a private coaching practice for technical managers and written two books: *The Driver's Seat* and *Rare On Purpose* (May 2025). His sites: iamjayfloyd.com and rareonpurpose.com.
+Jay is Sr. Manager, Analytics Engineering at Rula (since June 2026), previously a data-platform engineering manager at Zapier for ~5.5 years. In parallel since 2022 he has run a private coaching practice for technical managers and written two books: *The Driver's Seat* and *Rare On Purpose* (May 2025). His sites: iamjayfloyd.com and rareonpurpose.com. His podcast, *On Everything with Jay Floyd*, is now *The Rare On Purpose Podcast* (63 episodes).
 
 His frameworks, in his words:
 
+- **People Leadership OS** — "Technical skill got you promoted, but people leadership is the job now." Five steps: Map Your Leadership Design → Find the Leadership Drag → Rebuild Delegation and Ownership → Strengthen Performance and Hard Conversations → Practice Calm Authority. "A lot of technical managers are not failing. They are leading a new role with an old operating system." His coaching focus areas, per Leland: delegation, performance conversations, hard conversations, trust, communication under pressure, stakeholder friction, **former peer dynamics**.
 - **Coaching-first management** — active listening, open-ended questions ("How do you feel about this approach?" / "What do you think could be a potential solution?"), a safe space for feedback, personalized development plans built on strengths — "not just what they're good at, but what type of work *energizes* them" — and being coachable yourself: "Even the best coaches have their own coaches." But coaching is only one of a manager's hats; over-coaching creates dependence. He has said managing is "only probably twenty percent coach."
-- **People Leadership OS** — "Technical skill got you promoted, but people leadership is the job now." Five steps: Map Your Leadership Design → Find the Leadership Drag → Rebuild Delegation and Ownership → Strengthen Performance and Hard Conversations → Practice Calm Authority. "A lot of technical managers are not failing. They are leading a new role with an old operating system."
-- **RareStack / Rare On Purpose** — Surface → Structure → Land. "Lead with alignment, not performance — Build with purpose, not pressure." Outcomes include: "You stop over-explaining and start being understood… You lead from Calm Authority — not urgency, not ego."
+- **RareStack / Rare On Purpose** — Surface → Structure → Land. "Lead with alignment, not performance — Build with purpose, not pressure." Surface: name the gap between how you operate and how you're perceived. Structure: positioning language, communication clarity, an operating rhythm that forces alignment. Land: clarity → behavior → positioning → career movement. Outcomes include: "You stop over-explaining and start being understood… You lead from Calm Authority — not urgency, not ego… You become more legible to leadership."
 - **"Identify Your Seatbelts"** (*The Driver's Seat*, ch. 2) — "What's the thing that has you stuck in the backseat? What are you afraid of?" Address the fear at the root. "Fail faster and use that failure as fuel."
+- **At Rula** he leads analytics engineering, data governance, and AI enablement, partnering with Product, Clinical, Finance, Operations, and Engineering — and his design principle there is that "the safest and healthiest path is also the easiest path."
 
 ---
 
-## (a) Leadership Design / leadership style
+## Step 1 — Map Your Leadership Design
 
 **Jay's lens:** He believes most technical managers aren't failing — they're "leading a new role with an old operating system." He listens for whether you can name your own operating system — how you think, decide, handle pressure, build trust — and whether you've actually rebuilt it since becoming a manager.
 
@@ -58,9 +61,9 @@ Third — and this is the one I'd actually be judged on — I absorb the organiz
 
 ---
 
-## (b) Delegation & Ownership
+## Step 2 — Find the Leadership Drag
 
-**Jay's lens:** His #1 diagnostic is whether everything still runs through you — "You know too much, so everything runs through you… You become the answer machine." He listens for a *delegation system*, not good intentions: written decision rights, a handoff plan, and how you inspect without micromanaging.
+**Jay's lens:** His diagnosis starts with naming the drag honestly — where your current habits are costing you energy, clarity, trust, or team ownership. He listens for the cost, not just the habit: what did the old operating system actually cost you and the team?
 
 ### ★ Q4. Tell me about a time you were the bottleneck. What did you change?
 
@@ -76,7 +79,31 @@ That freed me to do the work only I can do: the roadmap across teams, how the te
 
 **[NEEDS YOUR STORY: confirm the pod-lead names and the before/after numbers — decisions reaching you per week, recurring meetings count — before using this live. The repo has them as blanks.]**
 
-### Q5. How do you delegate without lowering the bar on quality?
+### ★ Q5. What's your biggest weakness as a manager?
+
+My biggest weakness is that I'm slow to let go of decisions. I came up as a tech lead, so if something matters, my instinct is to own it.
+
+For a while that worked — when I led one team, owning every alignment and every technical call was efficient. Then the team grew into two teams, each with its own scope and stakeholders, and I kept running it the old way for about three months longer than I should have. Every decision still went through me. My calendar was every team's stakeholder calendar, teams waited on me while I context-switched, and the engineers with the most context were bringing me their decisions instead of making them.
+
+They share one root, and naming it is the honest part: I came up as a strong tech lead, and the instincts that made me good at that — owning the call, explaining the reasoning in depth, protecting the team's harmony — each needed rewiring when I started managing. So I restructured: a senior IC per team owns stakeholder alignment and technical decisions, decision rights are written down, and I hand off gradually — co-run, sit in, step out — with a weekly sync for cross-team issues.
+
+I track it: how many decisions still come to me per week, how many stakeholder meetings I'm in, and I ask stakeholders directly whether alignment got better or worse. It's much better, but it's not fully solved — on high-stakes calls my instinct is still to step in early. That's what I'm watching now, and it's the first thing I'd design for in a bigger team: build the layer that owns decisions, and keep myself for the decisions that cross the layers.
+
+### Q6. What's a belief about management you've changed your mind on?
+
+I used to think my job was to have the answer. Now I think my job is to build the system that produces answers without me — and to name the fear that's keeping me in the answer seat.
+
+The concrete version of that change is about feedback. Early on, I thought 1:1s were for check-ins, not feedback. I thought I was protecting the relationship by softening hard messages. Then an engineer got blindsided in a performance review because I'd never told him the expectation clearly — and he was right to be blindsided. That was on me. What I learned is that the discomfort of giving feedback early is much cheaper than the damage of giving it late. Now feedback happens within a week of noticing, in the 1:1, with a clear structure, and nobody is surprised at review time.
+
+There's a second piece I took from Jay's own writing, actually — the idea of failing faster. I used to treat a miss as something to avoid. Now I treat it as fuel, but only if we name what actually happened. The fraud threshold call, the pod-lead handoff — both of those only worked because we said plainly what went wrong first. The fear doesn't go away by avoiding it; it goes away by addressing it at the root.
+
+---
+
+## Step 3 — Rebuild Delegation and Ownership
+
+**Jay's lens:** His #1 diagnostic is whether everything still runs through you — "You know too much, so everything runs through you… You become the answer machine." He listens for a *delegation system*, not good intentions: written decision rights, a handoff plan, and how you inspect without micromanaging.
+
+### Q7. How do you delegate without lowering the bar on quality?
 
 By being explicit about what "good" means before I hand something over, and by inspecting outcomes instead of process.
 
@@ -84,7 +111,7 @@ The delegation system has three parts. First, written decision rights: inside yo
 
 A good example is the support review work. We cut review time from 30 minutes to 5 by building an eval-driven pipeline — but the quality bar was the eval set itself. Once that existed, engineers could move fast without me checking every case, because the system caught regressions. That's what delegation should feel like: the standard is enforced by the system, not by my calendar.
 
-### Q6. How do you know when to step in on a technical decision — and when to stay out?
+### Q8. How do you know when to step in on a technical decision — and when to stay out?
 
 I have a simple rule. I step in when the decision crosses teams, is expensive to reverse, or needs judgment the team can't see yet — usually because it touches another org's metrics or a commitment I made. I stay out when it's reversible and inside their scope, even if I'd decide differently. That's the hard part: letting a good-enough decision stand because the ownership matters more than the extra five percent.
 
@@ -94,11 +121,11 @@ I stay technically close enough to judge well — I review design docs async, I 
 
 ---
 
-## (c) Performance & Hard Conversations
+## Step 4 — Strengthen Performance and Hard Conversations
 
-**Jay's lens:** He sells a "Performance Conversation Framework" and "Hard Conversation Scripts" — he listens for structure and timing, not courage. The signal is: feedback early, expectations in writing, no one surprised at review time.
+**Jay's lens:** He sells a "Performance Conversation Framework" and "Hard Conversation Scripts" — he listens for structure and timing, not courage. The signal is: feedback early, expectations in writing, no one surprised at review time. His scripts explicitly cover conflict, expectations, **former peers**, stakeholders, and direct reports.
 
-### ★ Q7. How do you handle an underperforming engineer?
+### ★ Q9. How do you handle an underperforming engineer?
 
 I diagnose before I judge. There are three questions, in order. First, clarity: do they actually understand what success looks like? Very often it's a communication problem, not a capability problem. Second, fit: are they in a role that plays to their strengths? Sometimes someone is struggling because they're in the wrong seat. Third, support: have I given them the tools, the time, and the mentoring to succeed? As a manager, underperformance is partly my problem.
 
@@ -106,7 +133,7 @@ If it's truly a capability gap after coaching, I'd build a clear, time-bound imp
 
 I want to give you a real example of the fit question. I had a backend engineer who was struggling on his team, and the easy path was a PIP. But the diagnosis said skill-fit, not performance — he was strong in infrastructure, just in the wrong role. So we moved him to the infrastructure side instead. It was the slower, more expensive path, and it was the right one: he became core to our platform work. Sometimes a "misfit" engineer is actually a high performer in a different role, and I'd rather find that fit than manage someone out of a seat they were never going to win in.
 
-### ★ Q8. Tell me about a difficult conversation you had. How did you prepare?
+### ★ Q10. Tell me about a difficult conversation you had. How did you prepare?
 
 Giving negative feedback is harder for me than it should be. I care a lot about the team's trust, and early on I'd soften the message or wait for a better moment — which is really just postponing it.
 
@@ -116,19 +143,33 @@ I went back, told him that directly, and we rebuilt the plan together. Then I ch
 
 He stayed, his performance recovered, and the whole team got clearer expectations out of it. I track one thing above all: nobody is surprised at review time. It still isn't comfortable for me, and I don't think it should be — but I don't let discomfort set the timing anymore.
 
-### Q9. Have you ever had to manage someone out?
+### Q11. Have you ever had to manage someone out?
 
 No — and I want to be straight about that rather than dress something up. I haven't managed anyone out.
 
 The closest I've come is the repositioning I just described: an engineer who was struggling in one seat, and instead of starting a performance process, we moved him to infrastructure work where his strengths actually fit, and he thrived there. My view is that managing someone out should be the last step after you've honestly checked clarity, fit, and support — and in the cases I've faced, the fit check changed the answer. If I ever do have to manage someone out, I'd want it to be after that same honest sequence, with clear expectations in writing and no surprises.
 
+### ★ Q12. Tell me about a time you had to lead former peers — people who used to be at your level, or who you used to work alongside. How did you handle the shift?
+
+I lived the adjacent version of this when I inherited a team of ten after their manager left — I wasn't their peer, but I was new authority to people who already had their own ways of working. I started by diagnosing before changing anything: in the first 1:1s I asked what was missing with the last manager and where they wanted to go, and I changed one visible thing fast — consistent 1:1s and protected focus time — and never missed it.
+
+The rule I kept was: no surprises, expectations in writing, and earn the authority by absorbing the org load instead of passing it down. People judge a new manager by whether the first stated commitment survives contact with pressure — so I picked something small, painful, and real, and I held it. With former peers specifically, the hardest part is that the relationship changes and pretending it hasn't is what breaks trust — so I name the shift directly, I don't pull rank to settle old debates, and I let their work, not my title, do the convincing over time.
+
+**[NEEDS YOUR STORY: a true former-peer case — who, what changed in the relationship, one hard moment. The inherited-team story is adjacent, not a former-peer story. Do not use this answer live until those details are real.]**
+
+### Q13. Tell me about a time two people on your team were in conflict with each other. What did you do?
+
+Two of my senior engineers deadlocked on a model architecture, and the disagreement was starting to cost us. Instead of deciding for them, I had each write a one-page design doc, then ran a structured discussion — assumptions, tradeoffs, unknowns — and we landed on a hybrid. Then we set the standing rule: senior engineers propose, the team debates, I break ties if needed, and then everyone commits. The commitment half is what makes the disagreement safe.
+
+What I learned from it is that most team conflict isn't really about the technical question — it's about who gets heard and who decides. So my job in the conflict was to make the decision process explicit before anyone had to defend a position in public. Once the process was fair, the people could disagree without it becoming personal.
+
 ---
 
-## (d) Calm Authority / trust
+## Step 5 — Practice Calm Authority
 
 **Jay's lens:** "Calm Authority" is the end state of his system — lead "without brute-forcing everything," "not urgency, not ego." He listens for steadiness under pressure, and for whether trust was built *before* it was needed.
 
-### Q10. How do you build trust with a team — especially one that didn't choose you?
+### Q14. How do you build trust with a team — especially one that didn't choose you?
 
 I inherited a team once — ten engineers, my manager had left, no interim — so I've actually lived this. The first thing I did was diagnose before changing anything. The first 1:1 question that mattered wasn't "what are you working on," it was "what was missing with the last manager?" and "where do you actually want to go?" You're finding out what the team believes about how this place works before you try to change it.
 
@@ -136,7 +177,7 @@ Then I changed one thing visibly and fast. People judge a new manager by whether
 
 The deeper principle is that trust is built by removing surprises. Expectations in writing, feedback mid-cycle, no one blindsided at review time. And I try to be the surface the organization pushes against, so the team doesn't have to be. When people see you absorb the org load — the meetings, the stakeholder noise — instead of passing it down, they start to trust that you've got them. That's what calm authority actually is: not being loud, just being steady and predictable when it counts.
 
-### Q11. Tell me about a time you led under real pressure. How did you keep the team steady?
+### Q15. Tell me about a time you led under real pressure. How did you keep the team steady?
 
 The clearest one is the support automation work at DoorDash. Our escalation rate was 67 percent — two out of three cases were going to a human — review time was 30 minutes a case, and manual tickets were running 500 per 10,000 orders. The team was drowning, and every stakeholder wanted their issue first.
 
@@ -144,13 +185,25 @@ What kept us steady wasn't heroics, it was cadence and one clear system. I named
 
 The results: escalation went from 67 percent to just over 50 percent, review time from 30 minutes to 5, manual tickets from 500 down to 260 per 10,000 orders. The lesson I took from it is that under pressure, the manager's job is to narrow, not to widen — one priority, one system, a steady rhythm — and to absorb the noise so the team can hear itself think.
 
+### Q16. When something goes wrong — an outage, a missed deadline, bad news from above — how do you communicate it to the team?
+
+I name the problem honestly and I narrow, not widen — during the support automation crunch, escalation was 67 percent and the team was drowning, so I gave them one measurable target instead of ten competing asks and absorbed the stakeholder noise myself. I'm transparent about the facts and the plan, but I don't pass my anxiety down — the team should hear steadiness from me, not urgency.
+
+What I've learned is that there's a difference between transparency and dumping. Transparency is: here's what happened, here's what we know, here's the plan, here's what I need from you. Dumping is letting the team carry my stress about it. So I separate the two — I tell them the facts early, even when the facts are bad, because silence is what actually scares people. Then after the fix, we do the learning: what did we see, what do we carry forward, so the next time we're faster and calmer.
+
+### Q17. How do you manage your own energy and pressure as a manager — what does your operating rhythm look like?
+
+I know my engine: I'm a coach by instinct, so my risk is over-coaching and over-explaining when I'm under pressure, and carrying too much in my head. My rhythm is weekly: a pod-lead sync for cross-team issues, 1:1s built around growth not status, and protected focus time — I held a no-meeting day against real pressure because that's when the real work gets done.
+
+And I track the numbers that tell me if I'm slipping back into the bottleneck: how many decisions still come to me per week, how many stakeholder meetings I'm in. When those numbers climb, that's my signal to step back and rebuild the delegation — not to work harder. The operating rhythm is the thing that keeps me steady, because pressure doesn't go away; the system is what absorbs it.
+
 ---
 
-## (e) Coaching-first management & mentoring/leveling
+## Coaching-First Management & Leveling
 
 **Jay's lens:** He always starts as a coach — "understanding who is this person, what's their motivation, and let's identify their unique strengths" — but he will test whether you know coaching is only about twenty percent of the job, and when to take the hat off.
 
-### ★ Q12. How do you coach and mentor your engineers? How do you know it's working?
+### ★ Q18. How do you coach and mentor your engineers? How do you know it's working?
 
 I start with listening, not telling. A coaching-first approach for me begins with active listening — really hearing the person, their aspirations, their concerns — and then asking open-ended questions instead of handing over the answer. "How do you feel about this approach?" "What do you think could be a potential solution?" That does two things: it builds ownership, and it builds their critical thinking, because they have to arrive at the insight themselves.
 
@@ -158,7 +211,7 @@ My 1:1s are built for this. A few minutes on how they're doing, most of the time
 
 How do I know it's working? Three signals. People start bringing me decisions they've already made, not decisions they want me to make. They give each other feedback directly instead of routing it through me. And they disagree with me in a meeting, with data. When those three things are happening, the coaching is landing — because the point was never to make them dependent on me, it was to make them stronger without me.
 
-### ★ Q13. How do you approach leveling and promotions? How do you keep it fair?
+### ★ Q19. How do you approach leveling and promotions? How do you keep it fair?
 
 I'm very transparent about it. I tell every report: here's what's expected at your level, here's what I believe that looks like for you specifically, and let's talk about it. If you have aspirations for the next level, let's discuss what that looks like for you — because what I've found is that people are most frustrated not when they're told no, but when there's no clear expectation at all. "You did great" — great at what? "You were inconsistent this quarter" — inconsistent against what?
 
@@ -168,7 +221,7 @@ Two of my pod leads grew into senior scope exactly this way — they took on sta
 
 **[NEEDS YOUR STORY: name one specific promotion — who, from what level to what, and the stretch assignment that made the case. The repo references this story (S7) but the details weren't pulled.]**
 
-### ★ Q14. When do you coach, and when do you just give the answer?
+### ★ Q20. When do you coach, and when do you just give the answer?
 
 This is the hardest judgment call in management, and I had to learn it by getting it wrong. My natural inclination is to coach — I wake up wanting to coach people. But I walked into management assuming coaching *was* management, and within a few months I saw the problem: coaching takes time, and management doesn't always have it. If I coach everything, I create dependence — people who need me to rebuild their confidence every week instead of holding onto their own strength.
 
@@ -176,13 +229,33 @@ So now I sort it three ways. I coach when the person already has the answer and 
 
 The signal I watch for is dependence. If someone's confidence collapses between our 1:1s and they need me to rebuild it every time, I'm over-coaching. The goal is the opposite: that they leave the conversation holding their own reasons to move, not mine.
 
+### ★ Q21. Who coaches you? How do you stay coachable as a manager?
+
+I have a coach in the form of our HR partner — when I had to have difficult conversations I practiced a couple with her first, and that changed how I give feedback. I also ask my reports directly in 1:1s what's working and what isn't about how I lead — if I'm asking them to be coached, I have to model being coached.
+
+And honestly, this interview prep is part of it: I'm studying how Jay thinks about leadership because I want to keep rebuilding my own operating system. The day I stop being coached is the day I start assuming my instincts are right — and my instincts are exactly what got me into the bottleneck in the first place.
+
+### Q22. How do you decide how much direction to give someone — how do you calibrate it to the person and the skill?
+
+It varies by person and by skill — someone can be senior in one area and a beginner in another, so I don't give one person one fixed amount of direction. When someone already has the answer, I coach; when there's a real tradeoff, I'll give them bounded space — "take two days, bring me what you've got"; when it's urgent or they've asked twice, I direct explicitly.
+
+The way I think about it is a competence spectrum: someone who's unconsciously competent in one skill can be unconsciously incompetent in another, and the amount and directness of direction has to follow the skill, not the title. The signal I watch is dependence: if their confidence collapses between 1:1s, I'm over-coaching. If they're stuck and not asking, I'm under-directing. Calibration is a weekly judgment, not a fixed style.
+
+### Q23. How do you help a fellow manager who's struggling with the people side?
+
+I start by exchanging notes, not giving a lecture — I want to improve on the strategy side, they want to improve on the people side, so we make each other better. The first thing I usually share is the 1:1s: I set them up with everybody in my perimeter, even people I have no work with, because knowing someone before you need them changes everything.
+
+And I tell them the thing I had to learn myself — that coaching is only about twenty percent of the job, and the rest is systems: delegation, expectations in writing, and hard conversations on time. If they're over-coaching, I share the dependence signal I watch for; if they're avoiding the hard conversation, I share the structure I use — what I observed, why it matters, what good looks like, how I'll help.
+
+**[NEEDS YOUR STORY: one real peer-manager example — who, what you shared, what changed.]**
+
 ---
 
-## (f) Recruiting & growing teams
+## Recruiting & Growing Teams
 
 **Jay's lens:** He's a hiring manager at Rula right now, and he joined Rula partly "to help grow this team… building an environment where great people can do the BEST work." He listens for a real bar, not a vibe — and for whether growth is a system, not a favor.
 
-### Q15. Tell me about a team you built from scratch.
+### Q24. Tell me about a team you built from scratch.
 
 I built my current setup from nothing — 12 engineers across two pods, support automation and fraud and risk ML. Three things I got right, and one I'd do differently.
 
@@ -194,7 +267,7 @@ Third, I gave away decisions early, before it felt safe. Senior ICs owning areas
 
 What I'd do differently: I'd write down the decision rights from the start instead of absorbing everything first and delegating later. That three-month lag I mentioned — where every decision still ran through me — was the cost of learning that lesson. Now when scope changes, I set up the owner and the decision rights at the start.
 
-### Q16. How do you hire? What do you look for?
+### Q25. How do you hire? What do you look for?
 
 Four things, in order. Technical foundation — can they think through systems, can they code, do they understand ML fundamentals for the fraud side. Learning mindset — have they grown in past roles, do they ask good questions. Communication — can they explain complex ideas clearly, because that's critical on cross-functional teams. And judgment — how do they decide under uncertainty. In interviews I like to walk through a recent real decision with them and see how they reasoned.
 
@@ -202,7 +275,7 @@ I stay involved personally — I do technical interviews and culture assessments
 
 **[NEEDS YOUR STORY: one "best hire" story with a name and specifics — how you found them, what you saw in the interview, what they became. The question bank lists this as a standard question.]**
 
-### Q17. Tell me about someone you promoted. What did you do that made the difference?
+### Q26. Tell me about someone you promoted. What did you do that made the difference?
 
 The honest structure of the answer is: who they were, what the gap was, what stretch I gave them, and what changed in them — not just in their title.
 
@@ -214,11 +287,11 @@ Would they have gotten there without me? Eventually, maybe — they had the abil
 
 ---
 
-## (g) Cross-team coordination & technical roadmaps
+## Cross-Team Coordination & Technical Roadmaps
 
 **Jay's lens:** His own career is cross-functional translation — a Data Governance Council with Legal, Finance, Product, and Engineering; a Redshift-to-Databricks migration across teams; 1:1s with everybody in his perimeter. He listens for how you build alignment *before* you need it, and for roadmaps argued in business terms, not technical ones. (Note: he has no published roadmap framework of his own — don't attribute one to him.)
 
-### Q18. How do you set a technical roadmap when the goals are still being defined?
+### Q27. How do you set a technical roadmap when the goals are still being defined?
 
 I work backward from the business problem, not forward from the technology. On the fraud side, the framing was: fraud is a growing threat, our current model catches 40 percent with 2 percent false positives, and we want to catch 60 percent with under 2 percent false positives. Then: what's blocking us — model architecture, feature engineering, throughput? Then what's the 6-month roadmap to get there — new model training, data pipeline improvements, and so on. I bring the team in to debate the approach, but I own the strategy. And I adjust based on what we learn — if we hit a technical wall, we pivot.
 
@@ -226,7 +299,7 @@ Two rules I hold. First, we're not building cool things, we're solving real prob
 
 If I were setting a roadmap at Rula, I'd start the same way — with the clinical and operations problem, not the model. What does the care team need to decide faster or better, and what's the smallest system that proves it?
 
-### ★ Q19. Tell me about a cross-org initiative you drove.
+### ★ Q28. Tell me about a cross-org initiative you drove.
 
 The biggest one is unifying fraud detection. We had 60-plus separate fraud models, built by different teams at different times, each with its own owner, its own features, its own blind spots. My job was to bring them into one system — one evaluation framework, one serving path, one set of ownership rules.
 
@@ -236,7 +309,7 @@ The other cross-org win was the restaurant underwriting work — a $1M pilot tha
 
 **[NEEDS YOUR STORY: for the 60-model unification — which teams/orgs were involved, how long alignment took, and one moment where a team resisted and what you did. The repo references this as a cross-org story but the mechanics weren't pulled.]**
 
-### Q20. How do you say no to a partner team or a senior stakeholder?
+### Q29. How do you say no to a partner team or a senior stakeholder?
 
 With an alternative, not a wall — and with a clear statement of what the boundary protects.
 
@@ -244,29 +317,63 @@ A real example: Product wanted our fraud team to also take on chargeback prevent
 
 The same principle applies inside the team. I held a no-meeting day against real pressure from partner teams, because focus time was the thing my engineers needed most. Boundaries only work if you hold them when holding them costs you something — the moment you make an exception, the boundary is gone. So I decide the boundary in advance, I explain what it protects, and I offer the next-best help I can actually give.
 
+### Q30. What do you do when the goals coming down from above are vague or keep moving? How do you create clarity for your team?
+
+I work backward from the business problem, not forward from the technology — on the fraud side I framed it as: we catch 40 percent with 2 percent false positives, we want 60 percent with under 2 percent, so what's blocking us. Then I give the team one measurable target instead of ten competing asks, and I own the ambiguity upward instead of passing it down.
+
+If I can't get clarity from above, I still won't let the team sit in fog — I'll name the decision we're making, the assumption behind it, and when we'll revisit it. Clarity isn't something a good boss hands you; it's something a good manager creates in the middle of the fog. And I use the 1:1s for exactly that: to reduce ambiguity, sharpen alignment, and make each person's value legible — including my own, upward.
+
+### ★ Q31. How do you get a team to adopt AI tools well — and how do you build guardrails so the safe path is the easy path?
+
+The quality bar has to live in the system, not in my head. On the support side we cut review time from 30 minutes to 5 with an eval-driven agentic pipeline — the eval set itself was the guardrail, so engineers could move fast without me checking every case because the system caught regressions.
+
+Same idea for AI adoption: give people a paved path with evals and shadow runs first, so the safe way is also the fastest way, and keep humans on the high-stakes calls. That's the design principle I'd bring to Rula too — the safest and healthiest path should also be the easiest path, or people will route around it. Adoption isn't a training problem, it's a design problem: make the right way the easy way, and measure whether people actually use it.
+
+**[NEEDS YOUR STORY: one concrete AI-adoption example at DoorDash — which workflow, what guardrail, what changed.]**
+
+### Q32. Tell me about a time you led your team through a big change — a reorg, a migration, a new direction. How did you bring people along?
+
+Unifying 60-plus fraud models into one system was as much a change problem as a technical one — people were being asked to give up models they'd built. I started with 1:1s with everybody in my perimeter before I needed anything from them, so when the time came I wasn't a stranger making a demand. I knew what they cared about, and they knew I saw the value in what they'd built.
+
+And the support automation shift worked the same way: I named honestly that working harder wouldn't fix it, gave the team one system to rally around — an agentic pipeline with real evals — and protected their focus time while we built it. Change lands when people understand the why before they're asked to give up the how — and when the person asking has already earned their trust.
+
 ---
 
-## (h) Strengths-based development / "Identify Your Seatbelts"
+## Alignment & Positioning (RareStack)
 
-**Jay's lens:** His book's chapter 2 is "Identify Your Seatbelts" — "What's the thing that has you stuck in the backseat? What are you afraid of?" He listens for honest self-knowledge: a real fear named at the root, and what you do with it — not a humblebrag.
+**Jay's lens:** His book's system is Surface → Structure → Land: name the gap between how you operate and how you're perceived, build positioning language and an operating rhythm that forces alignment, then turn clarity into behavior, positioning, and career movement. He listens for whether you can see your own perception gap — for yourself and for your team — and close it. "Lead with alignment, not performance — Build with purpose, not pressure."
 
-### ★ Q21. What's your biggest weakness as a manager?
+### ★ Q33. How do you make your team's work visible to leadership — how do you position impact so it actually lands?
 
-My biggest weakness is that I'm slow to let go of decisions. I came up as a tech lead, so if something matters, my instinct is to own it.
+I report up in business units, not technical ones — the first line is the decision or the ask, the second is the business impact, and the technical detail is an appendix. On the fraud threshold call, instead of debating precision and recall, I put fraud dollars prevented and legitimate customers blocked on the same chart at each threshold, and the room argued about a number instead of a principle — we agreed a phased rollout in one meeting.
 
-For a while that worked — when I led one team, owning every alignment and every technical call was efficient. Then the team grew into two teams, each with its own scope and stakeholders, and I kept running it the old way for about three months longer than I should have. Every decision still went through me. My calendar was every team's stakeholder calendar, teams waited on me while I context-switched, and the engineers with the most context were bringing me their decisions instead of making them.
+I also mentor people publicly so the org can see the work at the next level before the promotion conversation ever happens. The pattern is the same either way: stop over-explaining and start being understood. If the work is strong but the signal isn't landing, that's my problem to fix — not the team's, and not leadership's.
 
-They share one root, and naming it is the honest part: I came up as a strong tech lead, and the instincts that made me good at that — owning the call, explaining the reasoning in depth, protecting the team's harmony — each needed rewiring when I started managing. So I restructured: a senior IC per team owns stakeholder alignment and technical decisions, decision rights are written down, and I hand off gradually — co-run, sit in, step out — with a weekly sync for cross-team issues.
+### Q34. How do you tell whether someone on your team is burned out or just misaligned — and what do you do differently in each case?
 
-I track it: how many decisions still come to me per week, how many stakeholder meetings I'm in, and I ask stakeholders directly whether alignment got better or worse. It's much better, but it's not fully solved — on high-stakes calls my instinct is still to step in early. That's what I'm watching now, and it's the first thing I'd design for in a bigger team: build the layer that owns decisions, and keep myself for the decisions that cross the layers.
+I start by asking what energizes them, not just what they're good at — burnout and misalignment look the same from the outside but need opposite fixes. If it's load, I protect focus time — we cut meeting load from about 50 percent to 20 percent and held a no-meeting day against real pressure. That's a load problem, and the fix is subtraction.
 
-### Q22. What's a belief about management you've changed your mind on?
+If it's fit, I move the seat, not the person — I had a backend engineer struggling on his team, and instead of a PIP we moved him to infrastructure, where he became core to our platform work. Misalignment isn't a performance problem, it's a design problem: the person is running a bad query against their own strengths. Fix the query — the role, the scope, the energy match — and the same person looks like a different engineer.
 
-I used to think my job was to have the answer. Now I think my job is to build the system that produces answers without me — and to name the fear that's keeping me in the answer seat.
+### Q35. How do you lead a team where people have competing values — one person who defaults to action, another who leads with empathy?
 
-The concrete version of that change is about feedback. Early on, I thought 1:1s were for check-ins, not feedback. I thought I was protecting the relationship by softening hard messages. Then an engineer got blindsided in a performance review because I'd never told him the expectation clearly — and he was right to be blindsided. That was on me. What I learned is that the discomfort of giving feedback early is much cheaper than the damage of giving it late. Now feedback happens within a week of noticing, in the 1:1, with a clear structure, and nobody is surprised at review time.
+I don't try to make them the same — a well-rounded team needs both, and I tell them that. What I do is name the tension out loud and agree on when each value wins: in an incident, action wins and we debrief with empathy after; in a performance conversation, empathy sets the tone and action sets the follow-through.
 
-There's a second piece I took from Jay's own writing, actually — the idea of failing faster. I used to treat a miss as something to avoid. Now I treat it as fuel, but only if we name what actually happened. The fraud threshold call, the pod-lead handoff — both of those only worked because we said plainly what went wrong first. The fear doesn't go away by avoiding it; it goes away by addressing it at the root.
+The mistake would be to treat one side as the problem. The person who defaults to action is why things ship; the person who leads with empathy is why people stay. My job is to help each of them work on what they're working on — the action person practicing a pause, the empathy person practicing a decision — so the team gets both strengths instead of one strength and one resentment.
+
+**[NEEDS YOUR STORY: one real pair of people and one real moment where their values clashed.]**
+
+### ★ Q36. How do you set priorities — and how do you balance long-term and short-term work?
+
+I use two principles, and I say them out loud so the team and I are deciding by the same rule.
+
+The long-term principle: we reserve capacity every week for the long-term goal. The short-term principle: for each week, we optimize by impact — the few things that matter most right now, with a clear owner for each.
+
+The starting split is roughly 70 percent short-term, 30 percent long-term — but the number isn't the point. The point is that we agree on the split together, we make it visible, and we review it weekly, so short-term wins don't quietly eat the future.
+
+And the two aren't separate lists. When we plan each month or each quarter, we decompose the long-term goal into milestones, and the short-term work is built from those milestones — so this week's priorities are steps toward the long-term outcome, not a different list. During execution we still keep the reserved time for the long-term work. That's how you avoid the local optimum: every priority has a why, an owner, and a place in the bigger story.
+
+*(Added Nov 21 from spoken practice in a voice call — his own wording, refined with the assistant. The 70/30 split is a starting point he offered, not a DoorDash policy.)*
 
 ---
 
@@ -282,11 +389,15 @@ There's a second piece I took from Jay's own writing, actually — the idea of f
 ## [NEEDS YOUR STORY] — fill these in before Tuesday
 
 1. **Q4 delegation story** — pod-lead names; decisions reaching you per week (before/after); recurring stakeholder meetings count (before/after).
-2. **Q13 / Q17 promotion story** — one specific promotion: name, levels, the stretch assignment, one independent decision that proved it.
-3. **Q16 best hire** — one hire story: how you found them, what you saw in the interview, what they became.
-4. **Q4 follow-up: a recent slip** — one real recent case where you jumped into a delegated decision and how you caught it.
-5. **Q19 cross-org mechanics** — 60-model unification: which teams/orgs, how long alignment took, one moment of resistance and what you did.
-6. **Q18 roadmap detail** — the 6-month shape of the agentic support pipeline roadmap (phases, gates) so the fraud example isn't the only roadmap story.
+2. **Q12 former-peer case** — who, what changed in the relationship, one hard moment. (New — the inherited-team story is adjacent, not a former-peer story.)
+3. **Q19 / Q26 promotion story** — one specific promotion: name, levels, the stretch assignment, one independent decision that proved it.
+4. **Q25 best hire** — one hire story: how you found them, what you saw in the interview, what they became.
+5. **Q4 follow-up: a recent slip** — one real recent case where you jumped into a delegated decision and how you caught it.
+6. **Q28 cross-org mechanics** — 60-model unification: which teams/orgs, how long alignment took, one moment of resistance and what you did.
+7. **Q27 roadmap detail** — the 6-month shape of the agentic support pipeline roadmap (phases, gates) so the fraud example isn't the only roadmap story.
+8. **Q31 AI-adoption example** — one concrete case at DoorDash: which workflow, what guardrail, what changed. (New.)
+9. **Q35 competing-values pair** — one real pair of people and one real moment where their values clashed. (New.)
+10. **Q23 peer-manager example** — one real peer manager you helped: who, what you shared, what changed. (New.)
 
 ## Sources
 
@@ -294,13 +405,18 @@ Jay Floyd material (all read live, Nov 21, 2026):
 
 - https://iamjayfloyd.com/ — homepage; People Leadership OS, five steps, "Technical skill got you promoted. People leadership is the job now."
 - https://iamjayfloyd.com/books — *Rare On Purpose* framing ("leading without erasing yourself").
-- https://www.rareonpurpose.com/ — RareStack (Surface → Structure → Land), Calm Authority outcomes, both books.
+- https://iamjayfloyd.com/about — operator background; stakeholder tension; "turn who you actually are into the way you lead."
+- https://www.rareonpurpose.com/ — RareStack (Surface → Structure → Land), Calm Authority outcomes, Accelerator/Intensive, both books.
 - https://powertofly.com/up/zapier-build-coaching-into-your-management-approach — "5 ways to build coaching into your management approach," Oct 25, 2023; coaching-first, five recommendations, "Even the best coaches have their own coaches."
 - https://uncommonteams.com/uncommon-leadership-interview-series/feed-your-good-wolf-jay-floyd/ — "Feed your good wolf," Apr 15, 2024; manager-vs-coach, over-coaching/dependence, level transparency, 1:1s with your whole perimeter, "Identify Your Seatbelts," "Fail faster."
-- https://www.joinleland.com/jay-floyd — career history (Rula since June 2026; Zapier ~5.5 yrs), People Leadership OS packages.
-- https://www.mento.co/coaches/jay-floyd — strengths-based / High 5, book attribution.
+- https://www.joinleland.com/jay-floyd — career history (Rula since June 2026; Zapier ~5.5 yrs), People Leadership OS packages, focus areas incl. former peer dynamics.
+- https://www.joinleland.com/jay-floyd/o/the-leader-you-actually-are-coaching-for-technical-managers — $4,500, 10 sessions, package contents.
+- https://www.joinleland.com/jay-floyd/o/leadership-reset-sprint-for-technical-leaders — $1,500, 4h, contents.
+- https://www.mento.co/coaches/jay-floyd — strengths-based / High 5, One of One workshop, book attribution.
+- https://podcasts.apple.com/us/podcast/on-everything-with-jay-floyd/id1726490780 — now *The Rare On Purpose Podcast with Jay Floyd*, 63 episodes; 8 most recent read ("Your Life Is a Bad Query," "Nobody's Handing You Clarity," "A Polished Life Can Still Be a Borrowed One," "Champions Hurt," "You Want It One Way. It's The Other Way," "Stop Naming What You Don't Want," "Between Cabrini and Love Jones").
 - https://bookshop.org/p/books/rare-on-purpose-jay-floyd/0406856f1bc112c8 — *Rare On Purpose*, May 26, 2025, 150 pp., $17.99.
 - Full research report: `research_notes/jay-floyd-rula-leadership-coaching-20261121-1821/report.md`
+- Alignment audit: `goals/rula-next-stage-interviews/files/jay-floyd-content-alignment-audit.md`
 
 User's own interview-prep repo (github.com/jitingxu1/interview-prep, public, main branch):
 
