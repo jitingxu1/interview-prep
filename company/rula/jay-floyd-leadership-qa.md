@@ -35,11 +35,25 @@ His frameworks, in his words:
 
 ### ★ Q1. How would you describe your leadership style?
 
-I'd call it coaching-first, but not coaching-only — and that second half matters, because I learned it the hard way.
+My style is situational. It depends on the person, the skill, and the problem. I came up as a tech lead, and the main thing I learned in three years of managing is that one style doesn't fit every problem.
 
-I start by understanding the person. What's their motivation, what kind of work energizes them, what are they trying to get better at. In a 1:1, I ask more than I tell — open-ended questions, real listening, not jumping to the answer. My 1:1s are structured around the engineer's growth, not status: a few minutes on how they're doing, most of the time on what's blocking or exciting them, and a regular career check-in. The goal is that nobody is ever surprised in a review — if there's a concern, they've heard it from me multiple times already, with a plan.
+I use the four modes from situational leadership: directing, coaching, supporting, delegating. For each task I ask: how much skill and confidence does this person have *on this specific problem*? A senior engineer can need directing on something brand new. A junior can own a part of the code they know well.
 
-But coaching is one hat. When something is urgent, or high-stakes, or someone has asked me twice, I direct — clearly and explicitly. I had to learn that, because my instinct as a former tech lead was to either coach everything or solve everything myself. Neither one scales. So my style now is: coach by default, direct when the situation demands it, and be honest with the team about which mode I'm in.
+I'm explicit about it. I tell each person where I think they are on their area, and I ask where *they* think they are. If we disagree, that gap is the conversation, and then we plan how to move them up.
+
+Two examples. In a production incident when we're losing money, I'm directive: I pick the people, assign the work, align on the goal, and we review afterward. On the other end, when my team split into two pods, I moved two senior ICs to delegation on purpose. I co-ran their stakeholder meetings for a month, then sat in, then stepped out. Now they own their team's decisions, and both grew into senior scope.
+
+The trap I watch for is over-coaching. If someone needs me to rebuild their confidence every week, I've created dependence. The goal is to move everyone toward delegation.
+
+**Likely follow-ups** (full answers, delivery checklist, and practice log in [leadership/leadership_style.md](../../leadership/leadership_style.md)):
+
+- *Someone thinks they're at delegating, you think coaching?* Give them a bounded piece to own fully, agree on what good looks like up front, and let the result settle it.
+- *How do you go directive without it feeling like distrust?* Name the mode and why ("this is about the situation, not you"), and hand ownership back after the incident.
+- *How do you assess skill and confidence?* What they bring me (decision, options, or question), how they handle the first surprise, and their own self-assessment.
+- *A time you misjudged someone's stage?* **[NEEDS YOUR STORY]**
+- *Doesn't directive undercut ownership?* Not if it ends with the incident and the area owner leads the follow-through.
+- *What would your team say your style is?* **[NEEDS YOUR STORY: confirm with real feedback]**
+- *Your default mode?* Coaching, which is exactly why I use a deliberate model.
 
 ### ★ Q2. What changed for you when you moved from tech lead to manager?
 
@@ -398,6 +412,8 @@ And the two aren't separate lists. When we plan each month or each quarter, we d
 8. **Q31 AI-adoption example** — one concrete case at DoorDash: which workflow, what guardrail, what changed. (New.)
 9. **Q35 competing-values pair** — one real pair of people and one real moment where their values clashed. (New.)
 10. **Q23 peer-manager example** — one real peer manager you helped: who, what you shared, what changed. (New.)
+11. **Q1 follow-up: misjudged stage** — one case where you delegated too early or held on too long. The Q4 three-month lag is a candidate. (New, Nov 22.)
+12. **Q1 follow-up: what your team would say** — confirm with real feedback (skip-level, 360, or a report's words) before using it. (New, Nov 22.)
 
 ## Sources
 

@@ -49,6 +49,11 @@ Materials on your leadership approach, values, and how you think about managing.
 10. **[Managing Up](./managing_up.md)** — working effectively with your manager
     - Six practices, the ByteDance "avoid managing up" caveat, 30-second spoken version
 
+11. **[Leadership Style](./leadership_style.md)** — the "how would you describe your leadership style?" answer
+    - Situational leadership: four modes, matched to the skill rather than the title
+    - Five-step structure for any philosophy question, final ~80-second answer, delivery checklist
+    - Seven follow-ups with answers, practice log
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
