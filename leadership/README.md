@@ -89,6 +89,9 @@ Materials on your leadership approach, values, and how you think about managing.
     - Spoken "how do you hire?" answer; scorecard; levelling signals (mid / senior / staff); culture add and "raise the average"
     - Question bank for ML / AI engineers, follow-ups that reveal level, and candidate-side follow-ups
 
+20. **[Who Coaches You](./who_coaches_you.md)** — the "who coaches you? how do you stay coachable?" answer
+    - Who (mentor, HR partner, your own team) → how (specific asks, reflection loop) → example → close; traps and follow-ups
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

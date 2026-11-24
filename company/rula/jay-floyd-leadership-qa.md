@@ -366,9 +366,19 @@ The warning sign I watch for is dependence. If someone needs me to rebuild their
 
 ### ★ Q21. Who coaches you? How do you stay coachable as a manager?
 
-I have a coach in the form of our HR partner — when I had to have difficult conversations I practiced a couple with her first, and that changed how I give feedback. I also ask my reports directly in 1:1s what's working and what isn't about how I lead — if I'm asking them to be coached, I have to model being coached.
+I have a few sources, and the most important one is my own team.
 
-And honestly, this interview prep is part of it: I'm studying how Jay thinks about leadership because I want to keep rebuilding my own operating system. The day I stop being coached is the day I start assuming my instincts are right — and my instincts are exactly what got me into the bottleneck in the first place.
+Who: I have a mentor, a more experienced manager I go to for the hard people situations. Our HR partner has coached me too: before my first few difficult conversations, I practised them with her. And I ask my reports directly in 1:1s: "What's one thing I could do differently that would help you?" If I'm asking them to be coachable, I have to model it.
+
+How: after any hard situation, I write down what happened, how I handled it, what I'd do better, and which instinct got in my way. Then I bring the pattern to my mentor. That's how reading and advice turn into actual habits.
+
+Example: the clearest one was feedback. I used to soften hard messages and wait for a better moment. My HR partner helped me see that waiting was the problem, not the message. I changed to a simple structure (what I saw, why it matters, what good looks like, how I'll help), and I give feedback within a week. Nobody on my team gets surprised at review time anymore.
+
+The day I stop being coached is the day I start assuming my instincts are right, and my instincts are exactly what I've had to rebuild as a manager.
+
+**[CONFIRM: do you actually have a mentor? If not, say "peer managers" or "my manager." Removed Nov 24: the line about studying Jay's material (reads as flattery).]**
+
+*Hint: who (mentor, HR partner, my team) → how (ask specifically, reflection loop) → example (feedback → change) → close. Full file: [leadership/who_coaches_you.md](../../leadership/who_coaches_you.md).*
 
 ### Q22. How do you decide how much direction to give someone — how do you calibrate it to the person and the skill?
 
