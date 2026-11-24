@@ -301,11 +301,24 @@ And I track the numbers that tell me if I'm slipping back into the bottleneck: h
 
 ### ★ Q18. How do you coach and mentor your engineers? How do you know it's working?
 
-I start with listening, not telling. A coaching-first approach for me begins with active listening — really hearing the person, their aspirations, their concerns — and then asking open-ended questions instead of handing over the answer. "How do you feel about this approach?" "What do you think could be a potential solution?" That does two things: it builds ownership, and it builds their critical thinking, because they have to arrive at the insight themselves.
+I coach by starting with where each person wants to go, then building a plan around their strengths. And I know it's working when the way they make decisions changes.
 
-My 1:1s are built for this. A few minutes on how they're doing, most of the time on what's blocking or exciting them, and a regular career check-in. And I try to build personalized growth plans around strengths — not just what someone's good at, but what kind of work *energizes* them. One engineer on my team was frustrated by meetings and needed deep focus time; another wanted to learn production systems. Once I understood that, I could unblock them completely differently.
+Understand: in our first career conversation, I ask where they want to be in a year or two, and what kind of work gives them energy, not just what they're good at. I also get input from their peers and watch their work myself, so I have more than one view of their strengths and gaps.
 
-How do I know it's working? Three signals. People start bringing me decisions they've already made, not decisions they want me to make. They give each other feedback directly instead of routing it through me. And they disagree with me in a meeting, with data. When those three things are happening, the coaching is landing — because the point was never to make them dependent on me, it was to make them stronger without me.
+Plan: we pick one or two areas to grow, not ten. Then I find stretch work that builds exactly those areas. How much direction I give depends on how new the skill is to them, as I described earlier.
+
+Rhythm: our 1:1s are mostly about growth, not status. I ask more than I tell, feedback comes within a week, and once a month we check in on the bigger goal.
+
+**[EXAMPLE: one engineer: goal, stretch work, result. Pod leads (Q4) and the tech lead (Q10) are already used; pick someone else, or refer back in one line.]**
+
+How I know it's working: three signals. They bring me decisions they've already made, instead of questions. They give each other feedback directly, instead of routing it through me. And they disagree with me in a meeting, with data. When I see those, they've grown, and they don't need me for that anymore.
+
+*Jay angle: his coaching-first approach (start with the person and what energizes them; ask more than tell) in your own words. Keep the four modes to one line; they were in Q1. Full file: [leadership/coaching_and_mentoring.md](../../leadership/coaching_and_mentoring.md).*
+
+**Likely follow-ups, with hints:**
+- *Doesn't know what they want?* **Energy → options → experiments → reflect.** "You don't need a five-year plan. You need the next experiment."
+- *Goal doesn't fit the team?* **Honest → overlap → bridge → help them move.** "I'd rather help someone grow out of my team than keep them stuck in it." (Real example: the Q10 tech lead.)
+- *Mentoring seniors who know more?* **Context, questions, scope, visibility, other mentors.** "My job isn't to know more than them. It's to help them have more impact."
 
 ### ★ Q19. How do you approach leveling and promotions? How do you keep it fair?
 

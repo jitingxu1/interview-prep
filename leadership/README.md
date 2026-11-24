@@ -77,6 +77,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - Three questions: urgency/stakes, do they have what they need, bounded room; the "asked twice" rule; dependence as the warning sign
     - Follow-ups with hints, including a framework and template for "a time coaching didn't work"
 
+17. **[Coaching and Mentoring](./coaching_and_mentoring.md)** — the "how do you coach your engineers, and how do you know it's working?" answer
+    - Understand (goals, energy, peer input) → plan (one or two areas, stretch work) → rhythm; three signals it's working
+    - Frameworks and hints for: someone who doesn't know what they want, a goal that doesn't fit the team, mentoring seniors who know more
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
