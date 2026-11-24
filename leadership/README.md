@@ -65,6 +65,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - Seven-step structure, ~2-minute answer, checklist, follow-ups (linked to [weaknesses.md](./weaknesses.md)), practice log
     - Open items: team shape (four areas vs. two pods) and real before/after numbers
 
+14. **[Underperformance](./underperformance.md)** — the "how do you handle an underperforming engineer?" answer
+    - No surprises at review time: early → diagnose (clarity, fit, support, personal) → written plan → escalate
+    - Home of the backend-engineer story; ~90-second answer, checklist, six follow-ups with quick hints, practice log
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

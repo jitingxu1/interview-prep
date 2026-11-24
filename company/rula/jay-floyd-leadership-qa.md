@@ -182,11 +182,28 @@ I stay technically close enough to judge well — I review design docs async, I 
 
 ### ★ Q9. How do you handle an underperforming engineer?
 
-I diagnose before I judge. There are three questions, in order. First, clarity: do they actually understand what success looks like? Very often it's a communication problem, not a capability problem. Second, fit: are they in a role that plays to their strengths? Sometimes someone is struggling because they're in the wrong seat. Third, support: have I given them the tools, the time, and the mentoring to succeed? As a manager, underperformance is partly my problem.
+My rule is that a performance review should never be the first time someone hears they're behind. So I catch it early, diagnose before I judge, and agree on a clear plan.
 
-If it's truly a capability gap after coaching, I'd build a clear, time-bound improvement plan with specific milestones. If they improve, great. If not, we have an honest conversation about fit.
+Early: I watch for patterns, not one bad week: missed commitments, quality slipping, someone going quiet. When I see a pattern, I raise it in our next 1:1, not at review time.
 
-I want to give you a real example of the fit question. I had a backend engineer who was struggling on his team, and the easy path was a PIP. But the diagnosis said skill-fit, not performance — he was strong in infrastructure, just in the wrong role. So we moved him to the infrastructure side instead. It was the slower, more expensive path, and it was the right one: he became core to our platform work. Sometimes a "misfit" engineer is actually a high performer in a different role, and I'd rather find that fit than manage someone out of a seat they were never going to win in.
+Diagnose: I ask three questions, in order. Clarity: do they actually know what good looks like? Often it's a communication problem, not a capability one. Fit: are they in a role that plays to their strengths? Support: have I given them the time, tools, and help they need? And sometimes it's something personal, so I ask.
+
+Agree a plan: I tell them what I see, what good looks like, and I ask for their view. If we see it differently, that's the conversation. Then we write down a plan with specific goals, a timeline, and weekly check-ins.
+
+Example: I had a backend engineer who was struggling on his team. The easy path was a performance plan, but the diagnosis said fit, not effort: he was strong in infrastructure, just in the wrong seat. We moved him to the infrastructure side, and he became core to our platform work.
+
+If it doesn't improve: if the plan runs its course and the gap is still there, we have an honest conversation about fit, and I bring in HR if it needs to become formal. The goal is that whatever happens, whether they improve, move, or leave, nobody is surprised and it's fair.
+
+*Home of the backend-engineer story: in Q11, Q24, Q25, Q34 refer back to it in one line. Don't imply you've run a formal PIP (Q11: you haven't managed anyone out).*
+
+**Likely follow-ups, with hints** (full answers in [leadership/underperformance.md](../../leadership/underperformance.md)):
+
+- *How long before it's formal?* **4–8 weeks, said up front.** **[CONFIRM against your company's process]**
+- *They disagree with you?* **Examples, their view, a measurable test.** "Let the result settle it."
+- *Personal cause?* **People first, HR, privacy, then back to the plan.**
+- *Effect on the team?* **Private, rebalance, thank.** "Ignoring it hurts the high performers most."
+- *Ever had someone not improve?* **Honest no; the fit check changed the answer.**
+- *Strong performer slipping?* **Something changed: ask what.** Usually a conversation, not a plan.
 
 ### ★ Q10. Tell me about a difficult conversation you had. How did you prepare?
 
