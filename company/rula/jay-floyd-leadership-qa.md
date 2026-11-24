@@ -492,9 +492,22 @@ And the support automation shift worked the same way: I named honestly that work
 
 ### ★ Q33. How do you make your team's work visible to leadership — how do you position impact so it actually lands?
 
-I report up in business units, not technical ones — the first line is the decision or the ask, the second is the business impact, and the technical detail is an appendix. On the fraud threshold call, instead of debating precision and recall, I put fraud dollars prevented and legitimate customers blocked on the same chart at each threshold, and the room argued about a number instead of a principle — we agreed a phased rollout in one meeting.
+Visibility is two different things: where you share, and how you say it. The second one matters more.
 
-I also mentor people publicly so the org can see the work at the next level before the promotion conversation ever happens. The pattern is the same either way: stop over-explaining and start being understood. If the work is strong but the signal isn't landing, that's my problem to fix — not the team's, and not leadership's.
+How I say it: I report in business terms, not technical ones. The first line is the decision or the ask, the second is the business impact (dollars, customers, risk), and the technical detail goes in the appendix. The clearest example was a fraud-threshold decision. Instead of debating precision and recall, I put fraud dollars prevented and legitimate customers blocked on the same chart, at each threshold. The room argued about a number instead of a principle, and we agreed on a phased rollout in one meeting.
+
+Who says it: I have the engineers present their own work, at all-hands demos and in our tech forum. Leadership sees the people, not just the project, and it builds the case for their growth long before a promotion conversation.
+
+Where: a weekly newsletter for the whole org, a shared project tracker so anyone can see status, and trainings and Q&A sessions with partner teams.
+
+Does it land: I check by asking leaders what they remember, and by watching whether other teams start coming to us early. If the work is strong but the message isn't landing, that's my problem to fix, not the team's.
+
+*Home of the fraud-threshold story (Q6, Q27: one line only). Jay angle: "legible to leadership," "being understood, not over-explaining." Full file: [leadership/visibility_to_leadership.md](../../leadership/visibility_to_leadership.md).*
+
+**Likely follow-ups, with hints:**
+- *Leadership doesn't value tech debt or reliability?* **Translate into risk and cost.** "What does it cost us if we don't?"
+- *Your team's work shows up in someone else's project?* **Name the people, publicly and specifically.** "Credit is cheap to give and expensive to lose."
+- *Quiet engineers' work?* **Evidence, a stage that suits them, speak for them.** "Make their work visible, not make them louder."
 
 ### Q34. How do you tell whether someone on your team is burned out or just misaligned — and what do you do differently in each case?
 

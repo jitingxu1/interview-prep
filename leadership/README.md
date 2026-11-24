@@ -92,6 +92,10 @@ Materials on your leadership approach, values, and how you think about managing.
 20. **[Who Coaches You](./who_coaches_you.md)** — the "who coaches you? how do you stay coachable?" answer
     - Who (mentor, HR partner, your own team) → how (specific asks, reflection loop) → example → close; traps and follow-ups
 
+21. **[Visibility to Leadership](./visibility_to_leadership.md)** — the "how do you make your team's work visible to leadership?" answer
+    - How you say it (business first; the fraud-threshold chart) → who says it (engineers) → where → does it land
+    - Follow-ups: tech debt leadership doesn't value, credit for your team's work, quiet engineers
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
