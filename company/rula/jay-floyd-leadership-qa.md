@@ -207,6 +207,30 @@ If it doesn't improve: if the plan runs its course and the gap is still there, w
 
 ### ★ Q10. Tell me about a difficult conversation you had. How did you prepare?
 
+The hardest conversation I've had was earlier this year, with my tech lead. For months we'd been preparing him to become an engineering manager. Then an org change took that path away, and I had to tell him.
+
+Context: he wanted to move into management, and we'd built a real plan together: the skills, feedback from leadership, the calibration. It was going well. Then midyear, with **[a hiring freeze / reorg]**, the company set a new rule: every manager needs at least 10 to 15 reports. Our team couldn't support a second manager, so the promotion was off the table.
+
+How I prepared: first, I got the facts straight from leadership: what was final, and what might change. Second, I decided what I could honestly offer, and what I couldn't promise. Third, I thought about how he'd feel. He'd done everything right, so I knew this would feel unfair. And I didn't wait: I told him within **[a day or two]** of hearing, so he wouldn't hear it from anyone else.
+
+The conversation: I said it in the first minute, clearly: the manager role isn't going to happen right now, and here's why. He was disappointed and asked, "What happens now?" I didn't rush past that. I acknowledged it was unfair given the work he'd put in. Then I gave him the honest picture and a plan: he'd keep growing as a manager without the title. He now leads a sub-team of the fraud ML team, mentors them, and does most of a manager's job. I was clear that I couldn't promise a date, only that if the team grows, he's the first person I'll put forward.
+
+Result: it took a month or two, but he came back fully engaged. **[REAL RESULT]**
+
+What I learned: don't tie someone's growth plan to a title or a date you don't control. Now I build growth plans around readiness and scope, so a change in the org doesn't erase the progress.
+
+*Jay angle: hard conversations with structure and timing, plus calm authority when bad news comes from above. If he asks Q16 later, refer back in one line. Full file, prep notes, follow-ups with hints: [leadership/difficult_conversation.md](../../leadership/difficult_conversation.md).*
+
+**[CONFIRM BEFORE USING LIVE: the cause (hiring freeze / reorg / span rule), "calibration" vs "certifications," how fast you told him, the real result, and whether you actually said "no date, but you're first."]**
+
+**Likely follow-ups, with hints:**
+- *What did you say in the first minute?* **News first, then why.**
+- *Could you have seen it coming?* **Own the date, not the org.** "I tied his plan to a title and a timeline I didn't control."
+- *How did you keep him from leaving?* **Real scope, honest odds, regular check-ins.**
+- *How did you handle the rest of the team?* **His news first, his to share.**
+
+**Backup story (blindsided engineer), if the tech-lead story was already used:**
+
 Giving negative feedback is harder for me than it should be. I care a lot about the team's trust, and early on I'd soften the message or wait for a better moment — which is really just postponing it.
 
 It caught up with me as a new manager. I had a performance concern about one engineer that I'd hinted at but never said directly. When I finally raised it clearly, he was blindsided — and he was right to be. I'd never set the expectation in the first place. That was on me.

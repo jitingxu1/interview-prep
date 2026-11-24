@@ -69,6 +69,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - No surprises at review time: early → diagnose (clarity, fit, support, personal) → written plan → escalate
     - Home of the backend-engineer story; ~90-second answer, checklist, six follow-ups with quick hints, practice log
 
+15. **[Difficult Conversation](./difficult_conversation.md)** — the "tell me about a difficult conversation" answer
+    - Telling a tech lead his manager path was cancelled by an org change: preparation, the first minute, a careful promise
+    - Lesson: build growth plans around readiness and scope, not a title or date; four follow-ups with hints
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
