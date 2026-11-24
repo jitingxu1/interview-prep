@@ -60,6 +60,11 @@ Materials on your leadership approach, values, and how you think about managing.
     - Tech lead vs. manager operating system table; operating system = mindset + skills + habits
     - Final ~75-second answer, delivery checklist, seven follow-ups (VoltronData as "how did you learn that?"), practice log
 
+13. **[Bottleneck Story](./bottleneck_story.md)** — the "tell me about a time you were the bottleneck" answer
+    - Fraud ML team, four areas: owners, written decision rights, co-run → sit in → step out
+    - Seven-step structure, ~2-minute answer, checklist, follow-ups (linked to [weaknesses.md](./weaknesses.md)), practice log
+    - Open items: team shape (four areas vs. two pods) and real before/after numbers
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

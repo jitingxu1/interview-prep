@@ -110,17 +110,23 @@ At Rula, I'd add one more: every engineer should be able to say how their work h
 
 ### ★ Q4. Tell me about a time you were the bottleneck. What did you change?
 
-My biggest weakness is that I'm slow to let go of decisions. I came up as a tech lead, so if something matters, my instinct is to own it.
+When I started managing the fraud ML team, I was the bottleneck, and it took me too long to see it.
 
-For a while that worked. I used to lead one team — one pod, one group of stakeholders — and owning every alignment and every technical call was efficient. Then the team grew into two teams — support automation and fraud and risk ML — each with its own scope and its own stakeholders. We're 12 engineers, but the surface area is much bigger than the headcount. I couldn't handle it all on my own — but I kept trying to for about three months longer than I should have. Every stakeholder alignment and every high-level technical decision still went through me.
+The team had four areas, and each had its own stakeholders: a product manager, data scientists, data and backend engineers, and business partners. Every area had a weekly sync, and I was in all four, plus every decision that came out of them.
 
-I noticed it in three ways. My calendar was every team's stakeholder calendar. Teams were waiting on me for decisions while I was context-switching across scopes. And the engineers closest to each problem, who had the most context, were bringing their decisions to me instead of making them. I was the bottleneck, and honestly I was exhausted.
+I noticed it in three ways. Decisions waited on me while I switched between areas. My calendar was every area's stakeholder calendar. And the engineers closest to each problem, who had the most context, were bringing their decisions to me instead of making them. **[ADD A REAL NUMBER]**
 
-So I restructured it. Each team now has a senior IC who owns that team's stakeholder alignment and its technical decisions. I wrote down the decision rights: within the team's scope, they decide and tell me after. What comes to me is anything that crosses teams, touches another org's metrics, is expensive to reverse, or changes headcount. I didn't just hand it over — for the first month I co-ran their stakeholder meetings, then they ran them with me sitting in, then I stepped out. And we have a weekly pod-lead sync where they bring cross-team issues and I catch anything that needs me.
+The problem wasn't my time, it was the design. I came up as a tech lead, and my instinct was: if something matters, I own it. That worked for one team. It didn't work for four areas.
 
-That freed me to do the work only I can do: the roadmap across teams, how the teams fit together, hiring, and leadership alignment. And two of the pod leads grew into senior scope because of it. It's not fully solved — on high-stakes calls my instinct is still to step in early. But this is exactly the model I'd bring to a bigger team: build the layer that owns decisions, and keep myself for the decisions that cross the layers.
+So I made three changes. Each area got an owner, usually the senior engineer with the most context. I wrote down the decision rights: inside their area, they decide and tell me after. Anything that crosses areas, touches another team's metrics, is expensive to reverse, or changes headcount comes to me. And I handed over gradually: I co-ran their syncs for a few weeks, then sat in while they ran them, then stepped out. Now I read the sync notes and join when they need me, plus a weekly owners' sync where cross-area issues come up.
 
-**[NEEDS YOUR STORY: confirm the pod-lead names and the before/after numbers — decisions reaching you per week, recurring meetings count — before using this live. The repo has them as blanks.]**
+That freed me to work on the whole team: the roadmap, hiring, and how the areas fit together. **[ADD REAL RESULTS]**
+
+It's not fully solved. On high-stakes calls my instinct is still to step in early. But now I catch it, and I track it by how many decisions still come to me each week.
+
+*Jay angle: this is his "find the leadership drag" and "rebuild delegation and ownership" steps, told as your story. Full file, checklist, and follow-ups: [leadership/bottleneck_story.md](../../leadership/bottleneck_story.md).*
+
+**[CONFIRM BEFORE USING LIVE: (1) team shape. Nov 22 practice says four areas inside fraud ML; Q1, Q2, Q5, Q19, Q26 and leadership/weaknesses.md say two pods (support automation and fraud & risk ML). Make them all match. (2) Real before/after numbers: decisions reaching you per week, recurring meetings, owners who grew, stakeholder feedback.]**
 
 ### ★ Q5. What's your biggest weakness as a manager?
 
