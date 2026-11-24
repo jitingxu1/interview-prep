@@ -9,6 +9,7 @@
 | 1 | Slow to delegate decisions | Default answer; HM and skip-level rounds | One pod → [N] pods transition; pod-lead model; S3 |
 | 2 | Too technical when reporting up | Second answer; skip-level, exec rounds | S2, S11 |
 | 3 | Delivering negative feedback feels hard | Second answer; HR / HRBP rounds | S5 |
+| 4 | The answer-man instinct (added Nov 22) | **Default when #1 was already told as a bottleneck story**; coaching-heavy interviewers (e.g. Rula's Jay Floyd) | 1:1s with junior engineers; the two-model fraud POC |
 
 All three share one root, and naming it makes you sound self-aware rather than coached: **you came up as a strong tech lead, and each one is a tech-lead instinct that doesn't scale to managing.** Use this framing if they ask for more than one.
 
@@ -178,6 +179,59 @@ S5: I gave an engineer a performance concern late, and he felt blindsided — be
 | "How do you give feedback to a senior engineer or a peer?" | Same structure, more framed as a question: "Here's what I'm seeing — what am I missing?" |
 | "Tell me about feedback you gave recently." | [A real recent example, delivered on time, using the structure.] |
 | "Isn't this just conflict avoidance?" | It was, early on. The fix wasn't becoming comfortable — it was taking timing out of my hands with structure and cadence. |
+
+---
+
+## 4. The answer-man instinct
+
+Built from mock practice on Nov 22. Use it as the main weakness answer when you've already told #1 as a bottleneck story ([bottleneck_story.md](./bottleneck_story.md)). #1 is about structure (owners and decision rights for whole areas). This one is about the instinct in daily moments: telling people the answer, or taking the work yourself.
+
+### Spoken version (~90 seconds)
+
+> "My biggest weakness is that my instinct is to be the person with the answer. I was an engineer for eight years, and when someone brings me a problem, part of me wants to say, 'Here's your answer,' or just take it and do it myself.
+>
+> It shows up in two ways. In 1:1s, when a junior engineer brings me a problem, I want to hand them the solution. And with real work: recently we needed to compare two fraud models, and my instinct was to run the POC myself.
+>
+> The cost is real. If I answer too early, they don't build the skill, they learn to bring every problem to me, and I miss their ideas. Some of the best solutions on my team came from someone else's angle, not mine.
+>
+> So I've built a habit. When someone brings me a problem, I ask first: 'What do you think?' or 'What have you tried?' If they're stuck, I give a hint, not the answer. And before I pick up any task, I ask myself, 'Is this something only I can do?' [REAL EXAMPLE OF IT WORKING, e.g. the POC: 'I handed it to one of the engineers, spent thirty minutes on what "better" means, and reviewed the design doc. They found X and presented it to stakeholders themselves.']
+>
+> The instinct hasn't gone away. But now I notice it before I act on it."
+
+**[CONFIRM BEFORE USING LIVE: one real result. Either the POC handoff (did you hand it off, and what happened?), or a 1:1 where you asked "what do you think?" and the engineer's idea turned out better than yours.]**
+
+### Why it works
+
+- A specific behavior, not a broad trait: "here's your answer."
+- Two forms of the same instinct, telling and doing, each with an example.
+- The cost includes something most candidates miss: you lose the team's ideas, not just their growth.
+- A concrete habit: ask first, hint instead of answer, "is this something only I can do?"
+- For Jay, it's his "answer machine" idea in your own words. Don't quote him.
+
+### Checklist
+
+- [ ] First sentence names the instinct
+- [ ] Say "junior" or "newer engineers," not "younger"
+- [ ] One real result, in one sentence
+- [ ] Don't reuse the "value by doing vs. designing the system" line from [tech_lead_to_manager.md](./tech_lead_to_manager.md)
+- [ ] No "right?"
+
+### Follow-ups
+
+| Question | Direction |
+|---|---|
+| "So do you never give answers?" | "No. When it's urgent, high-stakes, or they've already asked twice, I just give the answer clearly. Holding back is for when they can find it themselves and the cost of a wrong turn is small." Links back to situational leadership ([leadership_style.md](./leadership_style.md)). **Have this ready: coaching-heavy interviewers test whether you swing too far.** |
+| "How do you know holding back is helping, not just slowing things down?" | Watch what they bring next time: a question, options, or a decision they've already made. If nothing changes after a few rounds, I'm under-directing and switch to more structure. |
+| "Tell me about a time someone's idea was better than yours." | [NEEDS YOUR STORY: one real moment.] |
+| "How do you track it?" | How much hands-on work I do each week, and how often people bring me decisions vs. questions. |
+
+### Practice log (Nov 22)
+
+- **Attempt 1:** "lack of experience" / "engineering mindset." Too broad, undercut the candidacy ("only 3 years," "still young"), repeated Q2. Kept: "leadership can be trained, I wasn't a born leader," and the reflection loop (what happened, how I handled it, what I'd do better, what in the system allowed it, which instinct to change).
+- **Attempt 2:** "my instinct is to solve it myself," with the model-POC example. Specific and recent, but stopped before the fix and result, and overlapped Q2 and Q4.
+- **Attempt 3:** "the answer man." Best version: specific behavior, the right cost, and a new point (you miss other people's ideas). Combined with attempt 2 into the spoken version above.
+
+**Backup answer:** if the interviewer already heard #1 *and* this one doesn't fit, use #3 (negative feedback), told through the engineering lens: "As an engineer, I want complete data and the right moment before I act. With people, that turned into waiting and softening the message." The reflection loop from attempt 1 fits there as "how I learn."
 
 ---
 

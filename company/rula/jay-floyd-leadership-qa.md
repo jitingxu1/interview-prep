@@ -130,13 +130,19 @@ It's not fully solved. On high-stakes calls my instinct is still to step in earl
 
 ### ★ Q5. What's your biggest weakness as a manager?
 
-My biggest weakness is that I'm slow to let go of decisions. I came up as a tech lead, so if something matters, my instinct is to own it.
+*Jay will likely ask Q4 first, so don't retell the bottleneck story here. Use the answer-man instinct (below). Backup: negative feedback (`leadership/weaknesses.md` #3).*
 
-For a while that worked — when I led one team, owning every alignment and every technical call was efficient. Then the team grew into two teams, each with its own scope and stakeholders, and I kept running it the old way for about three months longer than I should have. Every decision still went through me. My calendar was every team's stakeholder calendar, teams waited on me while I context-switched, and the engineers with the most context were bringing me their decisions instead of making them.
+My biggest weakness is that my instinct is to be the person with the answer. I was an engineer for eight years, and when someone brings me a problem, part of me wants to say, "Here's your answer," or just take it and do it myself.
 
-They share one root, and naming it is the honest part: I came up as a strong tech lead, and the instincts that made me good at that — owning the call, explaining the reasoning in depth, protecting the team's harmony — each needed rewiring when I started managing. So I restructured: a senior IC per team owns stakeholder alignment and technical decisions, decision rights are written down, and I hand off gradually — co-run, sit in, step out — with a weekly sync for cross-team issues.
+It shows up in two ways. In 1:1s, when a junior engineer brings me a problem, I want to hand them the solution. And with real work: recently we needed to compare two fraud models, and my instinct was to run the POC myself.
 
-I track it: how many decisions still come to me per week, how many stakeholder meetings I'm in, and I ask stakeholders directly whether alignment got better or worse. It's much better, but it's not fully solved — on high-stakes calls my instinct is still to step in early. That's what I'm watching now, and it's the first thing I'd design for in a bigger team: build the layer that owns decisions, and keep myself for the decisions that cross the layers.
+The cost is real. If I answer too early, they don't build the skill, they learn to bring every problem to me, and I miss their ideas. Some of the best solutions on my team came from someone else's angle, not mine.
+
+So I've built a habit. When someone brings me a problem, I ask first: "What do you think?" or "What have you tried?" If they're stuck, I give a hint, not the answer. And before I pick up any task, I ask myself, "Is this something only I can do?" **[REAL EXAMPLE OF IT WORKING: the POC handoff, or a 1:1 where their idea beat yours.]**
+
+The instinct hasn't gone away. But now I notice it before I act on it.
+
+*Jay angle: his "answer machine," in your own words. Have the balance line ready: "When it's urgent, high-stakes, or they've asked twice, I just give the answer." Full version, checklist, and follow-ups: [leadership/weaknesses.md #4](../../leadership/weaknesses.md#4-the-answer-man-instinct).*
 
 ### Q6. What's a belief about management you've changed your mind on?
 

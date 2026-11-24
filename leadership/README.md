@@ -39,8 +39,8 @@ Materials on your leadership approach, values, and how you think about managing.
    - Chargeback pipeline (scalability) vs. lending pilot (speed), mapped
    - 2-minute answer structure + follow-ups
 
-8. **[Weaknesses](./weaknesses.md)** — three real ones, fully built
-   - Slow to delegate, too technical when reporting up, negative feedback feels hard
+8. **[Weaknesses](./weaknesses.md)** — four real ones, fully built
+   - Slow to delegate, too technical when reporting up, negative feedback feels hard, the answer-man instinct (added Nov 22)
    - How you noticed, what changed, how you track progress, follow-ups
 
 9. **[Reporting Up](./reporting_up.md)** — how to brief leadership
