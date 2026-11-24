@@ -160,11 +160,26 @@ There's a second piece I took from Jay's own writing, actually — the idea of f
 
 ### Q7. How do you delegate without lowering the bar on quality?
 
-By being explicit about what "good" means before I hand something over, and by inspecting outcomes instead of process.
+I keep the bar high by moving it out of my head and into the system.
 
-The delegation system has three parts. First, written decision rights: inside your scope, you decide and inform me after. Cross-team, hard to reverse, or headcount — those come to me. The line is explicit, so nobody has to guess whether they should ask. Second, the quality bar lives in the artifact, not in my head: design docs, decision logs, and eval gates. When we unified 60-plus fraud models into one system, I couldn't review every model myself — so the bar became the evaluation: offline metrics plus a shadow run before anything shipped. Third, a gradual handoff: I co-run, then I sit in, then I step out. Stakeholders keep trust, and the person taking ownership gets coached, not dropped in.
+First, I define "good" before I hand anything off: what done looks like, the constraints, and what's not acceptable. Most quality problems after delegating come from an unclear bar, not a weak engineer.
 
-A good example is the support review work. We cut review time from 30 minutes to 5 by building an eval-driven pipeline — but the quality bar was the eval set itself. Once that existed, engineers could move fast without me checking every case, because the system caught regressions. That's what delegation should feel like: the standard is enforced by the system, not by my calendar.
+Second, I build the bar into the work itself: a design doc before anything big, a review checklist, tests, and for ML work, an evaluation gate that has to pass before anything ships.
+
+Third, I match how closely I check to the risk. New skill or high stakes: more checkpoints early. A proven owner: I review the design and the outcome, not every step.
+
+Example: on our support automation work, we cut review time from 30 minutes to 5 with an eval-driven pipeline. The eval set itself was the quality bar. Engineers could move fast without me checking every case, because the system caught regressions.
+
+That's what delegation should feel like: the standard is enforced by the system, not by my calendar.
+
+**Add-on if asked about decision boundaries or visibility:** Inside an area, the DRI decides and tells me after; across areas, the tech lead decides; anything affecting other teams, hard to reverse, or about people comes to me. Visibility is "inform, don't ask": a decision log, a four-line weekly update, and written escalation triggers. "I should never learn about something important from my boss or a stakeholder first."
+
+*Don't retell Q4's handoff story here; this answer is about quality. Full file with the decision-rights table and visibility mechanisms: [leadership/delegation_and_quality.md](../../leadership/delegation_and_quality.md).*
+
+**Likely follow-ups, with hints:**
+- *Work comes back below the bar?* **Was the bar clear? → specific feedback → they fix it.** "If I fix it myself, I've taught them I'll always fix it."
+- *Avoid micromanaging?* **Agree the checkpoints up front; questions, not orders.**
+- *What do you never delegate?* **Hiring decisions, hard people conversations, cross-team commitments, hard-to-reverse calls.** "I delegate the work, not the accountability."
 
 ### Q8. How do you know when to step in on a technical decision — and when to stay out?
 

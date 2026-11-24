@@ -96,6 +96,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - How you say it (business first; the fraud-threshold chart) → who says it (engineers) → where → does it land
     - Follow-ups: tech debt leadership doesn't value, credit for your team's work, quiet engineers
 
+22. **[Delegation and Quality](./delegation_and_quality.md)** — the "how do you delegate without lowering the bar?" answer
+    - Define good → bar in the system → oversight matches risk → inspect outcomes; the eval-gate example
+    - Decision-rights table (DRI / tech lead / manager) and visibility without micromanaging ("inform, don't ask")
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
