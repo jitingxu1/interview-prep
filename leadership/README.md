@@ -100,6 +100,9 @@ Materials on your leadership approach, values, and how you think about managing.
     - Define good → bar in the system → oversight matches risk → inspect outcomes; the eval-gate example
     - Decision-rights table (DRI / tech lead / manager) and visibility without micromanaging ("inform, don't ask")
 
+23. **[Managing Out](./managing_out.md)** — the "have you ever managed someone out?" answer
+    - Honest no → closest case → how you'd do it (clarity/fit/support, written plan, HR, dignity) → won't avoid it
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

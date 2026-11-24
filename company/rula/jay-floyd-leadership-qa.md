@@ -256,9 +256,20 @@ He stayed, his performance recovered, and the whole team got clearer expectation
 
 ### Q11. Have you ever had to manage someone out?
 
-No — and I want to be straight about that rather than dress something up. I haven't managed anyone out.
+No, I haven't, and I'd rather be straight about that than dress something up.
 
-The closest I've come is the repositioning I just described: an engineer who was struggling in one seat, and instead of starting a performance process, we moved him to infrastructure work where his strengths actually fit, and he thrived there. My view is that managing someone out should be the last step after you've honestly checked clarity, fit, and support — and in the cases I've faced, the fit check changed the answer. If I ever do have to manage someone out, I'd want it to be after that same honest sequence, with clear expectations in writing and no surprises.
+The closest I've come is the backend engineer I mentioned: the fit check changed the outcome, and he thrived in a different role.
+
+If I do have to, I'd follow the same honest sequence. First, make sure I've really checked clarity, fit, and support. Then a written plan with specific goals and a timeline, with HR involved early. Every conversation would be direct, so the final decision is never a surprise. And if it comes to that, I'd handle the exit with dignity: a respectful conversation, help with the transition, and a short, respectful message to the team without details.
+
+I don't see it as a failure to avoid at all costs. Keeping someone in a role they can't succeed in isn't kind to them, and it isn't fair to the team carrying the gap. It's the last step, not the first, but I won't avoid it when it's the right call.
+
+*Hint: honest no → backend engineer (one line) → clarity/fit/support → written plan + HR → no surprises → dignity → won't avoid it. Full file: [leadership/managing_out.md](../../leadership/managing_out.md).*
+
+**Likely follow-ups, with hints:**
+- *Would you be able to do it?* **Yes, and why.** "Avoiding it is the unkind option. The team pays for it."
+- *How would you tell the team?* **Short, respectful, no details, focus on what's next.**
+- *What if they're well-liked?* **Same bar for everyone; kind, not unclear.**
 
 ### ★ Q12. Tell me about a time you had to lead former peers — people who used to be at your level, or who you used to work alongside. How did you handle the shift?
 
