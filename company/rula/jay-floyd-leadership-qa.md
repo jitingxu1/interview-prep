@@ -322,13 +322,24 @@ How I know it's working: three signals. They bring me decisions they've already 
 
 ### ★ Q19. How do you approach leveling and promotions? How do you keep it fair?
 
-I'm very transparent about it. I tell every report: here's what's expected at your level, here's what I believe that looks like for you specifically, and let's talk about it. If you have aspirations for the next level, let's discuss what that looks like for you — because what I've found is that people are most frustrated not when they're told no, but when there's no clear expectation at all. "You did great" — great at what? "You were inconsistent this quarter" — inconsistent against what?
+I keep it fair by making it transparent and evidence-based.
 
-The second half is that I don't put people in a box. The level framework is real, but the unique version of it is per person. One engineer might be an empathizer, another a deliverer — you don't have to be your colleague to be at the same level as your colleague. So I look for the version of the next level that fits their strengths, and then I give them stretch work that proves it, and I mentor them publicly so the rest of the org can see it.
+Transparent: every person on my team knows what's expected at their level and the next one, in specific terms. People are most frustrated not when they hear "not yet," but when there's no clear bar. "You did great": great at what? So I translate the level guide into what it means for their work.
 
-Two of my pod leads grew into senior scope exactly this way — they took on stakeholder alignment and technical decisions for their teams, and the promotion case wrote itself because the work was already visible. My rule is: the promotion should be a recognition of work already being done, not a promise about future work.
+Plan: if they want the next level, we build a plan around their strengths. Two people can reach the same level in different ways: one through technical depth, another through leading projects. Then I find stretch work that proves it. I build these plans around readiness and scope, not a date, because I can't promise a date.
 
-**[NEEDS YOUR STORY: name one specific promotion — who, from what level to what, and the stretch assignment that made the case. The repo references this story (S7) but the details weren't pulled.]**
+Evidence: I only put someone forward when they're already working at the next level consistently. The promotion should recognise work that's already happening, not a promise about the future. If I've done my job, the case writes itself.
+
+Fairness checks: I judge on evidence, not on who's loudest in meetings. I get peer input, I keep notes across the whole cycle so it's not just the last month, and I rotate high-visibility work so everyone gets a chance to show it. Then calibration with other managers keeps my bar consistent with theirs.
+
+**[EXAMPLE: one real promotion in one sentence, or the Q10 tech lead: "I'm doing exactly this with my tech lead right now: growing his scope so when a role opens, the case is already made."]**
+
+*Jay angle: level transparency and "don't put people in a box" are both his points. Full file with a leveling primer and deep-dive follow-ups: [leadership/leveling_and_promotions.md](../../leadership/leveling_and_promotions.md).*
+
+**Likely follow-ups, with hints:**
+- *They think they deserve it, you don't?* **Listen → bar, not peers → specific gap → plan → monthly check-in.** "Not 'you're not ready,' but here's exactly what the next level looks like."
+- *Rejected in calibration?* **Understand → own it → tell them honestly → rebuild → calibrate earlier.** "Usually part of it is on me. The case should have been undeniable." (If it hasn't happened to you, say so.)
+- *Quiet engineers overlooked?* **Evidence, not airtime; give them the stage; speak for them in calibration.** "My job is to make their work visible, not to make them louder."
 
 ### ★ Q20. When do you coach, and when do you just give the answer?
 

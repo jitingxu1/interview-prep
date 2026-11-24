@@ -81,6 +81,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - Understand (goals, energy, peer input) → plan (one or two areas, stretch work) → rhythm; three signals it's working
     - Frameworks and hints for: someone who doesn't know what they want, a goal that doesn't fit the team, mentoring seniors who know more
 
+18. **[Leveling and Promotions](./leveling_and_promotions.md)** — the "how do you approach leveling and promotions? how do you keep it fair?" answer
+    - Primer on how leveling and calibration work; what makes promotions unfair and the fix for each
+    - Transparent → plan → evidence → calibrate; deep dives on "they think they deserve it" and "rejected in calibration," plus quiet engineers
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
