@@ -309,11 +309,29 @@ What I learned is that most team conflict isn't about the technical question. It
 
 ### Q14. How do you build trust with a team — especially one that didn't choose you?
 
-I inherited a team once — ten engineers, my manager had left, no interim — so I've actually lived this. The first thing I did was diagnose before changing anything. The first 1:1 question that mattered wasn't "what are you working on," it was "what was missing with the last manager?" and "where do you actually want to go?" You're finding out what the team believes about how this place works before you try to change it.
+I've lived this. I inherited a team of ten engineers when their manager left, with no interim manager, so they didn't choose me and didn't know me.
 
-Then I changed one thing visibly and fast. People judge a new manager by whether the first stated commitment survives contact with pressure. I picked something small, painful, and real — consistent 1:1s and protected focus time — and I never missed it.
+Listen first. I didn't change anything for the first few weeks. In my first 1:1s, the questions that mattered weren't "what are you working on?" but "what was missing with your last manager?" and "where do you actually want to go?" You're learning what the team believes about how things work here before you try to change it.
 
-The deeper principle is that trust is built by removing surprises. Expectations in writing, feedback mid-cycle, no one blindsided at review time. And I try to be the surface the organization pushes against, so the team doesn't have to be. When people see you absorb the org load — the meetings, the stakeholder noise — instead of passing it down, they start to trust that you've got them. That's what calm authority actually is: not being loud, just being steady and predictable when it counts.
+One visible win. People judge a new manager by whether the first promise survives pressure. So I picked something small and real that they'd asked for: consistent 1:1s and protected focus time. And I never missed it, even in busy weeks.
+
+No surprises. I wrote down expectations, gave feedback early, and shared context openly: what leadership was asking for and why.
+
+On their side. I took the stakeholder noise and the meetings myself, so they didn't have to. When people see you absorb the pressure instead of passing it down, they start to trust you've got them.
+
+**[REAL RESULT: e.g. people bringing problems early, retention in the first year. Only what's true.]**
+
+Trust isn't built by being loud. It's built by being steady and predictable when it counts.
+
+**[CONFIRM: the old draft said "my manager had left"; the repo elsewhere says the team's manager left. Which is it? Was there really no interim? What did people ask for in the first 1:1s?]**
+
+*Hint: listen first → one visible win → never miss a promise → no surprises → absorb the noise. Full file: [leadership/building_trust.md](../../leadership/building_trust.md).*
+
+**Likely follow-ups, with hints:**
+- *Someone wanted your job?* **Name it privately, give them real scope, let work convince.** (Could double as Q12 if real.)
+- *Loyal to the old manager?* **Respect what worked; change slowly.** "Inheriting a team is mostly subtraction."
+- *First 90 days here?* **Listen (30) → one visible win (60) → first real change (90).**
+- *How do you know you've earned trust?* **People bring bad news early; they disagree openly.**
 
 ### Q15. Tell me about a time you led under real pressure. How did you keep the team steady?
 

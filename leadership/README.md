@@ -106,6 +106,9 @@ Materials on your leadership approach, values, and how you think about managing.
 24. **[Team Conflict](./team_conflict.md)** — the "two people on your team in conflict" answer
     - Seven conflict types and the fix for each; home of the architecture-deadlock story; follow-ups with hints
 
+25. **[Building Trust](./building_trust.md)** — the "how do you build trust with a team that didn't choose you?" answer
+    - Inherited team of 10: listen first → one visible win → never miss a promise → no surprises → absorb the noise; follow-ups incl. first 90 days
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy
