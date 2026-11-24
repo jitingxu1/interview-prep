@@ -73,6 +73,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - Telling a tech lead his manager path was cancelled by an org change: preparation, the first minute, a careful promise
     - Lesson: build growth plans around readiness and scope, not a title or date; four follow-ups with hints
 
+16. **[Coach vs. Answer](./coach_vs_answer.md)** — the "when do you coach, and when do you just give the answer?" answer
+    - Three questions: urgency/stakes, do they have what they need, bounded room; the "asked twice" rule; dependence as the warning sign
+    - Follow-ups with hints, including a framework and template for "a time coaching didn't work"
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

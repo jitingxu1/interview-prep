@@ -319,11 +319,26 @@ Two of my pod leads grew into senior scope exactly this way — they took on sta
 
 ### ★ Q20. When do you coach, and when do you just give the answer?
 
-This is the hardest judgment call in management, and I had to learn it by getting it wrong. My natural inclination is to coach — I wake up wanting to coach people. But I walked into management assuming coaching *was* management, and within a few months I saw the problem: coaching takes time, and management doesn't always have it. If I coach everything, I create dependence — people who need me to rebuild their confidence every week instead of holding onto their own strength.
+Coaching is my default, but I don't coach everything. I decide by asking three quick questions.
 
-So now I sort it three ways. I coach when the person already has the answer and needs to find it — that's where growth and ownership live, and the blast radius is small. I give limited space when there's a real tradeoff: I'll say, "take two days to explore it, then bring me what you've got" — a cost-benefit call, because letting someone walk too long has dependencies attached. And I direct explicitly when it's urgent, high-stakes, or they've already asked twice. In those cases I tell them exactly what I want and exactly how I want it done, and I explain what I'm expecting so it's fair.
+First, how urgent and high-stakes is it? If production is down or a customer is affected, I give the answer, clearly, and we talk about the why afterward. Coaching in the middle of an incident just costs time.
 
-The signal I watch for is dependence. If someone's confidence collapses between our 1:1s and they need me to rebuild it every time, I'm over-coaching. The goal is the opposite: that they leave the conversation holding their own reasons to move, not mine.
+Second, does the person already have what they need to find it? If they do, and a wrong turn is cheap, I coach. I ask, "What do you think?" or "What have you tried?" That's where people grow and take ownership.
+
+Third, what's in between? When there's a real trade-off, I give bounded room: "Take two days to explore it, then bring me what you've got." They still do the thinking, but it can't drift.
+
+And one rule: if someone has asked me twice, I stop coaching and just help. At that point holding back isn't teaching, it's frustrating.
+
+The warning sign I watch for is dependence. If someone needs me to rebuild their confidence every week, I'm over-coaching. The goal is that they walk out of the conversation with their own reasons to move, not mine.
+
+**[ONE-SENTENCE REAL EXAMPLE: a time you asked "what do you think?" and it worked.]**
+
+*Jay angle: his "coaching is only ~20% of the job" and over-coaching → dependence, in your own words. Links Q1 (which mode) and Q5 (your answer-man instinct): "This is the habit I built to manage the weakness I mentioned." Full file: [leadership/coach_vs_answer.md](../../leadership/coach_vs_answer.md).*
+
+**Likely follow-ups, with hints:**
+- *Deadline is close?* **Answer now, debrief after.** "The learning can happen after the deadline."
+- *Someone just wants the answer?* **Ask what help they want.** "I'll tell you, but first give me your best guess."
+- *A time coaching didn't work?* **Noticed → why (my call) → switched → lesson.** "Coaching only works when the person has something to build on." **[NEEDS YOUR STORY; framework and template in the full file]**
 
 ### ★ Q21. Who coaches you? How do you stay coachable as a manager?
 
