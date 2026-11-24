@@ -103,6 +103,9 @@ Materials on your leadership approach, values, and how you think about managing.
 23. **[Managing Out](./managing_out.md)** — the "have you ever managed someone out?" answer
     - Honest no → closest case → how you'd do it (clarity/fit/support, written plan, HR, dignity) → won't avoid it
 
+24. **[Team Conflict](./team_conflict.md)** — the "two people on your team in conflict" answer
+    - Seven conflict types and the fix for each; home of the architecture-deadlock story; follow-ups with hints
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

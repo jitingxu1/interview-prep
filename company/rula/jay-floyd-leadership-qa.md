@@ -281,9 +281,25 @@ The rule I kept was: no surprises, expectations in writing, and earn the authori
 
 ### Q13. Tell me about a time two people on your team were in conflict with each other. What did you do?
 
-Two of my senior engineers deadlocked on a model architecture, and the disagreement was starting to cost us. Instead of deciding for them, I had each write a one-page design doc, then ran a structured discussion — assumptions, tradeoffs, unknowns — and we landed on a hybrid. Then we set the standing rule: senior engineers propose, the team debates, I break ties if needed, and then everyone commits. The commitment half is what makes the disagreement safe.
+When two people on my team are in conflict, the first thing I do is work out what kind of conflict it is, because each needs a different fix. A technical disagreement needs criteria and data. An ownership conflict needs clear decision rights. A personal one needs private conversations about behavior. And often a conflict looks technical but is really about who gets heard or who decides.
 
-What I learned from it is that most team conflict isn't really about the technical question — it's about who gets heard and who decides. So my job in the conflict was to make the decision process explicit before anyone had to defend a position in public. Once the process was fair, the people could disagree without it becoming personal.
+That's what happened when two of my senior engineers deadlocked on a model architecture. It was starting to slow the whole team down, and the discussion was getting personal.
+
+I talked to each of them one-on-one first, without picking a side. Then I asked each to write a one-page design doc. Before we compared them, we agreed on the criteria: latency, accuracy, cost to maintain. Then we ran a structured discussion on the assumptions, the trade-offs, and what we didn't know yet. Once it was about criteria instead of people, the temperature dropped.
+
+We landed on a hybrid that took the strongest part of each. **[REAL DETAIL]** And we set a standing rule: senior engineers propose, the team debates, I break ties if needed, and then everyone commits, including the person whose idea didn't win. **[REAL RESULT]**
+
+What I learned is that most team conflict isn't about the technical question. It's about whether the process feels fair. Once it does, people can disagree hard without it becoming personal.
+
+**[CONFIRM: one-on-ones first? the criteria? the hybrid? what happened after?]**
+
+*Home of the architecture-deadlock story (Q3, Q8: one line only). Hint: diagnose the type → fix matches the type → separately first → criteria first → decide + commit → standing rule. Full file with the seven conflict types: [leadership/team_conflict.md](../../leadership/team_conflict.md).*
+
+**Likely follow-ups, with hints:**
+- *Personal, not technical?* **Private first, behavior and impact, clear expectations, HR if needed.** "I don't need them to be friends."
+- *Someone won't commit?* **Disagree and commit; a direct 1:1.** "Disagreeing is fine. Undermining a decision isn't."
+- *Conflict with you?* **Listen, invite it, change your mind if they're right.**
+- *Prevent it?* **Decision rights and process set before the conflict.**
 
 ---
 
