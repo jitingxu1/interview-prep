@@ -85,6 +85,10 @@ Materials on your leadership approach, values, and how you think about managing.
     - Primer on how leveling and calibration work; what makes promotions unfair and the fix for each
     - Transparent → plan → evidence → calibrate; deep dives on "they think they deserve it" and "rejected in calibration," plus quiet engineers
 
+19. **[Hiring](./hiring.md)** — how to decide, level, judge fit, and hold the bar
+    - Spoken "how do you hire?" answer; scorecard; levelling signals (mid / senior / staff); culture add and "raise the average"
+    - Question bank for ML / AI engineers, follow-ups that reveal level, and candidate-side follow-ups
+
 ## How to Use
 
 - Review these before interviews to internalize your philosophy

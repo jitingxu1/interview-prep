@@ -404,9 +404,11 @@ What I'd do differently: I'd write down the decision rights from the start inste
 
 ### Q25. How do you hire? What do you look for?
 
-Four things, in order. Technical foundation — can they think through systems, can they code, do they understand ML fundamentals for the fraud side. Learning mindset — have they grown in past roles, do they ask good questions. Communication — can they explain complex ideas clearly, because that's critical on cross-functional teams. And judgment — how do they decide under uncertainty. In interviews I like to walk through a recent real decision with them and see how they reasoned.
+I decide what good looks like before I interview: a scorecard with the mission, three to five must-have skills, and the behaviors that matter. Each interviewer covers different areas, and everyone writes feedback before the debrief so the loudest voice doesn't win. To judge level, I listen for scope and independence, not years: I always ask "what was your part, specifically?" For fit, I look for what the team is missing, not people like us. My bar is simple: would this person raise the team's average at this level? If I'm not sure, it's a no. And I hire for strengths: one clear strength the team needs beats being fine at everything.
 
-I stay involved personally — I do technical interviews and culture assessments myself, and I give engineers on the team a voice in hiring, because they usually spot things I miss. And I hire for strengths, not the req. The infra-strong engineer I mentioned is the example: on paper he was a fraud-detection hire, but his real strength was platform thinking, and once I saw that, I put him where that strength compounded. Hiring is the highest-leverage thing I do, so I don't delegate the bar.
+*Hint: scorecard → split areas → written feedback first → scope, not years → culture add → raise the average. Backend-engineer story: one line only (its home is Q9). Full playbook, levelling table, and question bank: [leadership/hiring.md](../../leadership/hiring.md).*
+
+*(Previous draft, kept for its content: technical foundation, learning mindset, communication, judgment; you do technical and culture interviews yourself; engineers on the team get a voice in hiring.)*
 
 **[NEEDS YOUR STORY: one "best hire" story with a name and specifics — how you found them, what you saw in the interview, what they became. The question bank lists this as a standard question.]**
 
